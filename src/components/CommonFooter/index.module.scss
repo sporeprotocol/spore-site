@@ -1,0 +1,78 @@
+.SpreadCreation {
+  display: flex;
+  width: 1400px;
+  box-sizing: border-box;
+  padding: 100px 203px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+  border-radius: 35px;
+  background: var(--background-03, #402E32);
+  .FooterDesc {
+    color: var(--white-alpha-100, #FFF);
+    text-align: center;
+    font-family: Baloo Extra Bolder;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 75px; /* 117.188% */
+    letter-spacing: -0.64px;
+    span {
+      color: var(--brand-yellow, #FFC43B);
+    }
+  }
+  .SpreadButton {
+    display: flex;
+    width: 201px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: var(--brand-blue, #3A5AFF);
+    color: var(--white-alpha-100, #FFF);
+    text-align: center;
+    font-feature-settings: 'calt' off;
+    font-family: Baloo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.16px;
+  }
+}
+
+.ContactUsContainer {
+  position: relative;
+  width: 1400px;
+  height: 240px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .SocialMediaContainer {
+    div {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+    p {
+      margin: 24px 0 0 0;
+      color: var(--black-alpha-100, #000);
+      text-align: center;
+      font-feature-settings: 'calt' off;
+      font-family: Baloo Extra Bolder;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 64px */
+    }
+  }
+}
+
+.ContactMushroom {
+  position: absolute;
+  right: 244px;
+}

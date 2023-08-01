@@ -1,0 +1,16 @@
+.HomePageWrapper {
+  width: 1400px;
+  overflow: hidden;
+  margin: 48px auto 24px auto;
+  border-radius: 35px;
+  background: var(--background-02, #FFF9EA);
+  display: flex;
+  flex-direction: column;
+}
+.tmp {
+  width: 1400px;
+  height: 300px;
+  background-image: url('../../assets/img/img.png');
+  background-size: cover;
+  background-position: center center;
+}

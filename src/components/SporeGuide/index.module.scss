@@ -1,0 +1,52 @@
+.SporeGuideWrapper {
+  overflow: hidden;
+  .SporeGuideTitle {
+    margin: 100px auto 56px auto;
+    color: var(--black-alpha-100, #000);
+    text-align: center;
+    font-family: Baloo Extra Bolder;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: -0.48px;
+  }
+  .SporeGuideDec {
+    width: 1040px;
+    margin: 0 auto 56px auto;
+    color: var(--black-alpha-100, #000);
+    text-align: center;
+    /* Subheader2 */
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 38.4px */
+  }
+  .SporeGuideContainer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  .SporeGuideButton {
+    display: flex;
+    width: 248px;
+    margin: 74px auto 100px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: var(--brand-blue, #3A5AFF);
+    p {
+      color: var(--white-alpha-100, #FFF);
+      text-align: center;
+      font-feature-settings: 'calt' off;
+      font-family: Baloo;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      letter-spacing: -0.16px;
+    }
+  }
+}

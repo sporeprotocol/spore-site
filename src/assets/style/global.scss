@@ -1,0 +1,40 @@
+html,
+body {
+  background: var(--background-01, #FFF4CC);
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../font/Nunito-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Baloo';
+  src: url('../font/Baloo2-VariableFont_wght.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Baloo Extra Bolder';
+  src: url('../font/Baloo2-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CaveatBrush';
+  src: url('../font/CaveatBrush-Regular_1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik Mono One';
+  src: url('../font/RubikMonoOne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

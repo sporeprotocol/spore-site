@@ -1,0 +1,90 @@
+.SloganWrapper {
+  position: relative;
+  width: 1040px;
+  height: 662px;
+  margin: 148px auto 31px auto;
+  display: flex;
+  flex-direction: column;
+
+  .ColonContainer {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-left: 212px;
+  }
+  .TextContainer {
+    width: 787px;
+    margin: 0 auto;
+    font-family: Baloo Extra Bolder;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 120%;
+    text-align: center;
+    span {
+      display: inline-flex;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-position: left 75%;
+    }
+    .CreateText {
+      width: 220px;
+      background-image: url('../../assets/svg/text-create.svg');
+    }
+    .EngageText {
+      width: 242px;
+      background-image: url('../../assets/svg/text-engage.svg');
+    }
+    .MonetizeText {
+      width: 284px;
+      background-image: url('../../assets/svg/text-monetize.svg');
+    }
+    .PurpleFont {
+      color: var(--brand-blue, #3A5AFF);
+    }
+    .BlueMushroom {
+      position: absolute;
+      top: 193px;
+      left: 19px;
+    }
+    .LoveMushroom {
+      position: absolute;
+      top: 2px;
+      right: 13px;
+    }
+    .QuestionMushroom {
+      position: absolute;
+      top: 244px;
+      right: 45px;
+    }
+  }
+  .IntroContainer {
+    width: 1040px;
+    margin: 56px auto 0 auto;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 48px */
+    color: var(--black-alpha-70, rgba(0, 0, 0, 0.70));
+  }
+  .SpreadButton {
+    display: inline-flex;
+    padding: 15px 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 72px auto 0 auto;
+    gap: 10px;
+    border-radius: 50px;
+    background: var(--brand-blue, #3A5AFF);
+    color: var(--white-alpha-100, #FFF);
+    text-align: center;
+    font-feature-settings: 'calt' off;
+    font-family: Baloo Extra Bolder;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.16px;
+  }
+}

@@ -1,0 +1,53 @@
+.SporeIntroWrapper {
+  background-color: var(--brand-yellow, #FFC43B);
+  background-repeat: no-repeat;
+  background-position: top center;
+  overflow: hidden;
+  .SporeIntroTitle {
+    margin-bottom: 46px;
+    div {
+      color: var(--black-alpha-100, #000);
+      text-align: center;
+      /* Header2 */
+      font-family: Baloo Extra Bolder;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 120%; /* 57.6px */
+      letter-spacing: -0.48px;
+      span {
+        color: var(--brand-blue, #3A5AFF);
+      }
+    }
+    p {
+      color: var(--black-alpha-100, #000);
+      text-align: center;
+      /* Subheader2 */
+      font-family: Nunito;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 160%; /* 38.4px */
+    }
+  }
+  .DiscoverButton {
+    display: flex;
+    width: 248px;
+    padding: 15px 25px;
+    margin: 105px auto 100px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: var(--brand-blue, #3A5AFF);
+    color: var(--white-alpha-100, #FFF);
+    text-align: center;
+    font-feature-settings: 'calt' off;
+    font-family: Baloo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.16px;
+  }
+}
