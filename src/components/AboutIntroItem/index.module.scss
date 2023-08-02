@@ -1,0 +1,50 @@
+.evenWrapper, .oddWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.evenWrapper {
+  flex-direction: row;
+}
+
+.oddWrapper {
+  flex-direction: row-reverse;
+}
+
+.svgWrapper {
+  width: 488px;
+  height: 488px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textWrapper {
+  position: relative;
+  width: 510px;
+  .title {
+    color: var(--black-alpha-70, rgba(0, 0, 0, 0.70));
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 38.4px */
+  }
+  .subtitle {
+    color: var(--black-alpha-100, #000);
+    font-family: Baloo Extra Bolder;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 38.4px */
+  }
+  .content {
+    color: var(--black-alpha-100, #000);
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+  }
+}

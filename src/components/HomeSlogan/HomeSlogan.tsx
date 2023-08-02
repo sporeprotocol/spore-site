@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactComponent as BlueMushroom } from '../../assets/svg/blue-mushroom.svg';
 import { ReactComponent as LoveMushroom } from '../../assets/svg/Love-mushroom.svg';
-import { ReactComponent as QuestionMushroom } from '../../assets/svg/question-mushroom.svg'
+// import { ReactComponent as QuestionMushroom } from '../../assets/svg/question-mushroom.svg'
 import styles from './index.module.scss'
 
 const HomeSlogan: React.FC = () => {
@@ -16,19 +16,24 @@ const HomeSlogan: React.FC = () => {
                 </svg>
             </div>
             <div className={styles.TextContainer}>
-                <span className={styles.CreateText}>Create, </span>
-                <span className={styles.EngageText}>Engage, </span> and
-                <span className={styles.MonetizeText}> Monetize</span>
-                "NFTs", "Your Digital Assets", "Anything" <span className={styles.PurpleFont}>On-Chain</span>
+                <div>Create, Spread, and Monetize</div>
+                <div className={styles.AnimationText}>
+                    <span>
+                        NFTs <br/>
+                        Anything <br/>
+                        Digital Assets
+                    </span>
+                </div>
+                <div className={styles.PurpleFont}>on chain</div>
                 <div className={styles.BlueMushroom}>
                     <BlueMushroom />
                 </div>
                 <div className={styles.LoveMushroom}>
                     <LoveMushroom />
                 </div>
-                <div className={styles.QuestionMushroom}>
-                    <QuestionMushroom />
-                </div>
+                {/*<div className={styles.QuestionMushroom}>*/}
+                {/*    <QuestionMushroom />*/}
+                {/*</div>*/}
             </div>
             <div className={styles.IntroContainer}>
                 The On-Chain protocol that redefine the way your asset is utilized, traded, and integrated with decentralized applications. Think big, engage more, and monetize your niche with Spore Protocol.

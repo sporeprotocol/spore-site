@@ -13,10 +13,10 @@
     margin-left: 212px;
   }
   .TextContainer {
-    width: 787px;
-    margin: 0 auto;
+    width: 894px;
+    margin: 0 auto 87px auto;
     font-family: Baloo Extra Bolder;
-    font-size: 64px;
+    font-size: 56px;
     font-weight: 800;
     line-height: 120%;
     text-align: center;
@@ -26,30 +26,45 @@
       background-repeat: no-repeat;
       background-position: left 75%;
     }
-    .CreateText {
-      width: 220px;
-      background-image: url('../../assets/svg/text-create.svg');
+    .AnimationText {
+      position: relative;
+      height: 67px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      span {
+        position: absolute;
+        top: 0;
+        animation: slide 6s linear infinite alternate;
+        line-height: 67px;
+        font-weight: bold;
+      }
     }
-    .EngageText {
-      width: 242px;
-      background-image: url('../../assets/svg/text-engage.svg');
-    }
-    .MonetizeText {
-      width: 284px;
-      background-image: url('../../assets/svg/text-monetize.svg');
-    }
+
+    //.CreateText {
+    //  width: 220px;
+    //  background-image: url('../../assets/svg/text-create.svg');
+    //}
+    //.EngageText {
+    //  width: 242px;
+    //  background-image: url('../../assets/svg/text-engage.svg');
+    //}
+    //.MonetizeText {
+    //  width: 284px;
+    //  background-image: url('../../assets/svg/text-monetize.svg');
+    //}
     .PurpleFont {
       color: var(--brand-blue, #3A5AFF);
     }
     .BlueMushroom {
       position: absolute;
-      top: 193px;
-      left: 19px;
+      top: 156px;
+      left: 87px;
     }
     .LoveMushroom {
       position: absolute;
-      top: 2px;
-      right: 13px;
+      top: 104px;
+      right: 40px;
     }
     .QuestionMushroom {
       position: absolute;
@@ -62,7 +77,7 @@
     margin: 56px auto 0 auto;
     text-align: center;
     font-family: Nunito;
-    font-size: 32px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 48px */
@@ -88,3 +103,17 @@
     letter-spacing: -0.16px;
   }
 }
+
+@keyframes slide {
+  0%, 20% {
+    top: 0;
+  }
+  40%, 60% {
+    top: -67px;
+  }
+  80%, 100% {
+    top: -134px;
+  }
+}
+
+

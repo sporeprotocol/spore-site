@@ -1,0 +1,28 @@
+.AboutIntroWrapper {
+  width: 1400px;
+  border-radius: 35px;
+  margin: 0 auto;
+  padding: 0 120px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: var(--background-02, #FFF9EA);
+  .AboutIntroTitle {
+    margin: 100px auto 56px auto;
+    color: var(--black-alpha-100, #000);
+    text-align: center;
+    /* Header2 */
+    font-family: Baloo Extra Bolder;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 57.6px */
+    letter-spacing: -0.48px;
+    .ImaginationText {
+      display: inline-block;
+      width: 274px;
+      background-image: url('../../assets/svg/text-imagination.svg');
+      background-repeat: no-repeat;
+      background-position: left 81%;
+    }
+  }
+}

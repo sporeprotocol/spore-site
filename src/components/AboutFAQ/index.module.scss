@@ -1,0 +1,28 @@
+.AboutFAQWrapper {
+  display: flex;
+  width: 1400px;
+  padding: 100px 180px;
+  margin: 24px auto;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 35px;
+  background: var(--white-alpha-100, #FFF);
+  .LeftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .LeftHeader {
+      margin-bottom: 56px;
+      color: var(--gray, #21232B);
+      /* Header2 */
+      font-family: Baloo Extra Bolder;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 120%; /* 57.6px */
+      letter-spacing: -0.48px;
+    }
+  }
+}
