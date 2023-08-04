@@ -17,6 +17,7 @@ const SporeSecp256k1EXAMPLE: React.FC = () => {
             <div className={styles.DocsWrapper}>
                 <BreadCrumbs parentName="Try" childName="Spore Secp256k1 Example" parentLink="/try" />
                 <div className={styles.MdxContainer}>
+                    {/*@ts-ignore*/}
                     <MDXProvider  components={components}>
                         <SporeSecp256k1EXAMPLEDocs />
                     </MDXProvider>

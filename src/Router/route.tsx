@@ -11,9 +11,7 @@ const AppRoutes: React.FC = () => {
             <Routes>
                 {routes.map((route, index) => (
                     <Route key={index} path={route.path} element={<route.component />}>
-                        {route.children?.map((childRoute, index) => (
-                            <Route key={index} path={childRoute.path} element={<childRoute.component />} />
-                        ))}
+
                     </Route>
                 ))}
             </Routes>

@@ -1,10 +1,9 @@
 .SporeIntroWrapper {
   position: relative;
   min-height: 100vh;
-  overflow-y: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
   background-color: var(--brand-yellow, #FFC43B);
   background-repeat: no-repeat;
   background-position: top center;
@@ -12,14 +11,13 @@
   box-sizing: border-box;
   .SporeIntroTitle {
     position: sticky;
-    top: 0;
+    width: 50%;
+    top: 100px;
     z-index: 1;
     display: flex;
     flex-direction: column;
     div {
       color: var(--black-alpha-100, #000);
-      text-align: center;
-      /* Header2 */
       font-family: Baloo Extra Bolder;
       font-size: 48px;
       font-style: normal;
@@ -52,8 +50,6 @@
     }
     p {
       color: var(--black-alpha-100, #000);
-      text-align: center;
-      /* Subheader2 */
       font-family: Nunito;
       font-size: 24px;
       font-style: normal;
