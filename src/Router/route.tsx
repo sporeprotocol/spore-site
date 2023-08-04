@@ -10,9 +10,7 @@ const AppRoutes: React.FC = () => {
             <CommonHeader />
             <Routes>
                 {routes.map((route, index) => (
-                    <Route key={index} path={route.path} element={<route.component />}>
-
-                    </Route>
+                    <Route key={index} path={route.path} element={<route.component />}></Route>
                 ))}
             </Routes>
         </Router>

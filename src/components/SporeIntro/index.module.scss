@@ -1,6 +1,5 @@
 .SporeIntroWrapper {
   position: relative;
-  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
@@ -12,6 +11,7 @@
   .SporeIntroTitle {
     position: sticky;
     width: 50%;
+    height:fit-content;
     top: 100px;
     z-index: 1;
     display: flex;
