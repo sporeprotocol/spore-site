@@ -1,0 +1,129 @@
+import TextLayout from "../../components/TextLayout/TextLayout";
+import { ReactComponent as MdxClock} from "../svg/mdx-clock.svg";
+import RunExample from '../img/run-example.png'
+import MarginContainer from "../../components/MarignContainer/MarginContainer";
+
+# Spore <span style={{color:'#3A5AFF'}}>Secp256k1</span> EXAMPLE
+
+<MarginContainer bottom={48} />
+
+<TextLayout
+    markdown={
+        'Estimated Time: 5~10mins'
+    }
+    SvgComponent={MdxClock}
+    ratio={19}
+    reverse={true}
+/>
+
+<MarginContainer bottom={32} />
+
+The Spore secp256k1 example is a collection of code examples written in TypeScript, which help you understand how to use @spore-sdk/core in Node environment to:
+
+<MarginContainer bottom={24} />
+
+- Construct and send transactions of spores and clusters on Testnet (Aggron)
+- Use Secp256k1Blake160 lock to sign transactions
+
+<MarginContainer bottom={100} />
+
+<hr/>
+
+<MarginContainer bottom={100} />
+
+# Setup <span style={{color:'#3A5AFF'}}>.</span>
+
+<MarginContainer bottom={48} />
+
+Firstly, you’ll need to clone the repository. Open up your terminal and type in the following command:
+
+<MarginContainer bottom={16} />
+
+```bash
+git clone https://github.com/ShookLyngs/spore-sdk.git
+```
+
+<MarginContainer bottom={32} />
+
+Assuming your spore-sdk is located at `~/projects/spore-sdk` . Make sure to change your terminal’s location accordingly.
+
+<MarginContainer bottom={16} />
+
+```bash
+cd ~/projects/spore-sdk
+```
+
+<MarginContainer bottom={32} />
+
+Then, you can install dependencies with pnpm by running the following command:
+
+```bash
+pnpm i
+```
+
+<MarginContainer bottom={32} />
+
+After installed, run the following command to build local packages:
+
+<MarginContainer bottom={16} />
+
+```bash
+pnpm run build:packages
+```
+
+<MarginContainer bottom={100} />
+
+<hr/>
+
+<MarginContainer bottom={100} />
+
+# Run an example <span style={{color:'#3A5AFF'}}>.</span>
+
+<MarginContainer bottom={32} />
+
+<img src={RunExample} alt={'run code'}/>
+
+<MarginContainer bottom={32} />
+
+Let's go to the spore secp256k1 examples' directory:
+
+<MarginContainer bottom={16} />
+
+```bash
+cd examples/secp256k1
+```
+
+<MarginContainer bottom={16} />
+
+The example code is stored in the apis directory, feel free to review the code or change the data of spore/cluster you want to create on-chain, or even treat the examples as your experimental fields.
+
+<MarginContainer bottom={32} />
+
+To run an example, for instance if you want to create a spore on-chain, you can run the apis/createSpore.ts example in your terminal:
+
+<MarginContainer bottom={16} />
+
+```bash
+ts-node apis/createSpore.ts
+```
+
+<MarginContainer bottom={16} />
+
+The example should construct and send a transaction that creates a spore, and after sending the transaction, it should return a `Transaction Hash` for you to view the details of the transaction on CKB Explorer.
+
+<MarginContainer bottom={100} />
+
+<hr/>
+
+<MarginContainer bottom={100} />
+
+# Configuration <span style={{color:'#3A5AFF'}}>.</span>
+
+<MarginContainer bottom={48} />
+
+If you have your own testing accounts, or if you want to configure the SporeConfig of the examples, you can go to the utils/config.ts file and update it. Inside the utils/config.ts file, you can do:
+
+<MarginContainer bottom={16} />
+
+- Update the default testing private keys to your own
+- Update the SporeConfig as needed

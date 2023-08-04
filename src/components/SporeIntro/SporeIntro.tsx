@@ -13,14 +13,14 @@ const SporeIntro: React.FC = () => {
                         What’s in <span>Spore</span>
                     </div>
                     <p>(not just another NFT protocol)</p>
+                    <div className={styles.DiscoverButton}>
+                        Discover Spore
+                    </div>
                 </div>
-                <div>
+                <div className={styles.SporeIntroCards}>
                     {sporeItemsData.map((item, index) => (
-                        <SporeItem title={item.title} subtitle={item.subtitle} content={item.content} index={index + 1} />
+                        <SporeItem title={item.title} content={item.content} index={index + 1} total={sporeItemsData.length} />
                     ))}
-                </div>
-                <div className={styles.DiscoverButton}>
-                    Discover Spore
                 </div>
             </div>
         </>

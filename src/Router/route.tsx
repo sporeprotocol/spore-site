@@ -1,3 +1,4 @@
+// AppRoutes.tsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import routes from './routesConfig';
@@ -9,11 +10,11 @@ const AppRoutes: React.FC = () => {
             <CommonHeader />
             <Routes>
                 {routes.map((route, index) => (
-                    <Route
-                        key={index}
-                        path={route.path}
-                        element={React.createElement(route.component)}
-                    />
+                    <Route key={index} path={route.path} element={<route.component />}>
+                        {route.children?.map((childRoute, index) => (
+                            <Route key={index} path={childRoute.path} element={<childRoute.component />} />
+                        ))}
+                    </Route>
                 ))}
             </Routes>
         </Router>

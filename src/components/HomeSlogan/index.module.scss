@@ -1,8 +1,7 @@
 .SloganWrapper {
   position: relative;
   width: 1040px;
-  height: 662px;
-  margin: 148px auto 31px auto;
+  margin: 132px auto 31px auto;
   display: flex;
   flex-direction: column;
 
@@ -14,7 +13,7 @@
   }
   .TextContainer {
     width: 894px;
-    margin: 0 auto 87px auto;
+    margin: 0 auto 34px auto;
     font-family: Baloo Extra Bolder;
     font-size: 56px;
     font-weight: 800;
@@ -41,25 +40,13 @@
       }
     }
 
-    //.CreateText {
-    //  width: 220px;
-    //  background-image: url('../../assets/svg/text-create.svg');
-    //}
-    //.EngageText {
-    //  width: 242px;
-    //  background-image: url('../../assets/svg/text-engage.svg');
-    //}
-    //.MonetizeText {
-    //  width: 284px;
-    //  background-image: url('../../assets/svg/text-monetize.svg');
-    //}
     .PurpleFont {
       color: var(--brand-blue, #3A5AFF);
     }
     .BlueMushroom {
       position: absolute;
-      top: 156px;
-      left: 87px;
+      top: 106px;
+      left: 127px;
     }
     .LoveMushroom {
       position: absolute;
@@ -74,7 +61,7 @@
   }
   .IntroContainer {
     width: 1040px;
-    margin: 56px auto 0 auto;
+    margin: 0 auto;
     text-align: center;
     font-family: Nunito;
     font-size: 20px;
@@ -88,7 +75,7 @@
     padding: 15px 25px;
     justify-content: center;
     align-items: center;
-    margin: 72px auto 0 auto;
+    margin: 47px auto 56px auto;
     gap: 10px;
     border-radius: 50px;
     background: var(--brand-blue, #3A5AFF);
