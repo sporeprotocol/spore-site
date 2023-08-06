@@ -12,6 +12,7 @@
   border-radius: 100px;
   background: var(--black-alpha-100, #000);
   z-index: 999;
+  box-sizing: content-box;
 
   .CommonHeaderLogo {
     font-feature-settings: 'calt' off;
