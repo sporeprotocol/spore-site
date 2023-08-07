@@ -20,7 +20,7 @@ const CommonFooter:React.FC = () => {
                         Ready to <span> spore-adically </span> create, engage, and monetize digital assets on-chain?
                     </div>
                     <div className={styles.SpreadButton}>
-                        Spread Creation
+                        Spread Your Creation
                     </div>
                 </div>
             }
