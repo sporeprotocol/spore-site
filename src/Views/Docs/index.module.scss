@@ -3,7 +3,7 @@
   margin: 56px auto 0 auto;
   padding-bottom: 100px;
   border-radius: 35px;
-  background: var(--background-02, #FFF9EA);
+  background: var(--white-alpha-100, #FFF);
   .MdxContainer {
     padding: 0 304px;
     h1 {
@@ -28,6 +28,40 @@
       li {
         padding: 0 4px 8px 4px;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .DocsWrapper {
+    width: 1200px;
+    .MdxContainer {
+      padding: 0 204px;
+    }
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 1200px) and (min-width: 412px) {
+  .DocsWrapper {
+    width: auto;
+    margin: 3rem 2.5rem 0 2.5rem;
+    overflow: hidden;
+    .MdxContainer {
+      width: auto;
+      padding: 0 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 412px)  {
+  .DocsWrapper {
+    width: auto;
+    margin: 3rem 2.5rem 0 2.5rem;
+    overflow: hidden;
+    .MdxContainer {
+      width: auto;
+      padding: 0 1.5rem;
     }
   }
 }

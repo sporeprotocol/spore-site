@@ -15,21 +15,21 @@ const MarkdownImageRow: React.FC<MarkdownImageRowProps> = ({ markdown, SvgCompon
             {reverse ?
                 <>
                     <div style={{width: `${ratio}px`}}>
-                        <SvgComponent />
+                        <SvgComponent style={{width: '100%', height: 'auto'}}/>
                     </div>
                     <div className="markdown-container">
                         <ReactMarkdown children={markdown} />
                     </div>
                 </>
                 :
-                <>
+                <div className="textLayout-container flex items-center">
                     <div>
                         <ReactMarkdown children={markdown} />
                     </div>
-                    <div style={{width: `${ratio}px`}}>
+                    <div style={{width: `${ratio}px`, flexShrink: '0'}}>
                         <SvgComponent style={{width: '100%', height: 'auto'}}/>
                     </div>
-                </>
+                </div>
             }
         </div>
     );

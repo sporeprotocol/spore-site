@@ -1,6 +1,6 @@
 .TrySloganWrapper {
-  width: 958px;
-  margin: 0 auto;
+  //width: 958px;
+  margin: 0 auto 107px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,11 +15,6 @@
     background: var(--white-alpha-30, rgba(255, 255, 255, 0.30));
     backdrop-filter: blur(5px);
     color: var(--black-alpha-50, rgba(0, 0, 0, 0.50));
-    font-family: Baloo;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 36px */
     box-sizing: content-box;
   }
   .Planting {
@@ -85,6 +80,57 @@
         border-radius: 13px;
         border: 1px solid var(--black-alpha-100, #000);
         background: var(--white-alpha-100, #FFF);
+      }
+    }
+  }
+  .mobileTitle {
+    display: none;
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 1200px)  {
+  .TrySloganWrapper {
+    .Planting {
+      display: none;
+    }
+    .SporeGuide {
+      display: none;
+    }
+    .DynamicContents {
+      display: none;
+    }
+    .mobileTitle {
+      display: block;
+      text-align: center;
+      font-size: 3.5rem;
+      font-family: "Baloo Extra Bolder";
+      span {
+        color: var(--brand-blue, #3A5AFF);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 412px){
+  .TrySloganWrapper {
+    .Planting {
+      display: none;
+    }
+    .SporeGuide {
+      display: none;
+    }
+    .DynamicContents {
+      display: none;
+    }
+    .mobileTitle {
+      display: block;
+      text-align: center;
+      font-size: 2.25rem;
+      font-family: "Baloo Extra Bolder";
+      padding: 0 1rem;
+      span {
+        color: var(--brand-blue, #3A5AFF);
       }
     }
   }

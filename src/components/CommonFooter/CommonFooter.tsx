@@ -16,10 +16,10 @@ const CommonFooter:React.FC = () => {
             { (path == '/' || path == '/about') &&
                 <div className={styles.SpreadCreation}>
                     <ThreeMushroom />
-                    <div className={styles.FooterDesc}>
+                    <h1 className={styles.FooterDesc}>
                         Ready to <span> spore-adically </span> create, engage, and monetize digital assets on-chain?
-                    </div>
-                    <div className={styles.SpreadButton}>
+                    </h1>
+                    <div className={`${styles.SpreadButton} button-ct`}>
                         Spread Your Creation
                     </div>
                 </div>
@@ -31,7 +31,7 @@ const CommonFooter:React.FC = () => {
                         <GithubIcon />
                         <TwitterIcon />
                     </div>
-                    <p>SPORE PROTOCOL</p>
+                    <h1>SPORE PROTOCOL</h1>
                 </div>
                 <div className={styles.ContactMushroom}>
                     <ContactMushroom />

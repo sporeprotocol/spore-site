@@ -24,5 +24,54 @@
       line-height: 120%; /* 57.6px */
       letter-spacing: -0.48px;
     }
+    .RightContainer {
+      h2 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .AboutFAQWrapper {
+    width: 1200px;
+    padding: 100px 80px;
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 1200px) and (min-width: 412px) {
+  .AboutFAQWrapper {
+    width: auto;
+    margin: 0 2.5rem;
+    padding: 0 1.5rem;
+    .LeftContainer {
+      display: none;
+    }
+    .RightContainer {
+      padding: 6.25rem 0;
+      h2 {
+        padding: 0 0 3.5rem 0;
+        font-size: 3rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .AboutFAQWrapper {
+    width: auto;
+    padding: 6.25rem 1rem;
+    .LeftContainer {
+      display: none;
+    }
+    .RightContainer {
+      h2 {
+        padding: 0 0 3.5rem 0;
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
   }
 }

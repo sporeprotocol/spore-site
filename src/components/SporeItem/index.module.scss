@@ -25,23 +25,12 @@
     border-radius: 30px;
     background: var(--brand-yellow, #FFC43B);
     color: var(--black-alpha-100, #000);
-    /* Body1-bold */
-    font-family: Nunito;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%; /* 27px */
   }
   .SvgItem {
     margin-top: 48px;
   }
 
   .SporeItemTitle {
-    font-family: Baloo Extra Bolder;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 120%; /* 38.4px */
     color: var(--brand-blue, #3A5AFF);
   }
   .SporeItemContent {
@@ -61,11 +50,6 @@
     .content {
       width: 408px;
       /* Body1 */
-      font-family: Nunito;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 27px */
       z-index: 1;
     }
     .index {
@@ -79,6 +63,72 @@
       font-style: normal;
       font-weight: 400;
       line-height: 100%; /* 200px */
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 412px) {
+  .SporeItemWrapper {
+    width: 32.5rem;
+    border-radius: 2.1875rem;
+    padding: 0 1rem;
+    .SvgItem {
+      width: 11.4rem;
+      height: 11.4rem;
+    }
+    .TotalAndIndex {
+      width: 5.75rem;
+      padding: 0.25rem 1.5rem;
+      margin-top: 3rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+    }
+    .SporeItemContent {
+      width: 25.5rem;
+      ul {
+        li {
+        }
+      }
+      .content {
+        width: auto;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 412px)  {
+  .SporeItemWrapper {
+    width: 21.4rem;
+    border-radius: 2.1875rem;
+    padding: 0 1rem;
+    .SvgItem {
+      width: 11.4rem;
+      height: 11.4rem;
+    }
+    .TotalAndIndex {
+      width: 5.75rem;
+      padding: 0.25rem 1.5rem;
+      margin-top: 3rem;
+      font-family: Nunito-SemiBold;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+    }
+    .SporeItemContent {
+      width: 19.43rem;
+      ul {
+        li {
+        }
+      }
+      .content {
+        width: auto;
+        font-size: 1rem;
+      }
     }
   }
 }

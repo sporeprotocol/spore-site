@@ -1,0 +1,26 @@
+import MarginContainer from "../../components/MarignContainer/MarginContainer";
+import NoteBoard from "../../components/NoteBoard/NoteBoard";
+
+<MarginContainer bottom={48} />
+
+<NoteBoard header={'🍡 Ingredients:'} contents={['Terminal', 'Spore Secp256k1 example', 'Generator Tool Website', 'Nervos Faucet website']}/>
+
+<MarginContainer bottom={48} />
+
+- If you prefer to start with a clean environment for testing, you can replace the default testing private keys with your own in the examples/secp256k1/utils/config.ts file:
+
+<MarginContainer bottom={16} />
+
+```javascript
+// Inside utils/config.ts
+export const accounts: string[] = [
+    /* Your private keys */
+];
+```
+<MarginContainer bottom={16} />
+
+- To generate a new private key for testing, open the Generator Tool website, click the refresh icon to generate a new account, and copy the generated account's Private Key (256-bit) from the Private/Public Key block. Replace one of the default testing private keys in the examples/secp256k1/utils/config.ts file with this new key.
+
+<MarginContainer bottom={18} />
+
+- To claim faucet for your new account, copy the generated account's Nervos CKB Address from the Default Lock (Secp256k1-Blake160) - Testnet block, open the Nervos Faucet website, paste the address into the address input, and click the Claim button. Wait for the faucet process to complete.

@@ -7,37 +7,41 @@ const TrySlogan:React.FC = () => {
     return (
         <div className={styles.TrySloganWrapper}>
             <div className={styles.Planting}>
-                <div className={styles.tag}>
+                <h3 className={styles.tag}>
                     <AdoptionSVG />
                     mass adoption
-                </div>
+                </h3>
                 <div className={styles.line}>
 
                 </div>
-                <div className={styles.text}>Planting digital seeds</div>
+                <h1 className={styles.text}>Planting digital seeds</h1>
             </div>
             <div className={styles.SporeGuide}>
-                <div className={styles.text}>A <span>{ `{Spore guide}`}</span></div>
+                <h1 className={styles.text}>A <span>{ `{Spore guide}`}</span></h1>
                 <div className={styles.line}></div>
-                <div className={styles.tag}>
+                <h3 className={styles.tag}>
                     <AdoptionSVG />
-                    On-chain storage
-                </div>
+                    Dynamic contents
+                </h3>
             </div>
             <div className={styles.DynamicContents}>
                 <div className={styles.MushroomLeft}>
                     <LeftMushroomSVG />
                 </div>
                 <div className={styles.RightContainer}>
-                    <div className={styles.tag}>
+                    <h3 className={styles.tag}>
                         <AdoptionSVG />
                         On-chain storage
-                    </div>
+                    </h3>
                     <div className={styles.line}></div>
                     <div>
                         <RightMushroom />
                     </div>
                 </div>
+            </div>
+            <div className={styles.mobileTitle}>
+                Planting digital forests –
+                    A {"{"}<span>{`Spore guide`}</span>{"}"}
             </div>
         </div>
     )

@@ -17,16 +17,23 @@
     .GuideContent {
       margin-top: 16px;
       color: var(--black-alpha-100, #000);
-      font-family: Nunito;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 27px */
     }
     .LinkButton {
       position: absolute;
       bottom: 32px;
       right: 32px;
     }
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 412px) {
+  .SporeItemWrapper {
+    width: 32.5rem;
+    border-radius: 4.5rem;
+  }
+}
+@media only screen and (max-width: 412px) {
+  .SporeItemWrapper {
+    width: auto;
   }
 }

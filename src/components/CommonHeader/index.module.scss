@@ -84,3 +84,182 @@
     white-space: nowrap;
   }
 }
+
+/* Mobile styles */
+@media only screen and (max-width: 1000px) and (min-width: 412px) {
+  .CommonHeaderWrapper {
+    display: flex;
+    width: calc(100% - 5rem);
+    height: 5rem;
+    padding: 1.25rem 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    box-sizing: border-box;
+    background: var(--black-alpha-100, #000);
+    .CommonHeaderNav, {
+      display: none;
+    }
+
+    button {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #ffffff;
+    }
+  }
+  .MobileMenuWrappper {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: -1rem;
+    left: -2.5rem;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black-alpha-100, #000);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    //padding: 2rem;
+    .MobileMenu {
+      width: 100%;
+      .MobileHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ffffff;
+        padding: 2.5rem 5rem;
+        .CommonHeaderLogo {
+          margin-top: 0;
+        }
+
+      }
+      .CommonHeaderNav {
+        display: flex;
+        align-items: flex-start !important;
+        padding: 5rem 2.5rem 0 2.5rem;
+        a {
+          &.Active {
+            width: auto;
+            height: auto;
+            background-color: #000;
+            color: var(--brand-yellow, #FFC43B);
+          }
+        }
+      }
+
+      .CommonHeaderLogo {
+        margin-top: 2rem;
+      }
+
+      .CommonHeaderNav {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 2rem;
+
+        a {
+          margin: 0;
+        }
+      }
+    }
+    .CommonHeaderContactUs {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .CommonHeaderWrapper {
+    display: flex;
+    width: calc(100% - 2rem);
+    height: 5rem;
+    padding: 1.25rem 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    box-sizing: border-box;
+    background: var(--black-alpha-100, #000);
+    .CommonHeaderNav, {
+      display: none;
+    }
+    .CommonHeaderLogo {
+      font-size: 1.125rem;
+    }
+
+    button {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #ffffff;
+    }
+  }
+  .MobileMenuWrappper {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: -1rem;
+    left: -1.5rem;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black-alpha-100, #000);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    //padding: 2rem;
+    .MobileMenu {
+      width: 100%;
+      .MobileHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ffffff;
+        padding: 2.12rem 2.5rem 1.12rem 2.5rem;
+        .CommonHeaderLogo {
+          margin-top: 0;
+          font-size: 1.125rem;
+        }
+
+      }
+      .CommonHeaderNav {
+        display: flex;
+        align-items: flex-start !important;
+        padding: 2.5rem 2.5rem 0 2.5rem;
+        a {
+          &.Active {
+            width: auto;
+            height: auto;
+            background-color: #000;
+            color: var(--brand-yellow, #FFC43B);
+          }
+        }
+      }
+
+      .CommonHeaderNav {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 2rem;
+
+        a {
+          margin: 0;
+        }
+      }
+    }
+    .CommonHeaderContactUs {
+      margin-bottom: 2rem;
+    }
+  }
+}

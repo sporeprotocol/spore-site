@@ -2,6 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html {
+  font-size: 16px;
+}
+
 html,
 body {
   background: var(--background-01, #FFF4CC);
@@ -11,6 +15,13 @@ body {
 @font-face {
   font-family: 'Nunito';
   src: url('../font/Nunito-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito-SemiBold';
+  src: url('../font/Nunito-SemiBold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -41,4 +52,105 @@ body {
   src: url('../font/RubikMonoOne-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Baloo Extra Bolder";
+  font-weight: 800;
+  line-height: 120%;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-family: Nunito-SemiBold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+}
+
+.sub-header,
+.sub-header-2,
+.body-1,
+.body-2 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.sub-header {
+  font-size: 20px;
+}
+
+.sub-header-2 {
+  font-size: 24px;
+}
+
+.body-1 {
+  font-size: 18px;
+}
+
+.body-2 {
+  font-size: 16px;
+}
+
+.button-ct {
+  font-family: "Baloo Extra Bolder";
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-family: Nunito-SemiBold;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 30px */
+  }
+  .sub-header {
+    font-size: 1.125rem;
+  }
+
+  .sub-header-2 {
+    font-size: 1.25rem;
+  }
+
+  .body-1 {
+    font-size: 1rem;
+  }
+
+  .body-2 {
+    font-size: 0.875rem;
+  }
+
+  .button-ct {
+    font-family: "Baloo Extra Bolder";
+    font-size: 1rem;
+  }
 }

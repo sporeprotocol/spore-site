@@ -1,11 +1,14 @@
 import TextLayout from "../../components/TextLayout/TextLayout";
 import { ReactComponent as MdxClock} from "../svg/mdx-clock.svg";
-import RunExample from '../img/run-example.png'
+import { ReactComponent as Rocket} from "../svg/rocket.svg";
 import MarginContainer from "../../components/MarignContainer/MarginContainer";
+import NoteBoard from "../../components/NoteBoard/NoteBoard";
+import ContentBoard from "../../components/ContentBoard/ContentBoard";
+import contentData from '../../utils/WhatsNext'
 
 # Spore <span style={{color:'#3A5AFF'}}>Secp256k1</span> EXAMPLE
 
-<MarginContainer bottom={48} />
+<MarginContainer bottom={32} />
 
 <TextLayout
     markdown={
@@ -18,24 +21,23 @@ import MarginContainer from "../../components/MarignContainer/MarginContainer";
 
 <MarginContainer bottom={32} />
 
-The Spore secp256k1 example is a collection of code examples written in TypeScript, which help you understand how to use @spore-sdk/core in Node environment to:
-
-<MarginContainer bottom={24} />
-
-- Construct and send transactions of spores and clusters on Testnet (Aggron)
-- Use Secp256k1Blake160 lock to sign transactions
-
-<MarginContainer bottom={100} />
-
-<hr/>
-
-<MarginContainer bottom={100} />
-
-# Setup <span style={{color:'#3A5AFF'}}>.</span>
+In this walkthrough, we will get hands-on with the process of constructing and sending spore/cluster transactions on the Testnet (Aggron) by using the Secp256k1Blake160 lock for these transactions.
 
 <MarginContainer bottom={48} />
 
-Firstly, you’ll need to clone the repository. Open up your terminal and type in the following command:
+# Steps <span style={{color:'#3A5AFF'}}>.</span>
+
+<MarginContainer bottom={48} />
+
+<NoteBoard header={'🍡 Ingredients:'} contents={['Node.js version 18.0.0 or above', 'PNPM version 8.0.0 or above', 'Terminal', 'Spore-SDK repository']}/>
+
+<MarginContainer bottom={48} />
+
+#### 🍄 Step 1: Environment Setup
+
+<MarginContainer bottom={40} />
+
+1\. Open your terminal and clone the spore-sdk repository:
 
 <MarginContainer bottom={16} />
 
@@ -45,7 +47,7 @@ git clone https://github.com/ShookLyngs/spore-sdk.git
 
 <MarginContainer bottom={32} />
 
-Assuming your spore-sdk is located at `~/projects/spore-sdk` . Make sure to change your terminal’s location accordingly.
+2\. Navigate to your spore-sdk directory (make sure to replace the pathname with yours)
 
 <MarginContainer bottom={16} />
 
@@ -55,7 +57,9 @@ cd ~/projects/spore-sdk
 
 <MarginContainer bottom={32} />
 
-Then, you can install dependencies with pnpm by running the following command:
+3\. Install dependencies by running the command:
+
+<MarginContainer bottom={16} />
 
 ```bash
 pnpm i
@@ -63,7 +67,7 @@ pnpm i
 
 <MarginContainer bottom={32} />
 
-After installed, run the following command to build local packages:
+4\. Once installed, build your local packages with:
 
 <MarginContainer bottom={16} />
 
@@ -71,21 +75,17 @@ After installed, run the following command to build local packages:
 pnpm run build:packages
 ```
 
-<MarginContainer bottom={100} />
+<MarginContainer bottom={16} />
 
-<hr/>
+Your environment setup is now ready if all commands execute without errors!
 
-<MarginContainer bottom={100} />
+<MarginContainer bottom={48} />
 
-# Run an example <span style={{color:'#3A5AFF'}}>.</span>
-
-<MarginContainer bottom={32} />
-
-<img src={RunExample} alt={'run code'}/>
+#### 🍄 Step 2: Explore the Example
 
 <MarginContainer bottom={32} />
 
-Let's go to the spore secp256k1 examples' directory:
+1\. In your terminal, navigate to the Spore Secp256k1 examples directory:
 
 <MarginContainer bottom={16} />
 
@@ -93,13 +93,16 @@ Let's go to the spore secp256k1 examples' directory:
 cd examples/secp256k1
 ```
 
-<MarginContainer bottom={16} />
+<MarginContainer bottom={32} />
 
-The example code is stored in the apis directory, feel free to review the code or change the data of spore/cluster you want to create on-chain, or even treat the examples as your experimental fields.
+2\. You will find the example code stored in examples/secp256k1/apis. Feel free to experiment with the code.
+<MarginContainer bottom={32} />
+
+#### 🍄 Step 3: Construct and Send a Spore Transaction
 
 <MarginContainer bottom={32} />
 
-To run an example, for instance if you want to create a spore on-chain, you can run the apis/createSpore.ts example in your terminal:
+1\. To create a spore on-chain, execute the apis/createSpore.ts example by running the command:
 
 <MarginContainer bottom={16} />
 
@@ -107,23 +110,28 @@ To run an example, for instance if you want to create a spore on-chain, you can 
 ts-node apis/createSpore.ts
 ```
 
-<MarginContainer bottom={16} />
+<MarginContainer bottom={32} />
 
-The example should construct and send a transaction that creates a spore, and after sending the transaction, it should return a `Transaction Hash` for you to view the details of the transaction on CKB Explorer.
+2\. This script will construct and send a transaction to create a spore on-chain. If successful, a Transaction Hash will be returned. You can use this hash to review your transaction details on the CKB Explorer.
 
-<MarginContainer bottom={100} />
+<MarginContainer bottom={92} />
 
 <hr/>
 
-<MarginContainer bottom={100} />
+<MarginContainer bottom={108} />
 
-# Configuration <span style={{color:'#3A5AFF'}}>.</span>
+## What’s Next?
 
 <MarginContainer bottom={48} />
 
-If you have your own testing accounts, or if you want to configure the SporeConfig of the examples, you can go to the utils/config.ts file and update it. Inside the utils/config.ts file, you can do:
-
+<TextLayout
+    markdown={
+        'Congratulations! You\'ve successfully constructed and sent a spore/cluster transaction on Testnet (Aggron) and used the Secp256k1Blake160 lock for your transactions. Use these Spore examples as a starting point to further explore and develop with the Spore SDK. Keep experimenting!'
+    }
+    SvgComponent={Rocket}
+    ratio={106}
+    reverse={false}
+/>
 <MarginContainer bottom={16} />
 
-- Update the default testing private keys to your own
-- Update the SporeConfig as needed
+<ContentBoard />

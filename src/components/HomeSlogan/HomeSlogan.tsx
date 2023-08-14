@@ -7,24 +7,26 @@ import styles from './index.module.scss'
 const HomeSlogan: React.FC = () => {
     return (
         <div className={styles.SloganWrapper}>
-            <div className={styles.ColonContainer}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                    <path d="M25 12C25 18.6274 19.6274 24 13 24C6.37258 24 0 18.6274 0 12C0 5.37258 6.37258 0 13 0C19.6274 0 25 5.37258 25 12Z" fill="#FFC43B"/>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                    <path d="M25 12C25 18.6274 19.6274 24 13 24C6.37258 24 0 18.6274 0 12C0 5.37258 6.37258 0 13 0C19.6274 0 25 5.37258 25 12Z" fill="#FFC43B"/>
-                </svg>
-            </div>
             <div className={styles.TextContainer}>
-                <div>Create, Spread, and Monetize</div>
+                <h1>
+                    <div className={styles.ColonContainer}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M25 12C25 18.6274 19.6274 24 13 24C6.37258 24 0 18.6274 0 12C0 5.37258 6.37258 0 13 0C19.6274 0 25 5.37258 25 12Z" fill="#FFC43B"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path d="M25 12C25 18.6274 19.6274 24 13 24C6.37258 24 0 18.6274 0 12C0 5.37258 6.37258 0 13 0C19.6274 0 25 5.37258 25 12Z" fill="#FFC43B"/>
+                        </svg>
+                    </div>
+                    Create, Spread, and Monetize
+                </h1>
                 <div className={styles.AnimationText}>
-                    <span>
+                    <h1>
                         NFTs <br/>
                         Anything <br/>
                         Digital Assets
-                    </span>
+                    </h1>
                 </div>
-                <div className={styles.PurpleFont}>on chain</div>
+                <h1 className={styles.PurpleFont}>on chain</h1>
                 <div className={styles.BlueMushroom}>
                     <BlueMushroom />
                 </div>
@@ -35,10 +37,10 @@ const HomeSlogan: React.FC = () => {
                 {/*    <QuestionMushroom />*/}
                 {/*</div>*/}
             </div>
-            <div className={styles.IntroContainer}>
+            <div className={`${styles.IntroContainer} sub-header`}>
                 The On-Chain protocol that redefine the way your asset is utilized, traded, and integrated with decentralized applications. Think big, engage more, and monetize your niche with Spore Protocol.
             </div>
-            <div className={styles.SpreadButton}>
+            <div className={`${styles.SpreadButton} button-ct`}>
                 Spread Your Creation
             </div>
         </div>

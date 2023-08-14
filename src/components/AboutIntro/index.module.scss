@@ -10,19 +10,59 @@
     margin: 100px auto 56px auto;
     color: var(--black-alpha-100, #000);
     text-align: center;
-    /* Header2 */
-    font-family: Baloo Extra Bolder;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 120%; /* 57.6px */
-    letter-spacing: -0.48px;
+
     .ImaginationText {
       display: inline-block;
       width: 274px;
       background-image: url('../../assets/svg/text-imagination.svg');
       background-repeat: no-repeat;
       background-position: left 81%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .AboutIntroWrapper {
+    width: 1200px;
+    padding: 0 80px;
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 1200px) and (min-width: 412px) {
+  .AboutIntroWrapper {
+    width: auto;
+    margin: 0 2.5rem;
+    padding: 0 1.5rem 7.38rem 1.5rem;
+    .AboutIntroTitle {
+      h2 {
+        font-size: 3rem;
+      }
+      .ImaginationText {
+        width: 11.875rem;
+        width: 11.875rem;
+        background-size: contain;
+        background-position: left 90%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .AboutIntroWrapper {
+    width: auto;
+    border-radius: 0;
+    padding: 0 1rem 6.25rem 1rem;
+    .AboutIntroTitle {
+      h2 {
+        font-size: 3rem;
+      }
+      .ImaginationText {
+        width: 11.875rem;
+        width: 11.875rem;
+        background-size: contain;
+        background-position: left 90%;
+      }
     }
   }
 }

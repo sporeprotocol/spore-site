@@ -15,10 +15,6 @@
   .TextContainer {
     width: 920px;
     margin: 0 auto;
-    font-family: Baloo Extra Bolder;
-    font-size: 56px;
-    font-weight: 800;
-    line-height: 120%;
     text-align: center;
     span {
       display: inline-flex;
@@ -28,6 +24,31 @@
     }
     .PurpleFont {
       color: var(--brand-blue, #3A5AFF);
+    }
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 1200px) and (min-width: 412px) {
+  .SloganWrapper {
+    width: auto;
+    padding: 0 4rem;
+    .TextContainer {
+      width: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 412px)  {
+  .SloganWrapper {
+    width: auto;
+    padding:0 4rem;
+    margin-bottom: 6.25rem;
+    .ColonContainer {
+      margin: 0 0 0.25rem 0;
+    }
+    .TextContainer {
+      width: auto;
     }
   }
 }

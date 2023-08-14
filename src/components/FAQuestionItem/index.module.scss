@@ -23,3 +23,10 @@
     line-height: 150%; /* 24px */
   }
 }
+
+/* Mobile styles */
+@media only screen and (max-width: 1200px)  {
+  .FAQuestionWrapper {
+    width: auto;
+  }
+}

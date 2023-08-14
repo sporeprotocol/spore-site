@@ -1,6 +1,5 @@
 .SloganWrapper {
   position: relative;
-  width: 1040px;
   margin: 132px auto 31px auto;
   display: flex;
   flex-direction: column;
@@ -9,14 +8,10 @@
     display: inline-flex;
     align-items: flex-start;
     gap: 15px;
-    margin-left: 212px;
+    margin-left: 148px;
   }
   .TextContainer {
-    width: 894px;
     margin: 0 auto 34px auto;
-    font-family: Baloo Extra Bolder;
-    font-size: 56px;
-    font-weight: 800;
     line-height: 120%;
     text-align: center;
     span {
@@ -31,7 +26,7 @@
       overflow: hidden;
       display: flex;
       justify-content: center;
-      span {
+      h1 {
         position: absolute;
         top: 0;
         animation: slide 6s linear infinite alternate;
@@ -63,11 +58,6 @@
     width: 1040px;
     margin: 0 auto;
     text-align: center;
-    font-family: Nunito;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 48px */
     color: var(--black-alpha-70, rgba(0, 0, 0, 0.70));
   }
   .SpreadButton {
@@ -82,11 +72,6 @@
     color: var(--white-alpha-100, #FFF);
     text-align: center;
     font-feature-settings: 'calt' off;
-    font-family: Baloo Extra Bolder;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 150% */
     letter-spacing: -0.16px;
   }
 }
@@ -103,4 +88,51 @@
   }
 }
 
+/* Mobile styles */
+@media only screen and (max-width: 1200px) {
+  .SloganWrapper {
+    margin: 11.5rem auto 10rem auto;
+    .IntroContainer {
+      width: auto;
+      padding: 1.5rem;
+    }
+    .TextContainer {
+      h1 {
+        position: relative;
+        .ColonContainer {
+          position: absolute;
+          left: 0;
+          margin: 0;
+          top: -1.5625rem;
+        }
+      }
+      .BlueMushroom {
+        display: none;
+      }
+      .LoveMushroom {
+        display: none;
 
+      }
+      .QuestionMushroom {
+        display: none;
+      }
+    }
+    .SpreadButton {
+      width: 21.4375rem;
+      padding: 0.9375rem 1.5625rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 412px)  {
+  .SloganWrapper {
+    margin: 11.25rem auto 10rem auto;
+    .TextContainer {
+      h1 {
+        .ColonContainer {
+          left: 1.25rem;
+        }
+      }
+    }
+  }
+}

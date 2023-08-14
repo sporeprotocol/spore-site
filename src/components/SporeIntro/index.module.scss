@@ -18,14 +18,8 @@
     display: flex;
     flex-direction: column;
     white-space: pre;
-    div {
+    h1 {
       color: var(--black-alpha-100, #000);
-      font-family: Baloo Extra Bolder;
-      font-size: 48px;
-      font-style: normal;
-      font-weight: 800;
-      line-height: 120%;
-      letter-spacing: -0.48px;
       span {
         color: var(--brand-blue, #3A5AFF);
       }
@@ -42,26 +36,73 @@
       background: var(--brand-blue, #3A5AFF);
       color: var(--white-alpha-100, #FFF);
       text-align: center;
-      font-feature-settings: 'calt' off;
-      font-family: Baloo Extra Bolder;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px; /* 150% */
-      letter-spacing: -0.16px;
-    }
-    p {
-      color: var(--black-alpha-100, #000);
-      font-family: Nunito;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 160%; /* 38.4px */
     }
   }
   .SporeIntroCards {
     position: sticky;
     overflow: auto;
     top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .WaveSvg {
+    position: relative;
+    width: 1200px;
+    height: 160px;
+    overflow: hidden;
+    svg {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .SporeIntroWrapper {
+    padding: 0 80px 0 80px;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) and (min-width: 412px) {
+  .WaveSvg {
+    position: relative;
+    svg {
+      position: absolute;
+      top: -10rem;
+      left: -10rem;
+    }
+  }
+  .SporeIntroWrapper {
+    display: block;
+    padding: 0;
+    .SporeIntroTitle {
+      width: auto;
+      text-align: center;
+    }
+    .DiscoverButton {
+      margin: 3rem auto 0 auto !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 412px)  {
+  .WaveSvg {
+    position: relative;
+    svg {
+      position: absolute;
+      top: -10rem;
+      left: -19rem;
+    }
+  }
+  .SporeIntroWrapper {
+    display: block;
+    padding: 0;
+    .SporeIntroTitle {
+      width: auto;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .DiscoverButton {
+      margin: 48px auto 0 auto !important;
+    }
   }
 }

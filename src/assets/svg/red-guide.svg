@@ -1,4 +1,4 @@
-<svg width="368" height="188" viewBox="0 0 368 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 368 188" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M186 4V2L184 2L44 2C20.804 2 2 20.804 2 44L2 184L2 186H4L184 186H186V184L186 4Z" fill="#FF3B53" stroke="#FFF4CC" stroke-width="4"/>
     <rect x="2" y="94" width="184" height="92" fill="black" stroke="#FFF4CC" stroke-width="4"/>
     <path d="M186 92V94H184L4 94H2V92C2 42.2522 43.2324 2 94 2C144.768 2 186 42.2522 186 92Z" fill="black" stroke="#FFF4CC" stroke-width="4"/>

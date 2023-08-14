@@ -25,6 +25,9 @@
     border: 4px solid var(--black-alpha-100, #000);
     background: var(--background-04, #FAFBFF);
   }
+  .innerSvg {
+    display: none;
+  }
   .ModuleInfoContainer {
     display: flex;
     flex-direction: column;
@@ -62,6 +65,7 @@
     .ButtonContainer {
       display: flex;
       align-items: center;
+      margin-top: 48px;
       gap: 36px;
       .button {
         padding: 13px 32px;
@@ -72,6 +76,66 @@
         font-size: 16px;
         font-style: normal;
         line-height: 150%; /* 24px */
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .TryMainWrapper {
+    width: 1200px;
+  }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 1200px) {
+  .TryMainWrapper {
+    width: auto;
+    margin: 0 2.5rem;
+    padding: 6.25rem 1.5rem 6.25rem 1.5rem;
+    .TryModuleContainer {
+      flex-direction: column;
+      padding: 3rem;
+      .innerSvg {
+        display: block;
+      }
+      .outsideSvg {
+        display: none;
+      }
+    }
+    .ButtonContainer {
+      .button {
+        flex: 1;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .TryMainWrapper {
+    width: auto;
+    margin: 0;
+    border-radius: 0;
+    .TryModuleContainer {
+      flex-direction: column;
+      padding: 3rem;
+      .innerSvg {
+        display: block;
+      }
+      .outsideSvg {
+        display: none;
+      }
+    }
+    .ButtonContainer {
+      flex-direction: column-reverse;
+      .button {
+        width: 100%;
+        flex: 1;
+        text-align: center;
       }
     }
   }

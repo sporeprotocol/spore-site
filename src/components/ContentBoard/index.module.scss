@@ -1,0 +1,15 @@
+.ContentBoardWrapper {
+  width: 792px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid var(--black-alpha-30, rgba(0, 0, 0, 0.30));
+  background: var(--background-02, #FFF9EA);
+  margin-bottom: 24px;
+}
+
+.MdxProvider {
+  margin-bottom: 24px;
+}

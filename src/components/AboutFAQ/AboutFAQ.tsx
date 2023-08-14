@@ -14,6 +14,7 @@ const AboutFAQ:React.FC = () => {
                 </div>
             </div>
             <div className={styles.RightContainer}>
+                <h2>FAQ</h2>
                 {questionsData.map((question, index) => (
                     <FAQuestionItem key={index} index={index} {...question} />
                 ))}

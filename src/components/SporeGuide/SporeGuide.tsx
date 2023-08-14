@@ -7,10 +7,10 @@ import SporeGuideItem from "../SporeGuideItem/SporeGuideItem.tsx";
 const SporeGuide:React.FC = () => {
     return (
         <div className={styles.SporeGuideWrapper}>
-            <div className={styles.SporeGuideTitle}>
+            <h1 className={styles.SporeGuideTitle}>
                 Planting Digital Seeds: A Spore Guide
-            </div>
-            <p className={styles.SporeGuideDec}>
+            </h1>
+            <p className={`${styles.SporeGuideDec} sub-header-2`}>
                 Whether you're crafting a dynamic piece of code or turning a meme into an asset, we've got the perfect ecosystem for your ideas to flourish.
             </p>
             <div className={styles.SporeGuideContainer}>
@@ -18,7 +18,7 @@ const SporeGuide:React.FC = () => {
                 <SporeGuideItem SvgIcon={RedSvg} title={'Hello, Spore Protocol!'} content={'Tutorial description goes here \n' +
                     'Tutorial description goes here '} url={'/'}/>
             </div>
-            <div className={styles.SporeGuideButton}>
+            <div className={`${styles.SporeGuideButton} button-ct`}>
                 <p>
                     Grow the Ecosystem
                 </p>

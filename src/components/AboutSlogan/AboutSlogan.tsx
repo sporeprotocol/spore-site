@@ -12,9 +12,9 @@ const AboutSlogan: React.FC = () => {
                     <path d="M25 12C25 18.6274 19.6274 24 13 24C6.37258 24 0 18.6274 0 12C0 5.37258 6.37258 0 13 0C19.6274 0 25 5.37258 25 12Z" fill="#FFC43B"/>
                 </svg>
             </div>
-            <div className={styles.TextContainer}>
+            <h1 className={styles.TextContainer}>
                 <span className={styles.PurpleFont}>Spore Protocol</span> – where your code spores into digital forests
-            </div>
+            </h1>
         </div>
     )
 }

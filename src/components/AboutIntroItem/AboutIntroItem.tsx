@@ -18,9 +18,9 @@ const AboutIntroItem: React.FC<Props> = ({ svg, title, subtitle, content, index 
                 {svg}
             </div>
             <div className={styles.textWrapper}>
-                <div className={styles.title}>{title}</div>
-                <div className={styles.subtitle}>{subtitle}</div>
-                <p className={styles.content}>{content}</p>
+                <div className={`${styles.title} sub-header`}>{title}</div>
+                <h3 className={styles.subtitle}>{subtitle}</h3>
+                <p className={`${styles.content} body-1`}>{content}</p>
             </div>
         </div>
     );

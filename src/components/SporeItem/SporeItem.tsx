@@ -23,15 +23,15 @@ const SporeItem: React.FC<Props> = ({ title, content, index, total }) => {
     const wrapperClass = index % 2 === 0 ? 'even-wrapper' : 'odd-wrapper';
     return (
         <div className={`${styles.SporeItemWrapper} ${styles[wrapperClass]}`}>
-            <div className={styles.TotalAndIndex}>{`${index}/${total}`}</div>
+            <div className={`${styles.TotalAndIndex} body-1`}>{`${index}/${total}`}</div>
             <div className={styles.SvgItem}>
                 {SvgComponent}
             </div>
-            <div className={styles.SporeItemTitle}>
-                <p>{title}</p>
-            </div>
+            <h2 className={styles.SporeItemTitle}>
+                {title}
+            </h2>
                 <div className={styles.SporeItemContent}>
-                <div className={styles.content}>
+                <div className={`${styles.content} body-1`}>
                     {content.includes('<') ? <div dangerouslySetInnerHTML={{ __html: content }} /> : <p>{content}</p>}
                 </div>
             </div>

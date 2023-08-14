@@ -6,14 +6,16 @@ import styles from './index.module.scss'
 const SporeIntro: React.FC = () => {
     return (
         <>
-            <WaveSvg />
+            <div className={styles.WaveSvg}>
+                <WaveSvg/>
+            </div>
             <div className={styles.SporeIntroWrapper}>
                 <div className={styles.SporeIntroTitle}>
-                    <div>
+                    <h1>
                         What’s in <span>Spore</span>
-                    </div>
-                    <p>(not just another NFT protocol)</p>
-                    <div className={styles.DiscoverButton}>
+                    </h1>
+                    <div className={"sub-header"}>(not just another NFT protocol)</div>
+                    <div className={`${styles.DiscoverButton} button-ct`}>
                         Discover Spore
                     </div>
                 </div>
