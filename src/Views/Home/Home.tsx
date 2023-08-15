@@ -22,12 +22,22 @@ const Home: React.FC = () => {
                 <HomeSlogan />
                 <SporeIntro />
                 <div className={styles.MemeContainer}>
-                    <div className={styles.SvgContainer}>
-                        {Array.from({ length: SVG_ITEM_COUNT * 2 }).map((_, idx) => <SvgItem key={idx} />)}
+                    <div className="flex">
+                        <div className={styles.SvgContainer}>
+                            {Array.from({ length: SVG_ITEM_COUNT * 2 }).map((_, idx) => <SvgItem key={idx} />)}
+                        </div>
+                        <div className={styles.SvgContainer}>
+                            {Array.from({ length: SVG_ITEM_COUNT * 2 }).map((_, idx) => <SvgItem key={idx} />)}
+                        </div>
                     </div>
                     <div className={styles.MemeBackground}></div>
-                    <div className={styles.SvgContainer}>
-                        {Array.from({ length: SVG_ITEM_COUNT * 2 }).map((_, idx) => <SvgItem key={idx} />)}
+                    <div className="flex">
+                        <div className={styles.SvgContainer}>
+                            {Array.from({ length: SVG_ITEM_COUNT * 2 }).map((_, idx) => <SvgItem key={idx} />)}
+                        </div>
+                        <div className={styles.SvgContainer}>
+                            {Array.from({ length: SVG_ITEM_COUNT * 2 }).map((_, idx) => <SvgItem key={idx} />)}
+                        </div>
                     </div>
                 </div>
                 <SporeGuide />
