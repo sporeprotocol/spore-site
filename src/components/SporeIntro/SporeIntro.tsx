@@ -17,7 +17,7 @@ const SporeIntro: React.FC = () => {
                     </h1>
                     <div className={"sub-header"}>(not just another NFT protocol)</div>
                     <div className={`${styles.DiscoverButton} ${styles.PCDiscoverButton} button-ct`}>
-                        <Link to={'/guide'}>
+                        <Link to={'/about'}>
                             Discover Spore
                         </Link>
                     </div>
@@ -28,7 +28,9 @@ const SporeIntro: React.FC = () => {
                     ))}
                 </div>
                 <div className={`${styles.DiscoverButton} ${styles.MobileDiscoverButton} button-ct`}>
-                    Discover Spore
+                    <Link to={'/about'}>
+                        Discover Spore
+                    </Link>
                 </div>
             </div>
         </>

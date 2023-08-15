@@ -16,10 +16,7 @@ const TryMain: React.FC = () => {
                         <TryModule />
                     </div>
                     <div className={styles.content}>
-                        <ul>
-                            <li>Functions to construct transactions around spores and clusters</li>
-                            <li>Functions to encode/decode data of spores/clusters</li>
-                        </ul>
+                        The software development kit (SDK) designed to help you build transactions, encode and decode data, and develop applications simple and efficient
                     </div>
                     <div className={styles.ButtonContainer}>
                         <div className={`${styles.button} button-ct`}>
@@ -41,15 +38,12 @@ const TryMain: React.FC = () => {
             <div className={styles.TryModuleContainer}>
                 <div className={styles.ModuleInfoContainer}>
                     <div className={styles.index}>02</div>
-                    <div className={styles.title}>Spore SDK</div>
+                    <div className={styles.title}>Spore protocol demo</div>
                     <div className={styles.innerSvg}>
                         <Cube />
                     </div>
                     <div className={styles.content}>
-                        <ul>
-                            <li>Functions to construct transactions around spores and clusters</li>
-                            <li>Functions to encode/decode data of spores/clusters</li>
-                        </ul>
+                        Connect your wallet, mint a spore, start your cluster
                     </div>
                     <div className={styles.ButtonContainer}>
                         <div className={`${styles.button} button-ct`}>
