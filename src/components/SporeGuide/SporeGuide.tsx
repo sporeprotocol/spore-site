@@ -15,9 +15,8 @@ const SporeGuide:React.FC = () => {
                 Whether you're crafting a dynamic piece of code or turning a meme into an asset, we've got the perfect ecosystem for your ideas to flourish.
             </p>
             <div className={styles.SporeGuideContainer}>
-                <SporeGuideItem SvgIcon={BlueSvg} title={'Spore-SDK!'} content={'a developer toolkit for building on Spore Protocol'} url={'/'}/>
-                <SporeGuideItem SvgIcon={RedSvg} title={'Hello, Spore Protocol!'} content={'Tutorial description goes here \n' +
-                    'Tutorial description goes here '} url={'/'}/>
+                <SporeGuideItem SvgIcon={BlueSvg} title={'Spore-SDK!'} content={'Designed to help you build transactions, encode and decode data, and develop applications simple and efficient'} url={'https://github.com/sporeprotocol/spore-sdk/tree/beta%EF%BC%8C'}/>
+                <SporeGuideItem SvgIcon={RedSvg} title={'Hello, Spore Protocol!'} content={'Connect your wallet, mint a spore, start your cluster'} url={'https://spore-demo.vercel.app/'}/>
             </div>
             <div className={`${styles.SporeGuideButton} button-ct`}>
                 <Link to={'/guide'}>
