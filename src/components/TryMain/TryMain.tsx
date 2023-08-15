@@ -22,12 +22,12 @@ const TryMain: React.FC = () => {
                         </ul>
                     </div>
                     <div className={styles.ButtonContainer}>
-                        <div className={styles.button}>
+                        <div className={`${styles.button} button-ct`}>
                             <Link to={'/doc/SporeSecp256k1EXAMPLE'}>
                                 Try out Example
                             </Link>
                         </div>
-                        <div className={styles.button}>
+                        <div className={`${styles.button} button-ct`}>
                             <Link target="_blank" to={'https://github.com/sporeprotocol/spore-sdk/tree/beta/docs/recipes'}>
                                 Test the Recipes
                             </Link>
@@ -52,7 +52,7 @@ const TryMain: React.FC = () => {
                         </ul>
                     </div>
                     <div className={styles.ButtonContainer}>
-                        <div className={styles.button}>
+                        <div className={`${styles.button} button-ct`}>
                             <Link target="_blank" to={'https://spore-demo.vercel.app/'}>
                                 Let's Go
                             </Link>
