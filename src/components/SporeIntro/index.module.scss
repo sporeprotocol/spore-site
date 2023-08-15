@@ -24,18 +24,24 @@
         color: var(--brand-blue, #3A5AFF);
       }
     }
-    .DiscoverButton {
+  }
+  .DiscoverButton {
+    display: flex;
+    width: 248px;
+    padding: 20px 24px;
+    margin: 48px 0 0 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: var(--brand-blue, #3A5AFF);
+    color: var(--white-alpha-100, #FFF);
+    text-align: center;
+    &.PCDiscoverButton {
       display: flex;
-      width: 248px;
-      padding: 20px 24px;
-      margin: 48px 0 0 0;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      border-radius: 50px;
-      background: var(--brand-blue, #3A5AFF);
-      color: var(--white-alpha-100, #FFF);
-      text-align: center;
+    }
+    &.MobileDiscoverButton {
+      display: none;
     }
   }
   .SporeIntroCards {
@@ -62,7 +68,7 @@
 }
 
 
-@media only screen and (max-width: 1200px) and (min-width: 412px) {
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
   .WaveSvg {
     position: relative;
     svg {
@@ -84,13 +90,13 @@
   }
 }
 
-@media only screen and (max-width: 412px)  {
+@media only screen and (max-width: 600px)  {
   .WaveSvg {
     position: relative;
     svg {
       position: absolute;
       top: -10rem;
-      left: -19rem;
+      left: -26rem;
     }
   }
   .SporeIntroWrapper {
@@ -100,9 +106,20 @@
       width: auto;
       text-align: center;
       margin-top: 2rem;
+      margin-bottom: 3.5rem;
     }
     .DiscoverButton {
-      margin: 48px auto 0 auto !important;
+      margin: 3rem auto 6.25rem auto !important;
+      &.PCDiscoverButton {
+        display: none;
+      }
+      &.MobileDiscoverButton {
+        display: flex;
+        width: 21.4375rem;
+        padding: 0.9375rem 1.5625rem;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }

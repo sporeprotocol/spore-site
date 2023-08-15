@@ -29,7 +29,7 @@
 }
 
 /* Mobile styles */
-@media only screen and (max-width: 1200px) and (min-width: 412px) {
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
   .SloganWrapper {
     width: auto;
     padding: 0 4rem;
@@ -39,7 +39,7 @@
   }
 }
 
-@media only screen and (max-width: 412px)  {
+@media only screen and (max-width: 600px)  {
   .SloganWrapper {
     width: auto;
     padding:0 4rem;

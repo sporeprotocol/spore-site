@@ -10,7 +10,8 @@ const Header: React.FC = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 1000 && window.innerWidth > 375);
+            console.log(window.innerWidth <= 1000)
+            setIsMobile(window.innerWidth <= 1000);
         };
 
         window.addEventListener('resize', handleResize);

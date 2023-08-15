@@ -21,9 +21,9 @@ const HomeSlogan: React.FC = () => {
                 </h1>
                 <div className={styles.AnimationText}>
                     <h1>
-                        NFTs <br/>
-                        Anything <br/>
-                        Digital Assets
+                        <span>Your NFTs</span> <br/>
+                        <span>Anything</span> <br/>
+                        <span className={styles.DigitalAssets}>Digital Assets</span>
                     </h1>
                 </div>
                 <h1 className={styles.PurpleFont}>on chain</h1>

@@ -40,7 +40,7 @@
 }
 
 /* Mobile styles */
-@media only screen and (max-width: 1200px) and (min-width: 412px) {
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
   .AboutFAQWrapper {
     width: auto;
     margin: 0 2.5rem;
@@ -59,7 +59,7 @@
   }
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 600px) {
   .AboutFAQWrapper {
     width: auto;
     padding: 6.25rem 1rem;

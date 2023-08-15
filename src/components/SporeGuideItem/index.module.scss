@@ -1,7 +1,7 @@
 .SporeItemWrapper {
   position: relative;
   width: 360px;
-  height: 419px;
+  height: auto;
   background-color: #ffffff;
   border-radius: 40px;
   .GuideContentContainer {
@@ -19,21 +19,21 @@
       color: var(--black-alpha-100, #000);
     }
     .LinkButton {
-      position: absolute;
-      bottom: 32px;
-      right: 32px;
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      margin: 1rem 0 2rem 0;
     }
   }
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 412px) {
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
   .SporeItemWrapper {
     width: 32.5rem;
     border-radius: 4.5rem;
   }
 }
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 600px) {
   .SporeItemWrapper {
-    width: auto;
   }
 }

@@ -32,6 +32,14 @@
         animation: slide 6s linear infinite alternate;
         line-height: 67px;
         font-weight: bold;
+        span {
+          background-image: url('../../assets/svg/text-under.svg');
+          background-position: center 75%;
+          padding: 0 10px;
+          &.DigitalAssets {
+            background-position: center 90%;
+          }
+        }
       }
     }
 
@@ -124,15 +132,22 @@
   }
 }
 
-@media only screen and (max-width: 412px)  {
+@media only screen and (max-width: 600px)  {
   .SloganWrapper {
     margin: 11.25rem auto 10rem auto;
     .TextContainer {
+      margin: 0;
       h1 {
         .ColonContainer {
-          left: 1.25rem;
+          left: 1.8rem;
         }
       }
+    }
+    .IntroContainer {
+      padding: 2rem 1rem 3rem 1rem;
+    }
+    .SpreadButton {
+      margin: 0 auto 3.5rem auto;
     }
   }
 }

@@ -86,7 +86,7 @@
 }
 
 /* Mobile styles */
-@media only screen and (max-width: 1000px) and (min-width: 412px) {
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
   .CommonHeaderWrapper {
     display: flex;
     width: calc(100% - 5rem);
@@ -175,18 +175,17 @@
   }
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 600px) {
   .CommonHeaderWrapper {
     display: flex;
     width: calc(100% - 2rem);
     height: 5rem;
-    padding: 1.25rem 2.5rem;
-    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
     align-items: center;
     align-self: stretch;
     box-sizing: border-box;
     background: var(--black-alpha-100, #000);
-    .CommonHeaderNav, {
+    .CommonHeaderNav, .CommonHeaderContactUs{
       display: none;
     }
     .CommonHeaderLogo {

@@ -42,7 +42,7 @@
 }
 
 /* Mobile styles */
-@media only screen and (max-width: 1200px) and (min-width: 412px) {
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
   .DocsWrapper {
     width: auto;
     margin: 3rem 2.5rem 0 2.5rem;
@@ -54,7 +54,7 @@
   }
 }
 
-@media only screen and (max-width: 412px)  {
+@media only screen and (max-width: 600px)  {
   .DocsWrapper {
     width: auto;
     margin: 3rem 2.5rem 0 2.5rem;
