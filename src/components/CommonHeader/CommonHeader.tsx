@@ -71,7 +71,7 @@ const Header: React.FC = () => {
                         <Link to={'/'} className={location.pathname === '/' ? styles.Active : ''}>Home</Link>
                         <Link to={'/about'} className={location.pathname === '/about' ? styles.Active : ''}>About</Link>
                         <Link to={'/guide'} className={location.pathname === '/guide' ? styles.Active : ''}>Guide</Link>
-                        <Link to={'/github'} className={location.pathname === '/github' ? styles.Active : ''}>Github</Link>
+                        {/*<Link to={'/github'} className={location.pathname === '/github' ? styles.Active : ''}>Github</Link>*/}
                     </div>
                     <div className={styles.CommonHeaderContactUs}>
                         <a target={'_blank'} href={'mailto:contact@spore.pro'}>
