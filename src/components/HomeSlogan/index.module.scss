@@ -5,12 +5,15 @@
   flex-direction: column;
 
   .ColonContainer {
+    position: absolute;
     display: inline-flex;
     align-items: flex-start;
     gap: 15px;
-    margin-left: 148px;
+    left: 10px;
+    top: -30px;
   }
   .TextContainer {
+    position: relative;
     margin: 0 auto 34px auto;
     line-height: 120%;
     text-align: center;
