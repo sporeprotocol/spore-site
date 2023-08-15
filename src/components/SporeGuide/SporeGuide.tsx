@@ -3,6 +3,7 @@ import styles from './index.module.scss'
 import { ReactComponent as BlueSvg } from '../../assets/svg/blue-guide.svg'
 import { ReactComponent as RedSvg } from '../../assets/svg/red-guide.svg'
 import SporeGuideItem from "../SporeGuideItem/SporeGuideItem.tsx";
+import {Link} from "react-router-dom";
 
 const SporeGuide:React.FC = () => {
     return (
@@ -19,9 +20,9 @@ const SporeGuide:React.FC = () => {
                     'Tutorial description goes here '} url={'/'}/>
             </div>
             <div className={`${styles.SporeGuideButton} button-ct`}>
-                <p>
+                <Link to={'/guide'}>
                     Grow the Ecosystem
-                </p>
+                </Link>
             </div>
         </div>
     )

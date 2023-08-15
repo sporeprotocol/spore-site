@@ -1,7 +1,5 @@
 import React from 'react';
 import { ReactComponent as AdoptionSVG } from "../../assets/svg/try-adoption.svg";
-import { ReactComponent as LeftMushroomSVG } from "../../assets/svg/LeftMushroom.svg";
-import { ReactComponent as RightMushroom } from "../../assets/svg/right-mushroom.svg";
 import styles from './index.module.scss'
 const TrySlogan:React.FC = () => {
     return (
@@ -23,21 +21,6 @@ const TrySlogan:React.FC = () => {
                     <AdoptionSVG />
                     Dynamic contents
                 </h3>
-            </div>
-            <div className={styles.DynamicContents}>
-                <div className={styles.MushroomLeft}>
-                    <LeftMushroomSVG />
-                </div>
-                <div className={styles.RightContainer}>
-                    <h3 className={styles.tag}>
-                        <AdoptionSVG />
-                        On-chain storage
-                    </h3>
-                    <div className={styles.line}></div>
-                    <div>
-                        <RightMushroom />
-                    </div>
-                </div>
             </div>
             <div className={styles.mobileTitle}>
                 Planting digital forests –

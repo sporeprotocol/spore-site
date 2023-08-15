@@ -16,7 +16,7 @@ const routes = [
         exact: true,
     },
     {
-        path: '/try',
+        path: '/guide',
         component: Try,
         exact: true
     },

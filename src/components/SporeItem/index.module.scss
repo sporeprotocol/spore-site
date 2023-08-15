@@ -5,7 +5,7 @@
   flex-direction: column;
   margin: 0 auto 32px auto;
   padding: 0 56px;
-  border-radius: 80px 48px 48px 80px;
+  border-radius: 35px;
   background: var(--background-01, #FFF4CC);
 
   &.even-wrapper {
@@ -31,7 +31,9 @@
   }
 
   .SporeItemTitle {
+    font-size: 32px;
     color: var(--brand-blue, #3A5AFF);
+    margin-top: 32px;
   }
   .SporeItemContent {
     position: relative;

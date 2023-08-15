@@ -5,7 +5,7 @@ import { ReactComponent as GithubIcon } from "../../assets/svg/github-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../assets/svg/twitter-icon.svg";
 import { ReactComponent as ContactMushroom } from "../../assets/svg/contact-mushroom.svg";
 import styles from './index.module.scss';
-import { useLocation } from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 
 const CommonFooter:React.FC = () => {
     const location = useLocation();
@@ -15,12 +15,14 @@ const CommonFooter:React.FC = () => {
         <>
             { (path == '/' || path == '/about') &&
                 <div className={styles.SpreadCreation}>
-                    <ThreeMushroom />
+                    <ThreeMushroom className={styles.ThreeMushroomContainer} />
                     <h1 className={styles.FooterDesc}>
                         Ready to <span> spore-adically </span> create, engage, and monetize digital assets on-chain?
                     </h1>
                     <div className={`${styles.SpreadButton} button-ct`}>
-                        Spread Your Creation
+                        <Link to={'/guide'}>
+                            Spread Your Creation
+                        </Link>
                     </div>
                 </div>
             }

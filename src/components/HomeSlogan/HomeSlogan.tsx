@@ -3,6 +3,7 @@ import { ReactComponent as BlueMushroom } from '../../assets/svg/blue-mushroom.s
 import { ReactComponent as LoveMushroom } from '../../assets/svg/Love-mushroom.svg';
 // import { ReactComponent as QuestionMushroom } from '../../assets/svg/question-mushroom.svg'
 import styles from './index.module.scss'
+import {Link} from "react-router-dom";
 
 const HomeSlogan: React.FC = () => {
     return (
@@ -41,7 +42,9 @@ const HomeSlogan: React.FC = () => {
                 The On-Chain protocol that redefine the way your asset is utilized, traded, and integrated with decentralized applications. Think big, engage more, and monetize your niche with Spore Protocol.
             </div>
             <div className={`${styles.SpreadButton} button-ct`}>
-                Spread Your Creation
+                <Link to={'/guide'}>
+                    Spread Your Creation
+                </Link>
             </div>
         </div>
     )

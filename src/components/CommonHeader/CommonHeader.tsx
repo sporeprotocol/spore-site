@@ -48,13 +48,13 @@ const Header: React.FC = () => {
                                         onClick={() => setIsMenuOpen(false)}
                                         className={location.pathname === '/about' ? styles.Active : ''}>About</Link>
                                     <Link
-                                        to={'/try'}
+                                        to={'/guide'}
                                         onClick={() => setIsMenuOpen(false)}
-                                          className={location.pathname === '/try' ? styles.Active : ''}>Try</Link>
-                                    <Link
-                                        to={'/github'}
-                                        onClick={() => setIsMenuOpen(false)}
-                                        className={location.pathname === '/github' ? styles.Active : ''}>Github</Link>
+                                          className={location.pathname === '/guide' ? styles.Active : ''}>Guide</Link>
+                                    {/*<Link*/}
+                                    {/*    to={'/github'}*/}
+                                    {/*    onClick={() => setIsMenuOpen(false)}*/}
+                                    {/*    className={location.pathname === '/github' ? styles.Active : ''}>Github</Link>*/}
                                 </div>
                             </div>
                             <div className={styles.CommonHeaderContactUs}>Contact us</div>
@@ -66,7 +66,7 @@ const Header: React.FC = () => {
                     <div className={styles.CommonHeaderNav}>
                         <Link to={'/'} className={location.pathname === '/' ? styles.Active : ''}>Home</Link>
                         <Link to={'/about'} className={location.pathname === '/about' ? styles.Active : ''}>About</Link>
-                        <Link to={'/try'} className={location.pathname === '/try' ? styles.Active : ''}>Try</Link>
+                        <Link to={'/guide'} className={location.pathname === '/guide' ? styles.Active : ''}>Guide</Link>
                         <Link to={'/github'} className={location.pathname === '/github' ? styles.Active : ''}>Github</Link>
                     </div>
                     <div className={styles.CommonHeaderContactUs}>Contact us</div>

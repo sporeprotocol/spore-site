@@ -14,15 +14,15 @@ const ContentBoard: React.FC = () => {
 
     const renderContent = (index: number, title: string, ContentComponent: React.FC) => (
         <div>
-            <div className={`${styles.ContentBoardWrapper}`}>
+            <div className={`${styles.ContentBoardWrapper}`} onClick={() => {
+                if (openIndex === index) {
+                    setOpenIndex(null);
+                } else {
+                    setOpenIndex(index);
+                }
+            }}>
                 <h4>{title}</h4>
-                <button onClick={() => {
-                    if (openIndex === index) {
-                        setOpenIndex(null);
-                    } else {
-                        setOpenIndex(index);
-                    }
-                }}>
+                <button>
                     {openIndex === index ? '-' : '+'}
                 </button>
             </div>

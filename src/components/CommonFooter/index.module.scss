@@ -10,6 +10,11 @@
   flex-shrink: 0;
   border-radius: 35px;
   background: var(--background-03, #402E32);
+  
+  .ThreeMushroomContainer {
+    max-width: 446px;
+  }
+  
   .FooterDesc {
     color: var(--white-alpha-100, #FFF);
     text-align: center;

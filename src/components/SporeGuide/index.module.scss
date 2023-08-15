@@ -26,11 +26,7 @@
     gap: 10px;
     border-radius: 50px;
     background: var(--brand-blue, #3A5AFF);
-    p {
-      color: var(--white-alpha-100, #FFF);
-      text-align: center;
-      font-feature-settings: 'calt' off;
-    }
+    color: var(--white-alpha-100, #FFF);
   }
 }
 
