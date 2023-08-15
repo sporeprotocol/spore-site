@@ -6,16 +6,56 @@
   display: flex;
   flex-direction: column;
 }
-.tmp {
+.MemeContainer {
+  position: relative;
+  width: 100%;
   height: 300px;
-  background-image: url('../../assets/img/img.png');
-  background-size: cover;
-  background-position: center center;
+  overflow: hidden;
+  background-color: #000;
+  .SvgContainer {
+    display: flex;
+    white-space: nowrap;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: rail;
+    animation-duration: 20s;
+    width: 200%;
+    height: 20px;
+    margin: 24px 0;
+    gap: 16px;
+    .SvgItem {
+      display: flex;
+      line-height: 20px;
+      color: #ffffff;
+      font-size: 20px;
+      font-family: "Baloo Extra Bolder";
+      gap: 16px;
+    }
+  }
+  .MemeBackground {
+    height: 157px;
+    background-image: url('../../assets/img/memebg.png');
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
   .HomePageWrapper {
     width: 1200px;
+  }
+}
+
+@keyframes rail {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 }
 
