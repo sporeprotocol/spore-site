@@ -10,3 +10,10 @@
     color: var(--text-03, #7B8684) !important;
   }
 }
+
+
+@media only screen and (max-width: 600px)  {
+  .flex-container {
+    flex-direction: column-reverse !important;
+  }
+}

@@ -11,7 +11,7 @@ interface MarkdownImageRowProps {
 
 const MarkdownImageRow: React.FC<MarkdownImageRowProps> = ({ markdown, SvgComponent, ratio, reverse = false }) => {
     return (
-        <div className="flex items-center" >
+        <div className="flex items-center flex-container" >
             {reverse ?
                 <>
                     <div style={{width: `${ratio}px`}}>
@@ -22,7 +22,7 @@ const MarkdownImageRow: React.FC<MarkdownImageRowProps> = ({ markdown, SvgCompon
                     </div>
                 </>
                 :
-                <div className="textLayout-container flex items-center">
+                <div className="textLayout-container flex items-center flex-container">
                     <div>
                         <ReactMarkdown children={markdown} />
                     </div>

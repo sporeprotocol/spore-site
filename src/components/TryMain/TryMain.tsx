@@ -2,6 +2,7 @@ import React from 'react';
 import { ReactComponent as TryModule } from "../../assets/svg/try-module.svg";
 import { ReactComponent as Cube} from "../../assets/svg/cube.svg";
 import styles from './index.module.scss';
+import {Link} from "react-router-dom";
 
 const TryMain: React.FC = () => {
     return (
@@ -43,7 +44,11 @@ const TryMain: React.FC = () => {
                         </ul>
                     </div>
                     <div className={styles.ButtonContainer}>
-                        <div className={styles.button}>Let's Go</div>
+                        <div className={styles.button}>
+                            <Link to={'/doc/SporeSecp256k1EXAMPLE'}>
+                                Let's Go
+                            </Link>
+                        </div>
                     </div>
                 </div>
                 <div className={styles.outsideSvg}>
