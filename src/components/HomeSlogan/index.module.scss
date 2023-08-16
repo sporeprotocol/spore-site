@@ -25,23 +25,24 @@
     }
     .AnimationText {
       position: relative;
-      height: 67px;
+      height: 80px;
       overflow: hidden;
       display: flex;
       justify-content: center;
       h1 {
         position: absolute;
         top: 0;
-        animation: slide 6s linear infinite alternate;
+        animation: slide 4s linear infinite alternate;
         line-height: 67px;
         font-weight: bold;
         span {
-          background-image: url('../../assets/svg/text-under.svg');
-          background-position: center 75%;
-          padding: 0 10px;
-          &.DigitalAssets {
-            background-position: center 90%;
-          }
+          height: 80px;
+          //background-image: url('../../assets/svg/text-under.svg');
+          //background-position: center 75%;
+          //padding: 0 10px;
+          //&.DigitalAssets {
+          //  background-position: center 90%;
+          //}
         }
       }
     }
@@ -143,6 +144,28 @@
       h1 {
         .ColonContainer {
           left: 1.8rem;
+        }
+      }
+      .AnimationText {
+        position: relative;
+        height: 67px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        h1 {
+          position: absolute;
+          top: 0;
+          animation: slide 3s linear infinite alternate;
+          line-height: 67px;
+          font-weight: bold;
+          span {
+            background-image: url('../../assets/svg/text-under.svg');
+            background-position: center 75%;
+            padding: 0 10px;
+            &.DigitalAssets {
+              background-position: center 90%;
+            }
+          }
         }
       }
     }

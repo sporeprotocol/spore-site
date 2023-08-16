@@ -16,6 +16,7 @@
     }
     .GuideContent {
       margin-top: 16px;
+      font-size: 16px;
       color: var(--black-alpha-100, #000);
     }
     .LinkButton {
@@ -23,6 +24,19 @@
       width: 100%;
       justify-content: flex-end;
       margin: 1rem 0 2rem 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .SporeItemWrapper {
+    width: 360px;
+    height: 423px;
+    .LinkButton {
+      position: absolute;
+      bottom: 32px;
+      right: 32px;
+      margin: 0 !important;
     }
   }
 }

@@ -113,7 +113,13 @@ h4 {
   font-size: 16px;
   transition: transform 0.3s ease;
   &:hover {
+    cursor: pointer;
     transform: rotate(-5deg);
+  }
+  a {
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 

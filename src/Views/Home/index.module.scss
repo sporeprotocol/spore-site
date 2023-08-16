@@ -70,8 +70,17 @@
 @media only screen and (max-width: 600px)  {
   .HomePageWrapper {
     width: auto;
-    margin: 3rem 0 0 0;
+    margin: 0;
     overflow: hidden;
     border-radius: 0;
+    .MemeContainer {
+      height: 13.5625rem;
+      .MemeBackground {
+        height: 4.9375rem;
+        background-image: url('../../assets/img/memeMobileBg.png');
+        background-size: cover;
+        background-position: center center;
+      }
+    }
   }
 }
