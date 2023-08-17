@@ -30,7 +30,8 @@
   }
   .outsideSvg {
     display: block;
-    width: 510px;
+    width: 50%;
+    flex-shrink: 0;
   }
   .ModuleInfoContainer {
     display: flex;

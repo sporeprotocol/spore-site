@@ -115,11 +115,7 @@ h4 {
   &:hover {
     cursor: pointer;
     transform: rotate(-5deg);
-  }
-  a {
-    &:hover {
-      cursor: pointer;
-    }
+    opacity: 0.8;
   }
 }
 
