@@ -17,7 +17,17 @@
       background-image: url('../../assets/svg/text-imagination.svg');
       background-repeat: no-repeat;
       background-position: left 81%;
+      animation: fadeIn 2s ease-out;
     }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
