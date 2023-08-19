@@ -27,12 +27,8 @@
       position: relative;
       height: 67px;
       overflow: hidden;
-      display: flex;
-      justify-content: center;
       h1 {
-        position: absolute;
-        top: 0;
-        animation: slide 7s linear infinite alternate;
+        animation: slide 7s linear infinite;
         line-height: 67px;
         font-weight: bold;
         span {
@@ -40,6 +36,7 @@
         }
       }
     }
+
 
     .PurpleFont {
       color: var(--brand-blue, #3A5AFF);
@@ -83,17 +80,13 @@
 }
 
 @keyframes slide {
-  0%, 14% {
-    top: 0;
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
-  29%, 43% {
-    top: -67px;
-  }
-  57%, 71% {
-    top: -134px;
-  }
-  86%, 100% {
-    top: 0;
+  100% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
   }
 }
 
