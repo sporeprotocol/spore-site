@@ -32,17 +32,11 @@
       h1 {
         position: absolute;
         top: 0;
-        animation: slide 4s linear infinite alternate;
+        animation: slide 7s linear infinite alternate;
         line-height: 67px;
         font-weight: bold;
         span {
           height: 67px;
-          //background-image: url('../../assets/svg/text-under.svg');
-          //background-position: center 75%;
-          //padding: 0 10px;
-          //&.DigitalAssets {
-          //  background-position: center 90%;
-          //}
         }
       }
     }
@@ -89,14 +83,17 @@
 }
 
 @keyframes slide {
-  0%, 20% {
+  0%, 14% {
     top: 0;
   }
-  40%, 60% {
+  29%, 43% {
     top: -67px;
   }
-  80%, 100% {
+  57%, 71% {
     top: -134px;
+  }
+  86%, 100% {
+    top: 0;
   }
 }
 
