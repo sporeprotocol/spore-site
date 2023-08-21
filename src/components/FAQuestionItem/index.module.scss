@@ -9,6 +9,9 @@
   font-weight: 700;
   line-height: 150%; /* 27px */
   border-bottom: 1px solid var(--black-alpha-10, rgba(0, 0, 0, 0.10));
+  &:hover {
+    cursor: pointer;
+  }
   .Question {
     display: flex;
     justify-content: space-between;
@@ -23,6 +26,7 @@
     font-weight: 400;
     line-height: 150%; /* 24px */
     padding-right: 100px;
+
   }
 }
 
