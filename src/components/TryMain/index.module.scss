@@ -77,10 +77,8 @@
         border-radius: 40px;
         background: var(--black-alpha-100, #000);
         color: var(--background-04, #FAFBFF);
-        font-family: Baloo Extra Bolder;
-        font-size: 16px;
-        font-style: normal;
-        line-height: 150%; /* 24px */
+        font-size: 14px;
+
         &:hover {
           cursor: pointer;
         }

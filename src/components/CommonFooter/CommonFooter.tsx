@@ -29,9 +29,16 @@ const CommonFooter:React.FC = () => {
             <div className={styles.ContactUsContainer}>
                 <div className={styles.SocialMediaContainer}>
                     <div>
-                        <DiscordIcon />
-                        <GithubIcon />
-                        <TwitterIcon />
+                        {/*<Link to={'/'} target={'_blank'}>*/}
+                        {/*    <DiscordIcon />*/}
+                        {/*</Link>*/}
+                        <Link to={'https://github.com/sporeprotocol/spore-sdk'} target={'_blank'}>
+                            <GithubIcon />
+                        </Link>
+                        {/*<Link to={'/'}>*/}
+                        {/*    <TwitterIcon />*/}
+                        {/*</Link>*/}
+
                     </div>
                     <h1>SPORE PROTOCOL</h1>
                 </div>

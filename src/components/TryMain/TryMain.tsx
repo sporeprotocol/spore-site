@@ -25,7 +25,7 @@ const TryMain: React.FC = () => {
                             </Link>
                         </div>
                         <div className={`${styles.button} button-ct`}>
-                            <Link target="_blank" to={'https://github.com/sporeprotocol/spore-sdk/tree/beta/docs/recipes'}>
+                            <Link target="_blank" to={'https://spore-protocol.gitbook.io/spore-protocol/how-to-recipes'}>
                                 Test the Recipes
                             </Link>
                         </div>
