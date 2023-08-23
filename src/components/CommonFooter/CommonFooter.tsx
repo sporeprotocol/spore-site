@@ -1,8 +1,8 @@
 import React from 'react';
 import { ReactComponent as ThreeMushroom } from "../../assets/svg/three-mushroom.svg";
-import { ReactComponent as DiscordIcon } from "../../assets/svg/discord-icon.svg";
+// import { ReactComponent as DiscordIcon } from "../../assets/svg/discord-icon.svg";
+// import { ReactComponent as TwitterIcon } from "../../assets/svg/twitter-icon.svg";
 import { ReactComponent as GithubIcon } from "../../assets/svg/github-icon.svg";
-import { ReactComponent as TwitterIcon } from "../../assets/svg/twitter-icon.svg";
 import { ReactComponent as ContactMushroom } from "../../assets/svg/contact-mushroom.svg";
 import styles from './index.module.scss';
 import {Link, useLocation} from 'react-router-dom';
