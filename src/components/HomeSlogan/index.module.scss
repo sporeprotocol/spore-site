@@ -33,6 +33,15 @@
         font-weight: bold;
         span {
           height: 67px;
+          .TextBottomBg {
+            background-color: #FFC43B;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            height: 30%;
+            bottom: 16%;
+            border-radius: 30px;
+          }
         }
       }
     }

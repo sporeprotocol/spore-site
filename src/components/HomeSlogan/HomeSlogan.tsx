@@ -22,14 +22,14 @@ const HomeSlogan: React.FC = () => {
                 </h1>
                 <div className={styles.AnimationText}>
                     <h1>
-                        <span>Your NFTs</span> <br/>
-                        <span>Anything</span> <br/>
-                        <span className={styles.DigitalAssets}>Digital Assets</span>
+                        <span>Your NFTs<span className={styles.TextBottomBg}></span></span> <br/>
+                        <span>Anything<span className={styles.TextBottomBg}></span></span> <br/>
+                        <span className={styles.DigitalAssets}>Digital Assets<span className={styles.TextBottomBg}></span></span>
                     </h1>
                     <h1>
-                        <span>Your NFTs</span> <br/>
-                        <span>Anything</span> <br/>
-                        <span className={styles.DigitalAssets}>Digital Assets</span>
+                        <span>Your NFTs<span className={styles.TextBottomBg}></span></span> <br/>
+                        <span>Anything<span className={styles.TextBottomBg}></span></span> <br/>
+                        <span className={styles.DigitalAssets}>Digital Assets<span className={styles.TextBottomBg}></span></span>
                     </h1>
                 </div>
                 <h1 className={styles.PurpleFont}>on chain</h1>
