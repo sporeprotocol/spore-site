@@ -32,12 +32,15 @@
         line-height: 67px;
         font-weight: bold;
         span {
+          position: relative;
           height: 67px;
+          .TextContent {
+            z-index: 1;
+          }
           .TextBottomBg {
             background-color: #FFC43B;
             position: absolute;
             width: 100%;
-            z-index: -1;
             height: 30%;
             bottom: 16%;
             border-radius: 30px;

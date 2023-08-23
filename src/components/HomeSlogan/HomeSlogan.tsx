@@ -22,14 +22,34 @@ const HomeSlogan: React.FC = () => {
                 </h1>
                 <div className={styles.AnimationText}>
                     <h1>
-                        <span>Your NFTs<span className={styles.TextBottomBg}></span></span> <br/>
-                        <span>Anything<span className={styles.TextBottomBg}></span></span> <br/>
-                        <span className={styles.DigitalAssets}>Digital Assets<span className={styles.TextBottomBg}></span></span>
+                        <span>
+                            <span className={styles.TextContent}>Your NFT</span>
+                            <span className={styles.TextBottomBg}></span>
+                        </span> <br/>
+                        <span>
+                            <span className={styles.TextContent}>Anything</span>
+                            <span className={styles.TextBottomBg}></span>
+                        </span> <br/>
+                        <span>
+                            <span className={styles.TextContent}>Digital Assets</span>
+                            <span className={styles.TextBottomBg}></span>
+                        </span> <br/>
+
                     </h1>
                     <h1>
-                        <span>Your NFTs<span className={styles.TextBottomBg}></span></span> <br/>
-                        <span>Anything<span className={styles.TextBottomBg}></span></span> <br/>
-                        <span className={styles.DigitalAssets}>Digital Assets<span className={styles.TextBottomBg}></span></span>
+                        <span>
+                            <span className={styles.TextContent}>Your NFT</span>
+                            <span className={styles.TextBottomBg}></span>
+                        </span> <br/>
+                        <span>
+                            <span className={styles.TextContent}>Anything</span>
+                            <span className={styles.TextBottomBg}></span>
+                        </span> <br/>
+                        <span>
+                            <span className={styles.TextContent}>Digital Assets</span>
+                            <span className={styles.TextBottomBg}></span>
+                        </span> <br/>
+
                     </h1>
                 </div>
                 <h1 className={styles.PurpleFont}>on chain</h1>
