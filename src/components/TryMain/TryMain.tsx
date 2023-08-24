@@ -38,7 +38,7 @@ const TryMain: React.FC = () => {
             <div className={styles.TryModuleContainer}>
                 <div className={styles.ModuleInfoContainer}>
                     <div className={styles.index}>02</div>
-                    <div className={styles.title}>Spore protocol demo</div>
+                    <div className={styles.title}>Spore demo</div>
                     <div className={styles.innerSvg}>
                         <Cube />
                     </div>
