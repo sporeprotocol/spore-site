@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
     a {
-      width: 64px;
+      width: 88px;
       height: 32px;
       line-height: 32px;
       color: var(--white-alpha-70, rgba(255, 255, 255, 0.70));
@@ -50,9 +50,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 64px;
+        width: 77px;
         height: 32px;
         border-radius: 49px;
+        padding: 0 8px;
+        box-sizing: content-box;
         color: var(--black-alpha-100, #000);
         text-align: center;
         /* Button */
@@ -63,6 +65,73 @@
         letter-spacing: -0.16px;
         background: var(--white-alpha-100, #FFF);
       }
+    }
+
+    .DropdownMenu {
+      position: relative;
+      display: inline-block;
+
+      .SubMenuMargin {
+        position: absolute;
+        height: 32px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -32px;
+        left: 0;
+        right: 0;
+        height: 32px;
+        background-color: transparent;
+        z-index: 1;
+      }
+
+      .ArrowDown {
+        transform: rotate(90deg);
+        display: inline-block;
+        margin-left: 5px;
+      }
+
+      .SubMenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        width: 576px;
+        height: auto;
+        flex-shrink: 0;
+        background-color: #fff;
+        border-radius: 20px;
+        border: 3px solid var(--background-03, #402E32);
+        background: var(--background-01, #FFF4CC);
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        a {
+          flex-basis: calc(50% - 30px);
+          display: block;
+          padding: 10px 15px;
+          color: #333;
+          text-decoration: none;
+          box-sizing: border-box;
+          line-height: 75%;
+          border-radius: 5px;
+
+          &:hover {
+            background-color: #FFC43B;
+          }
+        }
+      }
+
+      &:hover .SubMenu {
+        display: flex;
+      }
+
+
     }
   }
 

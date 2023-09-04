@@ -1,11 +1,41 @@
 import React from 'react';
-import { ReactComponent as ThreeMushroom } from "../../assets/svg/three-mushroom.svg";
+import { ReactComponent as BlueMushroom } from "../../assets/svg/blue-mushroom.svg";
+import { ReactComponent as QuestionMushroom } from "../../assets/svg/question-mushroom.svg";
 // import { ReactComponent as DiscordIcon } from "../../assets/svg/discord-icon.svg";
 // import { ReactComponent as TwitterIcon } from "../../assets/svg/twitter-icon.svg";
 import { ReactComponent as GithubIcon } from "../../assets/svg/github-icon.svg";
 import { ReactComponent as ContactMushroom } from "../../assets/svg/contact-mushroom.svg";
 import styles from './index.module.scss';
 import {Link, useLocation} from 'react-router-dom';
+
+type CardData = {
+    title: string;
+    content: string;
+    link: string;
+};
+
+const cardDataArray: CardData[] = [
+    {
+        title: "Basics",
+        content: "Offer you the flexibility to store anything on-chain: no format restrictions and no traditional protocol limits.",
+        link: "/"
+    },
+    {
+        title: "Tutorial",
+        content: "Offer you the flexibility to store anything on-chain: no format restrictions and no traditional protocol limits. ",
+        link: "/"
+    },
+    {
+        title: "How to recipes",
+        content: "Offer you the flexibility to store anything on-chain: no format restrictions and no traditional protocol limits. ",
+        link: "/"
+    },
+    {
+        title: "Development",
+        content: "Offer you the flexibility to store anything on-chain: no format restrictions and no traditional protocol limits. ",
+        link: "/"
+    },
+];
 
 const CommonFooter:React.FC = () => {
     const location = useLocation();
@@ -15,13 +45,30 @@ const CommonFooter:React.FC = () => {
         <>
             { (path == '/' || path == '/about') &&
                 <div className={styles.SpreadCreation}>
-                    <ThreeMushroom className={styles.ThreeMushroomContainer} />
+                    <BlueMushroom className={styles.BlueMushroom}/>
+                    <QuestionMushroom className={styles.QuestionMushroom}/>
                     <h1 className={styles.FooterDesc}>
-                        Ready to <span> spore-adically </span> create, engage, and monetize digital assets on-chain?
+                        Explore, Learn and Build
                     </h1>
+                    <div className={`${styles.FooterText} sub-header`}>
+                        Whether you're crafting a dynamic piece of code or turning a meme into an asset, we've got the perfect ecosystem for your ideas to flourish.
+                    </div>
+                    <div className={`${styles.FooterCardContainer}`}>
+                        {cardDataArray.map((card, index) => (
+                            <div key={index} className={`${styles.CardItem}`}>
+                                <h5 className={`${styles.CardTitle}`}>{card.title}</h5>
+                                <div className={`${styles.CardContent} body-1`}>
+                                    {card.content}
+                                </div>
+                                <div className={`${styles.CardButton}`}>
+                                    <Link to={card.link}>Visit</Link>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                     <div className={`${styles.SpreadButton} button-ct`}>
                         <Link to={'/guide'}>
-                            Spread Your Creation
+                            Start Creating
                         </Link>
                     </div>
                 </div>

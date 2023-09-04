@@ -34,7 +34,7 @@ const Header: React.FC = () => {
                                         <Link
                                             to={'/'}
                                             onClick={() => setIsMenuOpen(false)}
-                                            className={location.pathname === '/' ? styles.Active : ''}>SPOre Protocol</Link>
+                                            className={location.pathname === '/' ? styles.Active : ''}>Spore Protocol</Link>
                                     </div>
                                     <CloseButton onClick={() => setIsMenuOpen(false)}/>
                                 </div>
@@ -46,7 +46,7 @@ const Header: React.FC = () => {
                                     <Link
                                         to={'/about'}
                                         onClick={() => setIsMenuOpen(false)}
-                                        className={location.pathname === '/about' ? styles.Active : ''}>About</Link>
+                                        className={location.pathname === '/about' ? styles.Active : ''}>Why Spore</Link>
                                     <Link
                                         to={'/guide'}
                                         onClick={() => setIsMenuOpen(false)}
@@ -69,8 +69,20 @@ const Header: React.FC = () => {
                 <>
                     <div className={styles.CommonHeaderNav}>
                         <Link to={'/'} className={location.pathname === '/' ? styles.Active : ''}>Home</Link>
-                        <Link to={'/about'} className={location.pathname === '/about' ? styles.Active : ''}>About</Link>
-                        <Link to={'/guide'} className={location.pathname === '/guide' ? styles.Active : ''}>Guide</Link>
+                        <Link to={'/about'} className={location.pathname === '/about' ? styles.Active : ''}>Why Spore</Link>
+                        <div className={styles.DropdownMenu}>
+                            <Link to={'/guide'} className={`${location.pathname === '/guide' ? styles.Active : ''} SubMenuGuide`} >
+                                Guide <span className={styles.ArrowDown}>&gt;</span>
+                            </Link>
+                            <div className={styles.SubMenuMargin}>
+                                <div className={styles.SubMenu}>
+                                    <Link className={styles.SubMenuItem} to={'/sublink1'}>Spore Protocol Basics</Link>
+                                    <Link className={styles.SubMenuItem} to={'/sublink2'}>Tutorial</Link>
+                                    <Link className={styles.SubMenuItem} to={'/sublink3'}>How to recipes</Link>
+                                    <Link className={styles.SubMenuItem} to={'/sublink3'}>development</Link>
+                                </div>
+                            </div>
+                        </div>
                         {/*<Link to={'/github'} className={location.pathname === '/github' ? styles.Active : ''}>Github</Link>*/}
                     </div>
                     <div className={styles.CommonHeaderContactUs}>
