@@ -9,7 +9,7 @@ const About: React.FC = () => {
     return (
         <>
             <AboutSlogan />
-            <AboutInro />
+            {/*<AboutInro />*/}
             <AboutFAQ />
             <CommonFooter />
         </>
