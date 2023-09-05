@@ -29,6 +29,18 @@
     }
   }
 
+  .HeaderIconContainer {
+    a {
+      width: 32px;
+      height: 32px;
+      background-color: #FFC43B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+  }
+
   .CommonHeaderNav {
     display: flex;
     align-items: center;
@@ -101,7 +113,7 @@
         transform: translateX(-50%);
         z-index: 2;
         width: 576px;
-        height: auto;
+        height: 159px;
         flex-shrink: 0;
         background-color: #fff;
         border-radius: 20px;
@@ -110,7 +122,14 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 0;
+        padding: 10px 40px;
+        .SubMenuItem {
+          height: 69px;
+          padding: 8px 10px;
+          .SubMenuItemHeader {
+
+          }
+        }
         a {
           flex-basis: calc(50% - 30px);
           display: block;

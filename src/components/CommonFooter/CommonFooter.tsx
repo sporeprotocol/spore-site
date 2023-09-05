@@ -17,22 +17,22 @@ type CardData = {
 const cardDataArray: CardData[] = [
     {
         title: "Basics",
-        content: "Offer you the flexibility to store anything on-chain: no format restrictions and no traditional protocol limits.",
+        content: "Learn Spore Fundamentals - Quickly grasp the core concepts and components.",
         link: "/"
     },
     {
         title: "Tutorial",
-        content: "Offer you the flexibility to store anything on-chain: no format restrictions and no traditional protocol limits. ",
+        content: "Follow Along - Build a toy project, dive in with easy to follow steps and examples.",
         link: "/"
     },
     {
         title: "How to recipes",
-        content: "Offer you the flexibility to store anything on-chain: no format restrictions and no traditional protocol limits. ",
+        content: "Simplified Solutions - Find concise recipes to streamline your production.",
         link: "/"
     },
     {
-        title: "Development",
-        content: "Offer you the flexibility to store anything on-chain: no format restrictions and no traditional protocol limits. ",
+        title: "Resources",
+        content: "Power tools - SDK, API, Contracts, and more!",
         link: "/"
     },
 ];
@@ -48,7 +48,7 @@ const CommonFooter:React.FC = () => {
                     <BlueMushroom className={styles.BlueMushroom}/>
                     <QuestionMushroom className={styles.QuestionMushroom}/>
                     <h1 className={styles.FooterDesc}>
-                        Explore, Learn and Build
+                        Explore, Learn and Build!
                     </h1>
                     <div className={`${styles.FooterText} sub-header`}>
                         Whether you're crafting a dynamic piece of code or turning a meme into an asset, we've got the perfect ecosystem for your ideas to flourish.
