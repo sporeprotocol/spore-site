@@ -1,10 +1,11 @@
 import React from 'react';
 import { ReactComponent as BlueMushroom } from "../../assets/svg/blue-mushroom.svg";
 import { ReactComponent as QuestionMushroom } from "../../assets/svg/question-mushroom.svg";
-// import { ReactComponent as DiscordIcon } from "../../assets/svg/discord-icon.svg";
-// import { ReactComponent as TwitterIcon } from "../../assets/svg/twitter-icon.svg";
+import { ReactComponent as DiscordIcon } from "../../assets/svg/discord-icon.svg";
+import { ReactComponent as TwitterIcon } from "../../assets/svg/twitter-icon.svg";
 import { ReactComponent as GithubIcon } from "../../assets/svg/github-icon.svg";
 import { ReactComponent as ContactMushroom } from "../../assets/svg/contact-mushroom.svg";
+import { ReactComponent as ThreeMushroom } from "../../assets/svg/three-mushroom.svg";
 import styles from './index.module.scss';
 import {Link, useLocation} from 'react-router-dom';
 
@@ -43,7 +44,7 @@ const CommonFooter:React.FC = () => {
 
     return (
         <>
-            { (path == '/' || path == '/about') &&
+            { (path == '/') &&
                 <div className={styles.SpreadCreation}>
                     <BlueMushroom className={styles.BlueMushroom}/>
                     <QuestionMushroom className={styles.QuestionMushroom}/>
@@ -73,18 +74,33 @@ const CommonFooter:React.FC = () => {
                     </div>
                 </div>
             }
+
+            { (path == '/about') &&
+
+                <div className={styles.SpreadCreation}>
+                    <ThreeMushroom className={styles.ThreeMushroomContainer} />
+                    <h1 className={styles.FootAboutDesc}>
+                        Ready to <span> spore-adically </span> create, engage, and monetize digital assets on-chain?
+                    </h1>
+                    <div className={`${styles.SpreadButton} button-ct`}>
+                        <Link to={'/guide'}>
+                            Spread Your Creation
+                        </Link>
+                    </div>
+                </div>
+            }
             <div className={styles.ContactUsContainer}>
                 <div className={styles.SocialMediaContainer}>
                     <div>
-                        {/*<Link to={'/'} target={'_blank'}>*/}
-                        {/*    <DiscordIcon />*/}
-                        {/*</Link>*/}
+                        <Link to={'/'} target={'_blank'}>
+                            <DiscordIcon />
+                        </Link>
                         <Link to={'https://github.com/sporeprotocol/spore-sdk'} target={'_blank'}>
                             <GithubIcon />
                         </Link>
-                        {/*<Link to={'/'}>*/}
-                        {/*    <TwitterIcon />*/}
-                        {/*</Link>*/}
+                        <Link to={'/'}>
+                            <TwitterIcon />
+                        </Link>
 
                     </div>
                     <h1>SPORE PROTOCOL</h1>

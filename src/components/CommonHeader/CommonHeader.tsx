@@ -77,20 +77,20 @@ const Header: React.FC = () => {
                             <div className={styles.SubMenuMargin}>
                                 <div className={styles.SubMenu}>
                                     <Link className={styles.SubMenuItem} to={'/basics'}>
-                                        <p className={`${styles.SubMenuItemHeader} body-1`}>Spore Protocol Basics</p>
-                                        <p className={`${styles.SubMenuItemHeader} body-2`}>Learn Spore fundamentals</p>
+                                        <p className={`${styles.SubMenuItemHeader} sub-header`}>Spore Protocol Basics</p>
+                                        <p className={`${styles.SubMenuItemContent} body-2`}>Learn Spore fundamentals</p>
                                     </Link>
                                     <Link className={styles.SubMenuItem} to={'/tutorials'}>
-                                        <p className={`${styles.SubMenuItemHeader} body-1`}>Tutorial</p>
-                                        <p className={`${styles.SubMenuItemHeader} body-2`}>Learn with examples.</p>
+                                        <p className={`${styles.SubMenuItemHeader} sub-header`}>Tutorial</p>
+                                        <p className={`${styles.SubMenuItemContent} body-2`}>Learn with examples.</p>
                                     </Link>
                                     <Link className={styles.SubMenuItem} to={'/recipes'}>
-                                        <p className={`${styles.SubMenuItemHeader} body-1`}>How to recipes</p>
-                                        <p className={`${styles.SubMenuItemHeader} body-2`}>Build with solutions.</p>
+                                        <p className={`${styles.SubMenuItemHeader} sub-header`}>How to recipes</p>
+                                        <p className={`${styles.SubMenuItemContent} body-2`}>Build with solutions.</p>
                                     </Link>
                                     <Link className={styles.SubMenuItem} to={'/resources'}>
-                                        <p className={`${styles.SubMenuItemHeader} body-1`}>Resources</p>
-                                        <p className={`${styles.SubMenuItemHeader} body-2`}>Power tools for devs.</p>
+                                        <p className={`${styles.SubMenuItemHeader} sub-header`}>Resources</p>
+                                        <p className={`${styles.SubMenuItemContent} body-2`}>Power tools for devs.</p>
                                     </Link>
                                 </div>
                             </div>

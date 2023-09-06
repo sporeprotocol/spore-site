@@ -4,7 +4,7 @@
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  width: 920px;
+  width: 976px;
   padding: 20px 60px;
   justify-content: center;
   align-items: center;
@@ -127,7 +127,11 @@
           height: 69px;
           padding: 8px 10px;
           .SubMenuItemHeader {
-
+            text-align: left;
+            font-weight: 900;
+          }
+          .SubMenuItemContent {
+            text-align: left;
           }
         }
         a {

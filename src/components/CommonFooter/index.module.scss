@@ -7,7 +7,7 @@
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 32px;
   flex-shrink: 0;
   border-radius: 35px;
   background: var(--background-03, #402E32);
@@ -23,6 +23,10 @@
     top: 15px;
     right: 154px;
     transform: rotate(10.904deg);
+  }
+
+  .ThreeMushroomContainer {
+    max-width: 446px;
   }
 
   .FooterText {
@@ -48,9 +52,6 @@
       .CardTitle {
         color: #3A5AFF;
       }
-      .CardContent {
-
-      }
       .CardButton {
         display: flex;
         padding: 12px 24px;
@@ -60,6 +61,9 @@
         border-radius: 50px;
         background: var(--brand-yellow, #FFC43B);
         font-family: "Baloo Extra Bolder";
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -69,6 +73,17 @@
     font-family: Baloo Extra Bolder;
     color: var(--brand-yellow, #FFC43B);
   }
+
+  .FootAboutDesc {
+    max-width: 777px;
+    text-align: center;
+    font-family: Baloo Extra Bolder;
+    color: #ffffff;
+    span {
+      color: #ffc43b;
+    }
+  }
+
   .SpreadButton {
     display: flex;
     min-width: 200px;

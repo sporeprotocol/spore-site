@@ -24,7 +24,7 @@ const SporeIntro: React.FC = () => {
                 </div>
                 <div className={styles.SporeIntroCards}>
                     {sporeItemsData.map((item, index) => (
-                        <SporeItem title={item.title} content={item.content} index={index + 1} total={sporeItemsData.length} />
+                        <SporeItem title={item.title} content={item.content} index={index + 1} total={sporeItemsData.length} url={item.url}/>
                     ))}
                 </div>
                 <div className={`${styles.DiscoverButton} ${styles.MobileDiscoverButton} button-ct`}>
