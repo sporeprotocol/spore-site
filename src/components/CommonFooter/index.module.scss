@@ -49,6 +49,14 @@
       flex-shrink: 0;
       border-radius: 35px;
       background:  #FFF9EA;
+
+      &:hover {
+        background-image: url('../../assets/img/FooterCardBg.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+      }
+
       .CardTitle {
         color: #3A5AFF;
       }
