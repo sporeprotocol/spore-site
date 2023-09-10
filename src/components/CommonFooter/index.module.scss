@@ -35,6 +35,46 @@
     max-width: 950px;
   }
 
+  .DocumentationCard {
+    display: flex;
+    flex-direction: column;
+    width: 1274px;
+    height: 275px;
+    padding: 42px 50px 42px 27px;
+    border-radius: 35px;
+    background: #FFF9EA;
+  }
+
+  .DocumentationCard,
+  .FooterCardContainer {
+    .CardTitle {
+      color: #3A5AFF;
+    }
+    .CardButton {
+      display: flex;
+      width: 82px;
+      padding: 12px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 50px;
+      background: var(--brand-yellow, #FFC43B);
+      font-family: "Baloo Extra Bolder";
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .DocumentationCard {
+    .CardTitle {
+      margin-bottom: 20px;
+    }
+    .CardButton {
+      margin-top: 66px;
+    }
+  }
+
   .FooterCardContainer {
     display: flex;
     gap: 16px;
@@ -55,23 +95,6 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: left bottom;
-      }
-
-      .CardTitle {
-        color: #3A5AFF;
-      }
-      .CardButton {
-        display: flex;
-        padding: 12px 24px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 50px;
-        background: var(--brand-yellow, #FFC43B);
-        font-family: "Baloo Extra Bolder";
-        &:hover {
-          cursor: pointer;
-        }
       }
     }
   }

@@ -44,13 +44,13 @@
   .CommonHeaderNav {
     display: flex;
     align-items: center;
-    a {
+    a,
+    .SubMenuGuide {
       width: 88px;
       height: 32px;
       line-height: 32px;
-      color: var(--white-alpha-70, rgba(255, 255, 255, 0.70));
+      color: rgba(255, 255, 255, 0.70);
       text-align: center;
-      /* Button */
       font-family: Baloo Extra Bolder;
       font-size: 16px;
       font-style: normal;
@@ -58,6 +58,7 @@
       margin: 0 10px;
       letter-spacing: -0.16px;
       text-decoration: none;
+
       &.Active {
         display: flex;
         align-items: center;
@@ -78,7 +79,11 @@
         background: var(--white-alpha-100, #FFF);
       }
     }
-
+    .SubMenuGuide {
+      &:hover {
+        cursor: pointer;
+      }
+    }
     .DropdownMenu {
       position: relative;
       display: inline-block;
@@ -86,7 +91,32 @@
       .SubMenuMargin {
         position: absolute;
         height: 32px;
+        .SubDocMenuList {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 2;
+          width: 576px;
+          height: 353px;
+          flex-shrink: 0;
+          border-radius: 20px;
+          border: 3px solid #402E32;
+          background: #FFF4CC;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 40px;
+        }
+        .DocList {
+          width: 50%;
+        }
+        .MenuList {
+          width: 50%;
+        }
       }
+
 
       &:before {
         content: "";
@@ -106,24 +136,8 @@
       }
 
       .SubMenu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 2;
-        width: 576px;
-        height: 159px;
-        flex-shrink: 0;
-        background-color: #fff;
-        border-radius: 20px;
-        border: 3px solid var(--background-03, #402E32);
-        background: var(--background-01, #FFF4CC);
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 40px;
         .SubMenuItem {
+          width: 100%;
           height: 69px;
           padding: 8px 10px;
           .SubMenuItemHeader {
@@ -150,7 +164,7 @@
         }
       }
 
-      &:hover .SubMenu {
+      &:hover .SubDocMenuList {
         display: flex;
       }
 

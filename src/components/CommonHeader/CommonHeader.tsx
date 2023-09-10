@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { ReactComponent as CloseButton } from "../../assets/svg/close.svg";
+import codeBackgroundHeader from '../../assets/img/codeBackground.png';
 import styles from './index.module.scss'
 
 const Header: React.FC = () => {
@@ -69,29 +70,35 @@ const Header: React.FC = () => {
                 <>
                     <div className={styles.CommonHeaderNav}>
                         <Link to={'/'} className={location.pathname === '/' ? styles.Active : ''}>Home</Link>
-                        <Link to={'/about'} className={location.pathname === '/about' ? styles.Active : ''}>Why Spore</Link>
                         <div className={styles.DropdownMenu}>
-                            <Link to={'/guide'} className={`${location.pathname === '/guide' ? styles.Active : ''} SubMenuGuide`} >
+                            <div className={`${location.pathname === '/guide' ? styles.Active : ''} ${styles.SubMenuGuide}`} >
                                 Docs <span className={styles.ArrowDown}>&gt;</span>
-                            </Link>
+                            </div>
                             <div className={styles.SubMenuMargin}>
-                                <div className={styles.SubMenu}>
-                                    <Link className={styles.SubMenuItem} to={'/basics'}>
-                                        <p className={`${styles.SubMenuItemHeader} sub-header`}>Spore Protocol Basics</p>
-                                        <p className={`${styles.SubMenuItemContent} body-2`}>Learn Spore fundamentals</p>
-                                    </Link>
-                                    <Link className={styles.SubMenuItem} to={'/tutorials'}>
-                                        <p className={`${styles.SubMenuItemHeader} sub-header`}>Tutorial</p>
-                                        <p className={`${styles.SubMenuItemContent} body-2`}>Learn with examples.</p>
-                                    </Link>
-                                    <Link className={styles.SubMenuItem} to={'/recipes'}>
-                                        <p className={`${styles.SubMenuItemHeader} sub-header`}>How to recipes</p>
-                                        <p className={`${styles.SubMenuItemContent} body-2`}>Build with solutions.</p>
-                                    </Link>
-                                    <Link className={styles.SubMenuItem} to={'/resources'}>
-                                        <p className={`${styles.SubMenuItemHeader} sub-header`}>Resources</p>
-                                        <p className={`${styles.SubMenuItemContent} body-2`}>Power tools for devs.</p>
-                                    </Link>
+                                <div className={styles.SubDocMenuList}>
+                                    <div className={styles.DocList}>
+                                        <p className={`${styles.SubMenuItemHeader} sub-header`}>Documentation</p>
+                                        <p className={`${styles.SubMenuItemContent} body-2`}>Master Spore, from basics to building your next project.</p>
+                                        <img alt={'Documentation Header'} src={codeBackgroundHeader}/>
+                                    </div>
+                                    <div className={styles.SubMenu}>
+                                        <Link className={styles.SubMenuItem} to={'/basics'}>
+                                            <p className={`${styles.SubMenuItemHeader} sub-header`}>Spore Protocol Basics</p>
+                                            <p className={`${styles.SubMenuItemContent} body-2`}>Learn Spore fundamentals</p>
+                                        </Link>
+                                        <Link className={styles.SubMenuItem} to={'/tutorials'}>
+                                            <p className={`${styles.SubMenuItemHeader} sub-header`}>Tutorial</p>
+                                            <p className={`${styles.SubMenuItemContent} body-2`}>Learn with examples.</p>
+                                        </Link>
+                                        <Link className={styles.SubMenuItem} to={'/recipes'}>
+                                            <p className={`${styles.SubMenuItemHeader} sub-header`}>How to recipes</p>
+                                            <p className={`${styles.SubMenuItemContent} body-2`}>Build with solutions.</p>
+                                        </Link>
+                                        <Link className={styles.SubMenuItem} to={'/resources'}>
+                                            <p className={`${styles.SubMenuItemHeader} sub-header`}>Resources</p>
+                                            <p className={`${styles.SubMenuItemContent} body-2`}>Power tools for devs.</p>
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>

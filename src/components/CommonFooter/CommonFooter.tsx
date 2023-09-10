@@ -8,6 +8,7 @@ import { ReactComponent as ContactMushroom } from "../../assets/svg/contact-mush
 import { ReactComponent as ThreeMushroom } from "../../assets/svg/three-mushroom.svg";
 import styles from './index.module.scss';
 import {Link, useLocation} from 'react-router-dom';
+import AboutFAQ from "../AboutFAQ/AboutFAQ.tsx";
 
 type CardData = {
     title: string;
@@ -54,6 +55,15 @@ const CommonFooter:React.FC = () => {
                     <div className={`${styles.FooterText} sub-header`}>
                         Whether you're crafting a dynamic piece of code or turning a meme into an asset, we've got the perfect ecosystem for your ideas to flourish.
                     </div>
+                    <div className={styles.DocumentationCard}>
+                        <h5 className={`${styles.CardTitle}`}>Documentation</h5>
+                        <div className={`${styles.CardContent} body-1`}>
+                            Get started mastering Spore Protocol, from basics to building your next project.
+                        </div>
+                        <div className={`${styles.CardButton}`}>
+                            <Link to={'/'}>Visit</Link>
+                        </div>
+                    </div>
                     <div className={`${styles.FooterCardContainer}`}>
                         {cardDataArray.map((card, index) => (
                             <div key={index} className={`${styles.CardItem}`}>
@@ -89,6 +99,7 @@ const CommonFooter:React.FC = () => {
                     </div>
                 </div>
             }
+            <AboutFAQ />
             <div className={styles.ContactUsContainer}>
                 <div className={styles.SocialMediaContainer}>
                     <div>
