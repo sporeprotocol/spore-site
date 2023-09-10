@@ -22,28 +22,6 @@ const Home: React.FC = () => {
             <div className={styles.HomePageWrapper}>
                 <HomeSlogan />
                 <SporeIntro />
-                {/*<div className={styles.MemeContainer}>*/}
-                {/*    <div className="flex">*/}
-                {/*        <div className={styles.SvgContainer}>*/}
-                {/*            {Array.from({ length: SVG_ITEM_COUNT * 2 }).map((_, idx) => <SvgItem key={idx} />)}*/}
-                {/*        </div>*/}
-                {/*        <div className={styles.SvgContainer}>*/}
-                {/*            {Array.from({ length: SVG_ITEM_COUNT * 2 }).map((_, idx) => <SvgItem key={idx} />)}*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*    <Link to={'https://discord.gg/ZmbbT529fQ'} target={'_blank'}>*/}
-                {/*        <div className={styles.MemeBackground}></div>*/}
-                {/*    </Link>*/}
-                {/*    <div className="flex">*/}
-                {/*        <div className={styles.SvgContainer}>*/}
-                {/*            {Array.from({ length: SVG_ITEM_COUNT * 2 }).map((_, idx) => <SvgItem key={idx} />)}*/}
-                {/*        </div>*/}
-                {/*        <div className={styles.SvgContainer}>*/}
-                {/*            {Array.from({ length: SVG_ITEM_COUNT * 2 }).map((_, idx) => <SvgItem key={idx} />)}*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
-                {/*<SporeGuide />*/}
             </div>
             <CommonFooter />
         </>

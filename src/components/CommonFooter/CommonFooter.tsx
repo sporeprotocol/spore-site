@@ -77,26 +77,11 @@ const CommonFooter:React.FC = () => {
                             </div>
                         ))}
                     </div>
-                    <div className={`${styles.SpreadButton} button-ct`}>
-                        <Link to={'/guide'}>
-                            Start Creating
-                        </Link>
-                    </div>
-                </div>
-            }
-
-            { (path == '/about') &&
-
-                <div className={styles.SpreadCreation}>
-                    <ThreeMushroom className={styles.ThreeMushroomContainer} />
-                    <h1 className={styles.FootAboutDesc}>
-                        Ready to <span> spore-adically </span> create, engage, and monetize digital assets on-chain?
-                    </h1>
-                    <div className={`${styles.SpreadButton} button-ct`}>
-                        <Link to={'/guide'}>
+                    <Link to={'/guide'}>
+                        <div className={`${styles.SpreadButton} button-ct`}>
                             Spread Your Creation
-                        </Link>
-                    </div>
+                        </div>
+                    </Link>
                 </div>
             }
             <AboutFAQ />

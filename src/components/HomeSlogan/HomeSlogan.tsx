@@ -57,11 +57,13 @@ const HomeSlogan: React.FC = () => {
                 <div className={`${styles.IntroContainer} sub-header`}>
                     The On-Chain protocol that redefine the way your asset is utilized, traded, and integrated with decentralized applications. Think big, engage more, and monetize your niche with Spore Protocol.
                 </div>
-                <div className={`${styles.SpreadButton} button-ct`}>
+
                     <Link to={'/guide'}>
-                        Start Creating
+                        <div className={`${styles.SpreadButton} button-ct`}>
+                            Start Creating
+                        </div>
                     </Link>
-                </div>
+
             </div>
             <div className={`${styles.CodeWrapper}`}>
                 <MushroomBaby className={`${styles.MushroomBaby}`}/>
