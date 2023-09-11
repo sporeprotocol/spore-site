@@ -5,6 +5,12 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
+  .MobileButton {
+    display: none;
+  }
+  .PCButton {
+    display: flex;
+  }
   .TextWrapper {
     width: 638px;
     .TextContainer {
@@ -147,21 +153,36 @@
   }
 }
 
-@keyframes slide {
-  0% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-  100% {
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-}
-
-/* Mobile styles */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
   .SloganWrapper {
-    margin: 11.5rem auto 10rem auto;
+    width: 43rem;
+    //margin: 11.5rem auto 10rem auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .PCButton {
+      display: none;
+    }
+    .MobileButton {
+      display: flex;
+      margin: 5rem auto;
+    }
+
+    .TextWrapper {
+      width: 37.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        text-align: center;
+      }
+    }
+
+    .CodeWrapper {
+      margin: 5rem auto 0 auto;
+    }
+
     .IntroContainer {
       width: auto;
       padding: 1.5rem;
@@ -192,6 +213,7 @@
       padding: 0.9375rem 1.5625rem;
     }
   }
+
 }
 
 @media only screen and (max-width: 600px)  {

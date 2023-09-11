@@ -59,7 +59,7 @@ const HomeSlogan: React.FC = () => {
                     The On-Chain protocol that redefine the way your asset is utilized, traded, and integrated with decentralized applications. Think big, engage more, and monetize your niche with Spore Protocol.
                 </div>
 
-                    <Link to={'/guide'}>
+                    <Link className={styles.PCButton} to={'/guide'}>
                         <div className={`${styles.SpreadButton} button-ct`}>
                             {`Explore Documentation >`}
                         </div>
@@ -98,6 +98,11 @@ const HomeSlogan: React.FC = () => {
                 </pre>
                 </div>
             </div>
+            <Link className={styles.MobileButton} to={'/guide'}>
+                <div className={`${styles.SpreadButton} button-ct`}>
+                    {`Explore Documentation >`}
+                </div>
+            </Link>
         </div>
     )
 }

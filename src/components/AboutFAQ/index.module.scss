@@ -32,18 +32,12 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1440px) {
-  .AboutFAQWrapper {
-    width: 1200px;
-    padding: 100px 80px;
-  }
-}
 
 /* Mobile styles */
-@media only screen and (max-width: 1200px) and (min-width: 600px) {
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
   .AboutFAQWrapper {
-    width: auto;
-    margin: 0 2.5rem;
+    width: 43rem;
+    margin: 0 auto;
     padding: 0 1.5rem;
     .LeftContainer {
       display: none;
