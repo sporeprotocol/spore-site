@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import Prism from 'prismjs';
 import './code.scss'
 
+// @ts-ignore
 const HomeSlogan: React.FC = () => {
 
     const [textIndex, setTextIndex] = useState(0);
@@ -60,7 +61,7 @@ const HomeSlogan: React.FC = () => {
 
                     <Link to={'/guide'}>
                         <div className={`${styles.SpreadButton} button-ct`}>
-                            Start Creating
+                            {`Explore Documentation >`}
                         </div>
                     </Link>
 

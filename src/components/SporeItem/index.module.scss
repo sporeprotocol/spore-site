@@ -7,14 +7,58 @@
   margin: 0 auto 32px auto;
   padding: 0 56px;
   border-radius: 35px;
-  background: var(--background-01, #FFF4CC);
+  background: #FFF4CC;
+
+  &:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.30);
+  }
 
   &.even-wrapper {
+    position: relative;
     background-image: url('../../assets/svg/spore-even-bg.svg');
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url('../../assets/svg/spore-even-bg.svg');
+      z-index: -1;
+    }
+    &:hover {
+      background-image: none;
+    }
+    &:hover::before {
+      transition: 0.5s;
+      opacity: 0.8;
+    }
   }
+
   &.odd-wrapper {
+    position: relative;
     background-image: url('../../assets/svg/spore-odd-bg.svg');
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url('../../assets/svg/spore-odd-bg.svg');
+      z-index: -1;
+    }
+    &:hover {
+      background-image: none;
+    }
+    &:hover::before {
+      transition: 0.5s;
+      opacity: 0.8;
+    }
   }
+
+
   .TotalAndIndex {
     width: 76px;
     display: inline-flex;

@@ -33,11 +33,14 @@
     a {
       width: 32px;
       height: 32px;
-      background-color: #FFC43B;
+      background-color: rgba(255, 255, 255, 0.30);
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 50%;
+      &:hover {
+        background-color: #FFC43B;
+      }
     }
   }
 
@@ -103,7 +106,7 @@
           flex-shrink: 0;
           border-radius: 20px;
           border: 3px solid #402E32;
-          background: #FFF4CC;
+          background: #ffffff;
           flex-wrap: wrap;
           justify-content: space-between;
           align-items: center;

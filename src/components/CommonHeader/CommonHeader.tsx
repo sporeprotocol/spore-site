@@ -123,7 +123,7 @@ const Header: React.FC = () => {
                         {/* Mail SVG */}
                         <a href="mailto:contact@spore.pro" target="_blank" rel="noopener noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <circle cx="16" cy="16" r="16" fill="#FFC43B"/>
+                                <circle cx="16" cy="16" r="16" />
                                 <path d="M21.5 10H9.5C8.675 10 8.0075 10.675 8.0075 11.5L8 20.5C8 21.325 8.675 22 9.5 22H21.5C22.325 22 23 21.325 23 20.5V11.5C23 10.675 22.325 10 21.5 10ZM21.5 13L15.5 16.75L9.5 13V11.5L15.5 15.25L21.5 11.5V13Z" fill="black"/>
                             </svg>
                         </a>

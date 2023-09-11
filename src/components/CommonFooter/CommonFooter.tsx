@@ -76,11 +76,6 @@ const CommonFooter:React.FC = () => {
                             </div>
                         ))}
                     </div>
-                    <Link to={'/guide'}>
-                        <div className={`${styles.SpreadButton} button-ct`}>
-                            Spread Your Creation
-                        </div>
-                    </Link>
                 </div>
             }
             <AboutFAQ />
