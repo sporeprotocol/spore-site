@@ -218,6 +218,37 @@
     width: auto;
     padding: 6.25rem 1.5rem;
     border-radius: 0;
+    .DocumentationCard {
+      width: 19.15rem;
+      height: 26.5rem;
+      gap: 6.125rem;
+    }
+    .FooterCardContainer {
+      flex-wrap: wrap;
+      justify-content: center;
+      .CardItem {
+        width: 19.15rem;
+        height: 26.5rem;
+        gap: 3rem;
+      }
+    }
+  }
+  .BlueMushroom {
+    display: none;
+  }
+
+  .QuestionMushroom {
+    display: none;
+  }
+  .DocumentationCard,
+  .CardItem{
+    padding: 4rem 1.8rem 3.88rem 1rem;
+    .CardTitle {
+      margin-bottom: 0 !important;
+    }
+    .CardButton {
+      margin: 0 !important;
+    }
   }
   .SpreadButton {
     width: 100%;
@@ -232,6 +263,7 @@
       margin-top: 1.5rem;
     }
   }
+
   .ContactMushroom {
     display: none;
   }

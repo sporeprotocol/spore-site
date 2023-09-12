@@ -28,26 +28,30 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .SporeItemWrapper {
-    width: 360px;
-    height: 423px;
-    .LinkButton {
-      position: absolute;
-      bottom: 32px;
-      right: 32px;
-      margin: 0 !important;
+  @media only screen and (min-width: 1200px) {
+    .SporeItemWrapper {
+      width: 360px;
+      height: 423px;
+      .LinkButton {
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
+        margin: 0 !important;
+      }
     }
   }
-}
 
-@media only screen and (max-width: 1200px) and (min-width: 600px) {
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
   .SporeItemWrapper {
     width: 32.5rem;
     border-radius: 4.5rem;
+    overflow: hidden;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .SporeItemWrapper {
+    width: 21.4375rem;
+    border-radius: 4.5rem;
+    overflow: hidden;
   }
 }

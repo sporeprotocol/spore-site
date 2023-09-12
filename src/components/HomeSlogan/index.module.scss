@@ -224,6 +224,7 @@
 @media only screen and (max-width: 768px)  {
   .SloganWrapper {
     margin: 11.25rem auto 10rem auto;
+    flex-direction: column;
     .TextContainer {
       margin: 0;
       h1 {
@@ -254,8 +255,35 @@
         }
       }
     }
+    .TextWrapper {
+      width: 100%;
+      padding: 0 1rem;
+      text-align: center;
+      .TextContainer {
+        h1 {
+          text-align: center;
+        }
+      }
+    }
+    .CodeWrapper {
+      position: relative;
+      background: none;
+      width: 19.45rem;
+      height: 20.875rem;
+      top: 0;
+      right: 0;
+      margin: 0 auto;
+      svg {
+        display: none;
+      }
+      .CodeArea {
+        width: 100%;
+        height: 100%;
+      }
+    }
     .IntroContainer {
-      padding: 2rem 1rem 3rem 1rem;
+      width: 100%;
+      margin-bottom: 2rem;
     }
     .SpreadButton {
       margin: 0 auto 3.5rem auto;
