@@ -55,7 +55,7 @@ const HomeSlogan: React.FC = () => {
                     </div>
                     <h1 className={styles.PurpleFont}>on chain</h1>
                 </div>
-                <div className={`${styles.IntroContainer} sub-header`}>
+                <div className={`${styles.IntroContainer} body-1`}>
                     The On-Chain protocol that redefine the way your asset is utilized, traded, and integrated with decentralized applications. Think big, engage more, and monetize your niche with Spore Protocol.
                 </div>
 

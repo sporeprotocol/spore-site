@@ -183,6 +183,13 @@
     .DocumentationCard {
       width: 39.375rem;
       height: 17.18rem;
+      gap: 2.4375rem;
+      .CardTitle {
+        margin: 0;
+      }
+      .CardButton {
+        margin: 0;
+      }
     }
     .FooterCardContainer {
       width: 100%;
@@ -206,7 +213,7 @@
   }
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 768px)  {
   .SpreadCreation {
     width: auto;
     padding: 6.25rem 1.5rem;

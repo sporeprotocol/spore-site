@@ -59,7 +59,7 @@ const CommonFooter:React.FC = () => {
                         <div className={`${styles.CardContent} body-1`}>
                             Get started mastering Spore Protocol, from basics to building your next project.
                         </div>
-                        <div className={`${styles.CardButton}`}>
+                        <div className={`${styles.CardButton} button-ct`}>
                             <Link to={'/'}>Visit</Link>
                         </div>
                     </div>
@@ -70,7 +70,7 @@ const CommonFooter:React.FC = () => {
                                 <div className={`${styles.CardContent} body-1`}>
                                     {card.content}
                                 </div>
-                                <div className={`${styles.CardButton}`}>
+                                <div className={`${styles.CardButton} button-ct`}>
                                     <Link to={card.link}>Visit</Link>
                                 </div>
                             </div>
