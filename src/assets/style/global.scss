@@ -32,6 +32,13 @@ body {
 }
 
 @font-face {
+  font-family: 'Red Hat Mono';
+  src: url('../font/RedHatMono-VariableFont_wght.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Baloo';
   src: url('../font/Baloo2-VariableFont_wght.woff') format('woff');
   font-weight: normal;

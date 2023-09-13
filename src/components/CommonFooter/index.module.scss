@@ -43,6 +43,13 @@
     padding: 42px 50px 42px 27px;
     border-radius: 35px;
     background: #FFF9EA;
+    &:hover {
+      cursor: pointer;
+      background-image: url('../../assets/img/doc_card_bg.png');
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      background-size: 296px 148px;
+    }
   }
 
   .DocumentationCard,

@@ -98,10 +98,13 @@ const Header: React.FC = () => {
                             <div className={styles.SubMenuMargin}>
                                 <div className={styles.SubDocMenuList}>
                                     <div className={styles.DocList}>
-                                        <p className={`${styles.SubMenuItemHeader} sub-header`}>Documentation</p>
-                                        <p className={`${styles.SubMenuItemContent} body-2`}>Master Spore, from basics to building your next project.</p>
+                                        <div className={styles.SubMenuTextContainer} >
+                                            <p className={`${styles.SubMenuItemHeader} sub-header`}>Documentation</p>
+                                            <p className={`${styles.SubMenuItemContent} body-2`}>Master Spore, from basics to building your next project.</p>
+                                        </div>
                                         <img alt={'Documentation Header'} src={codeBackgroundHeader}/>
                                     </div>
+                                    <div className={styles.MenuDivider}></div>
                                     <div className={styles.SubMenu}>
                                         <Link className={styles.SubMenuItem} to={'/basics'}>
                                             <p className={`${styles.SubMenuItemHeader} sub-header`}>Spore Protocol Basics</p>

@@ -6,9 +6,8 @@
   display: flex;
   width: 976px;
   padding: 20px 60px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 160px;
   border-radius: 100px;
   background: var(--black-alpha-100, #000);
   z-index: 999;
@@ -21,7 +20,7 @@
 
   .CommonHeaderLogo {
     font-feature-settings: 'calt' off;
-    font-family: CaveatBrush;
+    font-family: CaveatBrush, monospace;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -29,7 +28,7 @@
     text-transform: uppercase;
     white-space: nowrap;
     a {
-      color: var(--white-alpha-100, #FFF);
+      color: #FFF;
       text-decoration: none;
     }
   }
@@ -59,11 +58,10 @@
       line-height: 32px;
       color: rgba(255, 255, 255, 0.70);
       text-align: center;
-      font-family: Baloo Extra Bolder;
+      font-family: Baloo Extra Bolder, monospace;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      margin: 0 10px;
       letter-spacing: -0.16px;
       text-decoration: none;
 
@@ -74,9 +72,8 @@
         width: 77px;
         height: 32px;
         border-radius: 49px;
-        padding: 0 8px;
         box-sizing: content-box;
-        color: var(--black-alpha-100, #000);
+        color: #000;
         text-align: center;
         /* Button */
         font-size: 16px;
@@ -84,7 +81,7 @@
         font-weight: 400;
         line-height: 100%; /* 16px */
         letter-spacing: -0.16px;
-        background: var(--white-alpha-100, #FFF);
+        background: #FFF;
       }
     }
     .SubMenuGuide {
@@ -107,7 +104,7 @@
           transform: translateX(-50%);
           z-index: 2;
           width: 576px;
-          height: 353px;
+          height: 368px;
           flex-shrink: 0;
           border-radius: 20px;
           border: 3px solid #402E32;
@@ -115,10 +112,37 @@
           flex-wrap: wrap;
           justify-content: space-between;
           align-items: center;
-          padding: 10px 40px;
+          //padding: 10px 50px 10px 32px;
         }
         .DocList {
           width: 50%;
+          padding: 40px 32px 0 18px;
+          .SubMenuTextContainer {
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 32px;
+            .SubMenuItemHeader {
+              text-align: left;
+              font-family: Nunito-SemiBold, monospace;
+            }
+            &:hover {
+              cursor: pointer;
+              background-color: #FFC43B;
+            }
+          }
+          img {
+            width: 227px;
+            height: 121px;
+          }
+        }
+        .MenuDivider {
+          width: 3px;
+          background: #000;
+          height: 100%;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+
         }
         .MenuList {
           width: 50%;
@@ -144,13 +168,15 @@
       }
 
       .SubMenu {
+        width: 50%;
+        padding: 40px 32px 0 32px;
         .SubMenuItem {
           width: 100%;
           height: 69px;
           padding: 8px 10px;
           .SubMenuItemHeader {
             text-align: left;
-            font-weight: 900;
+            font-family: Nunito-SemiBold, monospace;
           }
           .SubMenuItemContent {
             text-align: left;
@@ -159,7 +185,6 @@
         a {
           flex-basis: calc(50% - 30px);
           display: block;
-          padding: 10px 15px;
           color: #333;
           text-decoration: none;
           box-sizing: border-box;
@@ -174,6 +199,7 @@
 
       &:hover .SubDocMenuList {
         display: flex;
+        align-items: flex-start;
       }
 
 
@@ -181,7 +207,7 @@
     .MobileDropdownMenu {
       width: 100%;
       color: #ffffff;
-      font-family: "Baloo Extra Bolder";
+      font-family: "Baloo Extra Bolder", monospace;
       font-size: 1rem;
       margin: 1.25rem 5rem;
       .ArrowDown {
@@ -222,7 +248,7 @@
     background: #FFC43B;
     color: #000;
     text-align: center;
-    font-family: Baloo Extra Bolder;
+    font-family: Baloo Extra Bolder, monospace;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

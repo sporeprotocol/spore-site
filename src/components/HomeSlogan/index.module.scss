@@ -87,30 +87,32 @@
       align-items: flex-start;
       flex-shrink: 0;
       border-radius: 20px;
-      border: 3px solid #402E32;
+      border: 2px solid #402E32;
       background-color: #FFFFFF;
       .FileName {
         padding: 3px 12px;
         margin-top: 24px;
         margin-left: 16px;
+        margin-bottom: 24px;
         border-radius: 20px;
         border: 1px solid #402E32;
         background: #FFF9EA;
         font-size: 14px;
-        font-family: Red Hat Mono;
+        font-family: Red Hat Mono, monospace;
+
       }
       pre {
         display: flex;
         gap: 16px;
         .LineNumber {
           color: rgba(0, 0, 0, 0.30);
-          line-height: 170%;
-          font-family: Red Hat Mono;
-          font-size: 16px;
+          line-height: 172%;
+          font-family: Red Hat Mono, monospace;
+          font-size: 13px;
         }
         code {
-          font-family: Red Hat Mono;
-          font-size: 16px;
+          font-family: Red Hat Mono, monospace;
+          font-size: 13px;
           font-weight: 400;
           line-height: 170%;
         }

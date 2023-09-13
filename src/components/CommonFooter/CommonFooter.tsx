@@ -5,6 +5,8 @@ import { ReactComponent as DiscordIcon } from "../../assets/svg/discord-icon.svg
 import { ReactComponent as TwitterIcon } from "../../assets/svg/twitter-icon.svg";
 import { ReactComponent as GithubIcon } from "../../assets/svg/github-icon.svg";
 import { ReactComponent as ContactMushroom } from "../../assets/svg/contact-mushroom.svg";
+import { useNavigate } from 'react-router-dom';
+
 import styles from './index.module.scss';
 import {Link, useLocation} from 'react-router-dom';
 import AboutFAQ from "../AboutFAQ/AboutFAQ.tsx";
@@ -40,7 +42,9 @@ const cardDataArray: CardData[] = [
 
 const CommonFooter:React.FC = () => {
     const location = useLocation();
+    const router = useNavigate();
     const path = location.pathname;
+
 
     return (
         <>
@@ -54,7 +58,7 @@ const CommonFooter:React.FC = () => {
                     <div className={`${styles.FooterText} sub-header`}>
                         Whether you're crafting a dynamic piece of code or turning a meme into an asset, we've got the perfect ecosystem for your ideas to flourish.
                     </div>
-                    <div className={styles.DocumentationCard}>
+                    <div className={styles.DocumentationCard} onClick={() => router('/')}>
                         <h5 className={`${styles.CardTitle}`}>Documentation</h5>
                         <div className={`${styles.CardContent} body-1`}>
                             Get started mastering Spore Protocol, from basics to building your next project.
@@ -65,7 +69,7 @@ const CommonFooter:React.FC = () => {
                     </div>
                     <div className={`${styles.FooterCardContainer}`}>
                         {cardDataArray.map((card, index) => (
-                            <div key={index} className={`${styles.CardItem}`}>
+                            <div key={index} className={`${styles.CardItem}`}  onClick={() => router(card.link)}>
                                 <h5 className={`${styles.CardTitle}`}>{card.title}</h5>
                                 <div className={`${styles.CardContent} body-1`}>
                                     {card.content}

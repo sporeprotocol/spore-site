@@ -15,6 +15,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    svg {
+      flex-shrink: 0;
+    }
   }
   .Answer {
     margin-top: 12.5px;
@@ -30,8 +33,17 @@
 }
 
 /* Mobile styles */
-@media only screen and (max-width: 1200px)  {
+@media only screen and (max-width: 1280px)  {
   .FAQuestionWrapper {
     width: auto;
+  }
+}
+
+@media only screen and (max-width: 768px)  {
+  .FAQuestionWrapper {
+    width: auto;
+    .Answer {
+      padding: 0;
+    }
   }
 }
