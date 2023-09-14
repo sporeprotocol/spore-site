@@ -98,6 +98,7 @@
       background:  #FFF9EA;
 
       &:hover {
+        cursor: pointer;
         background-image: url('../../assets/img/FooterCardBg.png');
         background-size: contain;
         background-repeat: no-repeat;
@@ -177,6 +178,12 @@
 .ContactMushroom {
   position: absolute;
   right: 244px;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 677px) {
+  .DocumentationCard {
+    width: 39.375rem !important;
+  }
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
