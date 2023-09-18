@@ -112,6 +112,7 @@
           flex-wrap: wrap;
           justify-content: space-between;
           align-items: center;
+          animation: fadeIn 0.3s ease-in-out;
           //padding: 10px 50px 10px 32px;
         }
         .DocList {
@@ -255,6 +256,15 @@
     line-height: 100%; /* 16px */
     letter-spacing: -0.16px;
     white-space: nowrap;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
