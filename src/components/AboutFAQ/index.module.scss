@@ -26,24 +26,26 @@
     }
   }
   .RightContainer {
+    h1 {
+      display: none;
+    }
     h2 {
       display: none;
     }
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1440px) {
+@media only screen and (max-width: 1400px) {
   .AboutFAQWrapper {
-    width: 1200px;
-    padding: 100px 80px;
+    width: 100%;
   }
 }
 
 /* Mobile styles */
-@media only screen and (max-width: 1200px) and (min-width: 600px) {
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
   .AboutFAQWrapper {
-    width: auto;
-    margin: 0 2.5rem;
+    width: 43rem;
+    margin: 0 auto;
     padding: 0 1.5rem;
     .LeftContainer {
       display: none;
@@ -59,15 +61,20 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .AboutFAQWrapper {
     width: auto;
-    padding: 6.25rem 1rem;
+    padding: 6.25rem 1.5rem;
     border-radius: 0;
     .LeftContainer {
       display: none;
     }
     .RightContainer {
+      h1 {
+        display: block;
+        margin-bottom: 2.5rem;
+        text-align: center;
+      }
       h2 {
         padding: 0 0 3.5rem 0;
         font-size: 2rem;
