@@ -3,12 +3,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
-  background-color: var(--brand-yellow, #FFC43B);
+  background-color: #FFC43B;
   background-repeat: no-repeat;
   background-position: top center;
   padding: 70px 153px 70px 180px;
   box-sizing: border-box;
-
   .SporeIntroTitle {
     position: sticky;
     width: 50%;
@@ -64,7 +63,6 @@
     }
   }
   .SporeIntroWrapper {
-    display: block;
     padding: 0;
     .SporeIntroTitle {
       width: auto;
