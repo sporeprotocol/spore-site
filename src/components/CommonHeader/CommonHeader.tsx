@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 1280 && window.innerWidth > 375);
-    const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+    const [isSubMenuOpen, setIsSubMenuOpen] = useState(true);
 
     const toggleSubMenu = () => {
         setIsSubMenuOpen(prevState => !prevState);
