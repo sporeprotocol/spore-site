@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { ReactComponent as BlueMushroom } from "../../assets/svg/blue-mushroom.svg";
 import { ReactComponent as QuestionMushroom } from "../../assets/svg/question-mushroom.svg";
 import { ReactComponent as DiscordIcon } from "../../assets/svg/discord-icon.svg";
@@ -9,7 +9,8 @@ import { useNavigate } from 'react-router-dom';
 
 import styles from './index.module.scss';
 import {Link, useLocation} from 'react-router-dom';
-import AboutFAQ from "../AboutFAQ/AboutFAQ.tsx";
+import AboutFAQ from "../AboutFAQ/AboutFAQ";
+import GlobalContext from "../../context/GlobalContext";
 
 type CardData = {
     title: string;
@@ -17,35 +18,35 @@ type CardData = {
     link: string;
 };
 
-const cardDataArray: CardData[] = [
-    {
-        title: "Basics",
-        content: "Learn Spore Fundamentals - Quickly grasp the core concepts and components.",
-        link: "/"
-    },
-    {
-        title: "Tutorial",
-        content: "Follow Along - Build a toy project, dive in with easy to follow steps and examples.",
-        link: "/"
-    },
-    {
-        title: "How to recipes",
-        content: "Simplified Solutions - Find concise recipes to streamline your production.",
-        link: "/"
-    },
-    {
-        title: "Resources",
-        content: "Power tools - SDK, API, Contracts, and more!",
-        link: "/"
-    },
-];
-
 const CommonFooter:React.FC = () => {
     const location = useLocation();
     const router = useNavigate();
     const path = location.pathname;
+    const globalContext = useContext(GlobalContext)
 
 
+    const cardDataArray: CardData[] = [
+        {
+            title: "Basics",
+            content: "Learn Spore Fundamentals - Quickly grasp the core concepts and components.",
+            link: `${globalContext.baseUrl}/${globalContext.basic}`
+        },
+        {
+            title: "Tutorial",
+            content: "Follow Along - Build a toy project, dive in with easy to follow steps and examples.",
+            link: `${globalContext.baseUrl}/${globalContext.tutorial}`
+        },
+        {
+            title: "How to recipes",
+            content: "Simplified Solutions - Find concise recipes to streamline your production.",
+            link: `${globalContext.baseUrl}/${globalContext.howToRecipes}`
+        },
+        {
+            title: "Resources",
+            content: "Power tools - SDK, API, Contracts, and more!",
+            link: `${globalContext.baseUrl}/${globalContext.resources}`
+        },
+    ];
     return (
         <>
             { (path == '/') &&
@@ -64,7 +65,7 @@ const CommonFooter:React.FC = () => {
                             Get started mastering Spore Protocol, from basics to building your next project.
                         </div>
                         <div className={`${styles.CardButton} button-ct`}>
-                            <Link to={'/'}>Visit</Link>
+                            <Link to={`${globalContext.baseUrl}}`}>Visit</Link>
                         </div>
                     </div>
                     <div className={`${styles.FooterCardContainer}`}>

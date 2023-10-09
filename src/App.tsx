@@ -1,9 +1,14 @@
 import React from 'react';
-import Routes from './Router/route.tsx';
+import Routes from './Router/route';
+import { GlobalProvider } from './context/GlobalContext';
+import DocUrl from "./DocData";
 
 const App: React.FC = () => {
+
     return (
-        <Routes />
+        <GlobalProvider value={DocUrl}>
+            <Routes />
+        </GlobalProvider>
     );
 };
 

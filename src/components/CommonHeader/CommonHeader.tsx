@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { ReactComponent as CloseButton } from "../../assets/svg/close.svg";
 import codeBackgroundHeader from '../../assets/img/codeBackground.png';
 import styles from './index.module.scss'
+import GlobalContext from "../../context/GlobalContext";
 
 const Header: React.FC = () => {
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 1280 && window.innerWidth > 375);
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(true);
+    const globalContext = useContext(GlobalContext)
 
     const toggleSubMenu = () => {
         setIsSubMenuOpen(prevState => !prevState);
@@ -48,11 +50,11 @@ const Header: React.FC = () => {
                                         Doc<span className={`${styles.ArrowDown} ${isSubMenuOpen ? styles.ArrowUp : ''}`}>&gt;</span>
                                         {isSubMenuOpen && (  // 根据isSubMenuOpen的状态来条件渲染子菜单
                                             <div className={styles.MobileDropdownList}>
-                                                <Link to={'/'}>Documentation</Link>
-                                                <Link to={'/'}>Spore Protocol Basics</Link>
-                                                <Link to={'/'}>Tutorials</Link>
-                                                <Link to={'/'}>How to recipes</Link>
-                                                <Link to={'/'}>Resources</Link>
+                                                <Link to={`${globalContext.baseUrl}`}>Documentation</Link>
+                                                <Link to={`${globalContext.baseUrl}/${globalContext.basic}`}>Spore Protocol Basics</Link>
+                                                <Link to={`${globalContext.baseUrl}/${globalContext.tutorial}`}>Tutorials</Link>
+                                                <Link to={`${globalContext.baseUrl}/${globalContext.howToRecipes}`}>How to recipes</Link>
+                                                <Link to={`${globalContext.baseUrl}/${globalContext.resources}`}>Resources</Link>
                                             </div>
                                         )}
                                     </div>
@@ -90,7 +92,7 @@ const Header: React.FC = () => {
             ) : (
                 <>
                     <div className={styles.CommonHeaderNav}>
-                        <Link to={'/'} className={location.pathname === '/' ? styles.Active : ''}>Home</Link>
+                        <Link to={'/'} className={`${location.pathname === '/' ? styles.Active : ''} ${styles.HomeBtn}`}>Home</Link>
                         <div className={styles.DropdownMenu}>
                             <div className={`${location.pathname === '/guide' ? styles.Active : ''} ${styles.SubMenuGuide}`} >
                                 Docs <span className={styles.ArrowDown}>&gt;</span>
@@ -98,27 +100,27 @@ const Header: React.FC = () => {
                             <div className={styles.SubMenuMargin}>
                                 <div className={styles.SubDocMenuList}>
                                     <div className={styles.DocList}>
-                                        <div className={styles.SubMenuTextContainer} >
+                                        <Link className={styles.SubMenuTextContainer} target={'_blank'} to={`${globalContext.baseUrl}`}>
                                             <p className={`${styles.SubMenuItemHeader} sub-header`}>Documentation</p>
                                             <p className={`${styles.SubMenuItemContent} body-2`}>Master Spore, from basics to building your next project.</p>
-                                        </div>
+                                        </Link>
                                         <img alt={'Documentation Header'} src={codeBackgroundHeader}/>
                                     </div>
                                     <div className={styles.MenuDivider}></div>
                                     <div className={styles.SubMenu}>
-                                        <Link className={styles.SubMenuItem} to={'/basics'}>
+                                        <Link className={styles.SubMenuItem} target={'_blank'} to={`${globalContext.baseUrl}/${globalContext.basic}`}>
                                             <p className={`${styles.SubMenuItemHeader} sub-header`}>Spore Protocol Basics</p>
                                             <p className={`${styles.SubMenuItemContent} body-2`}>Learn Spore fundamentals</p>
                                         </Link>
-                                        <Link className={styles.SubMenuItem} to={'/tutorials'}>
+                                        <Link className={styles.SubMenuItem} target={'_blank'} to={`${globalContext.baseUrl}/${globalContext.tutorial}`}>
                                             <p className={`${styles.SubMenuItemHeader} sub-header`}>Tutorial</p>
                                             <p className={`${styles.SubMenuItemContent} body-2`}>Learn with examples.</p>
                                         </Link>
-                                        <Link className={styles.SubMenuItem} to={'/recipes'}>
+                                        <Link className={styles.SubMenuItem} target={'_blank'} to={`${globalContext.baseUrl}/${globalContext.howToRecipes}`}>
                                             <p className={`${styles.SubMenuItemHeader} sub-header`}>How to recipes</p>
                                             <p className={`${styles.SubMenuItemContent} body-2`}>Build with solutions.</p>
                                         </Link>
-                                        <Link className={styles.SubMenuItem} to={'/resources'}>
+                                        <Link className={styles.SubMenuItem} target={'_blank'} to={`${globalContext.baseUrl}/${globalContext.resources}`}>
                                             <p className={`${styles.SubMenuItemHeader} sub-header`}>Resources</p>
                                             <p className={`${styles.SubMenuItemContent} body-2`}>Power tools for devs.</p>
                                         </Link>

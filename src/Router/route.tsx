@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import routes from './routesConfig';
-import CommonHeader from "../components/CommonHeader/CommonHeader.tsx";
-import ScrollTop from "../utils/ScrollTop.ts";
+import CommonHeader from "../components/CommonHeader/CommonHeader";
+import ScrollTop from "../utils/ScrollTop";
 
 const AppRoutes: React.FC = () => {
     return (
