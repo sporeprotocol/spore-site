@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { ReactComponent as WaveSvg } from '../../assets/svg/intro-bg.svg'
 import SporeItem from "../SporeItem/SporeItem";
-import { sporeItemsData } from "../../utils/SporeItemsData.ts";
+import { sporeItemsData } from "../../utils/SporeItemsData";
 import styles from './index.module.scss'
 import {Link} from "react-router-dom";
+import GlobalContext from "../../context/GlobalContext";
 const SporeIntro: React.FC = () => {
+    const globalContext = useContext(GlobalContext)
+
     return (
         <>
             <div className={styles.WaveSvg}>
@@ -16,7 +19,7 @@ const SporeIntro: React.FC = () => {
                         What’s in <span>Spore</span>
                     </h1>
                     <div className={"sub-header"}>(not just another NFT protocol)</div>
-                    <Link to={'/about'}>
+                    <Link to={`${globalContext.baseUrl}`} target={'_blank'}>
                         <div className={`${styles.DiscoverButton} ${styles.PCDiscoverButton} button-ct`}>
                             Discover More
                         </div>
@@ -25,11 +28,11 @@ const SporeIntro: React.FC = () => {
                 </div>
                 <div className={styles.SporeIntroCards}>
                     {sporeItemsData.map((item, index) => (
-                        <SporeItem title={item.title} content={item.content} index={index + 1} total={sporeItemsData.length} url={item.url}/>
+                        <SporeItem title={item.title} content={item.content} index={index + 1} total={sporeItemsData.length}/>
                     ))}
                 </div>
                 <div className={`${styles.DiscoverButton} ${styles.MobileDiscoverButton} button-ct`}>
-                    <Link to={'/about'}>
+                    <Link to={`${globalContext.baseUrl}`} target={'_blank'}>
                         Discover More
                     </Link>
                 </div>

@@ -87,13 +87,13 @@ const CommonFooter:React.FC = () => {
             <div className={styles.ContactUsContainer}>
                 <div className={styles.SocialMediaContainer}>
                     <div>
-                        <Link to={'/'} target={'_blank'}>
+                        <Link to={"https://discord.gg/9eufnpZZ8P"} target={'_blank'}>
                             <DiscordIcon />
                         </Link>
                         <Link to={'https://github.com/sporeprotocol/spore-sdk'} target={'_blank'}>
                             <GithubIcon />
                         </Link>
-                        <Link to={'/'}>
+                        <Link to={'mailto:contact@spore.pro'}>
                             <TwitterIcon />
                         </Link>
 
