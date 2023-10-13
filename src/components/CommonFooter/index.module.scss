@@ -1,7 +1,6 @@
 .SpreadCreation {
   position: relative;
   display: flex;
-  width: 1400px;
   box-sizing: border-box;
   padding: 100px 203px;
   margin: 0 auto;
@@ -9,8 +8,7 @@
   align-items: center;
   gap: 32px;
   flex-shrink: 0;
-  border-radius: 35px;
-  background: var(--background-03, #402E32);
+  background: url('../../assets/img/pixel-grey-bg.png');
 
   .BlueMushroom {
     position: absolute;

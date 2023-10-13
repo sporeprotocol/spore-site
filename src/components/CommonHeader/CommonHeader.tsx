@@ -1,7 +1,8 @@
 import React, {useState, useEffect, useContext} from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { ReactComponent as CloseButton } from "../../assets/svg/close.svg";
-import codeBackgroundHeader from '../../assets/img/codeBackground.png';
+import { ReactComponent as DocumentMushroom } from "../../assets/svg/DocumentMushroom.svg";
+import { ReactComponent as PCheaderIcon } from "../../assets/svg/spore-site-logo-dark.svg";
 import styles from './index.module.scss'
 import GlobalContext from "../../context/GlobalContext";
 
@@ -28,7 +29,9 @@ const Header: React.FC = () => {
     return (
         <div className={`${styles.CommonHeaderWrapper} ${isMenuOpen ? styles.MobileFullScreen: ''}` }>
             <div className={styles.CommonHeaderLogo}>
-                <Link to={'/'} className={location.pathname === '/' ? styles.Active : ''}>SPOre Protocol</Link>
+                <Link to={'/'} className={location.pathname === '/' ? styles.Active : ''}>
+                    <PCheaderIcon />
+                </Link>
             </div>
             {isMobile ? (
                 <>
@@ -104,7 +107,7 @@ const Header: React.FC = () => {
                                             <p className={`${styles.SubMenuItemHeader} sub-header`}>Documentation</p>
                                             <p className={`${styles.SubMenuItemContent} body-2`}>Master Spore, from basics to building your next project.</p>
                                         </Link>
-                                        <img alt={'Documentation Header'} src={codeBackgroundHeader}/>
+                                        <DocumentMushroom />
                                     </div>
                                     <div className={styles.MenuDivider}></div>
                                     <div className={styles.SubMenu}>

@@ -9,7 +9,6 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 100px;
-  background: var(--black-alpha-100, #000);
   z-index: 999;
   box-sizing: content-box;
 
@@ -56,9 +55,9 @@
       width: 88px;
       height: 32px;
       line-height: 32px;
-      color: rgba(255, 255, 255, 0.70);
+      color: rgba(30, 30, 30, 0.70);
       text-align: center;
-      font-family: Baloo Extra Bolder, monospace;
+      font-family: "Tomorrow Light", monospace;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -73,7 +72,7 @@
         height: 32px;
         border-radius: 49px;
         box-sizing: content-box;
-        color: #000;
+        color: #ffffff;
         text-align: center;
         /* Button */
         font-size: 16px;
@@ -81,7 +80,7 @@
         font-weight: 400;
         line-height: 100%; /* 16px */
         letter-spacing: -0.16px;
-        background: #FFF;
+        background: conic-gradient(from 180deg at 48.5% 50%, #5A5A5A 26.24999910593033deg, #000 88.12500178813934deg, #3A3A3A 146.25deg, #000 204.37499284744263deg, #5E5E5E 268.1250071525574deg, #000 331.875deg);
       }
     }
     .SubMenuGuide {
@@ -95,7 +94,8 @@
 
       .SubMenuMargin {
         position: absolute;
-        height: 32px;
+        height: 4%;
+        left: 40px;
         .SubDocMenuList {
           display: none;
           position: absolute;
@@ -106,8 +106,8 @@
           width: 576px;
           height: 368px;
           flex-shrink: 0;
-          border-radius: 20px;
-          border: 3px solid #402E32;
+          border-radius: 16px;
+          border: 2px solid #1E1E1E;
           background: #ffffff;
           flex-wrap: wrap;
           justify-content: space-between;
@@ -117,24 +117,23 @@
         }
         .DocList {
           width: 50%;
-          padding: 40px 32px 0 18px;
+          padding: 24px 32px 0 18px;
           .SubMenuTextContainer {
             display: block;
             padding: 10px 15px;
             border-radius: 5px;
-            margin-bottom: 32px;
+            margin-bottom: 19px;
             .SubMenuItemHeader {
               text-align: left;
-              font-family: Nunito-SemiBold, monospace;
+              font-family: "Tomorrow Medium", monospace;
             }
             &:hover {
               cursor: pointer;
-              background-color: #FFC43B;
+              background-color: #E7E7E7;
             }
           }
-          img {
-            width: 227px;
-            height: 121px;
+          svg {
+            margin-left: 13px;
           }
         }
         .MenuDivider {
@@ -178,7 +177,7 @@
           padding: 8px 10px;
           .SubMenuItemHeader {
             text-align: left;
-            font-family: Nunito-SemiBold, monospace;
+            font-family: "Tomorrow Medium", monospace;
           }
           .SubMenuItemContent {
             text-align: left;
@@ -194,7 +193,7 @@
           border-radius: 5px;
 
           &:hover {
-            background-color: #FFC43B;
+            background-color: #E7E7E7;
           }
         }
       }

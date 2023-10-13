@@ -18,8 +18,8 @@ const SporeIntro: React.FC = () => {
                     <h1>
                         What’s in <span>Spore</span>
                     </h1>
-                    <div className={"sub-header"}>(not just another NFT protocol)</div>
-                    <Link to={`${globalContext.baseUrl}`} target={'_blank'}>
+                    <div className={`sub-header ${styles.IntroSubTtile}`}>(not just another NFT protocol)</div>
+                    <Link to={`${globalContext.baseUrl}`} target={'_blank'} >
                         <div className={`${styles.DiscoverButton} ${styles.PCDiscoverButton} button-ct`}>
                             Discover More
                         </div>

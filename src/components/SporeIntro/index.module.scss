@@ -1,13 +1,12 @@
 .WaveSvg {
   width: 100%;
   overflow: hidden;
+  margin-bottom: -1px;
 }
 .SporeIntroWrapper {
   position: relative;
   display: flex;
-  background-color: #FFC43B;
-  background-repeat: no-repeat;
-  background-position: top center;
+  background-image: url('../../assets/img/pixel-black-bg.png');
   padding: 70px 153px 70px 180px;
   box-sizing: border-box;
   .SporeIntroTitle {
@@ -21,10 +20,11 @@
     flex-direction: column;
     white-space: pre;
     h1 {
-      color: var(--black-alpha-100, #000);
-      span {
-        color: var(--brand-blue, #3A5AFF);
-      }
+      color: #FFF;
+    }
+    .IntroSubTtile {
+      font-family: Chakra Petch Regular, monospace;
+      color: rgba(255, 255, 255, 0.80);
     }
   }
   .DiscoverButton {
@@ -36,8 +36,8 @@
     align-items: center;
     gap: 10px;
     border-radius: 50px;
-    background: var(--brand-blue, #3A5AFF);
-    color: var(--white-alpha-100, #FFF);
+    background: conic-gradient(from 180deg at 48.5% 50%, #FBFBFD 26.24999910593033deg, #ECECEC 88.12500178813934deg, #FFF 156.58468008041382deg, #D6DFE6 191.74442768096924deg, #ECECEC 237.1290135383606deg, #FAFBFC 255.19062280654907deg, #ECECEC 310.1085305213928deg, #D4DDE2 331.875deg);
+    color: #1e1e1e;
     text-align: center;
     &.PCDiscoverButton {
       display: flex;

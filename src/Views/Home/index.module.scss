@@ -1,8 +1,6 @@
 .HomePageWrapper {
-  width: 1400px;
-  margin: 48px auto 24px auto;
-  border-radius: 35px;
-  background: var(--background-02, #FFF9EA);
+  margin: 0 auto 0 auto;
+  background: url('../../assets/img/pixel-grey-bg.png');
   display: flex;
   flex-direction: column;
 }
@@ -29,7 +27,7 @@
       line-height: 20px;
       color: #ffffff;
       font-size: 20px;
-      font-family: "Baloo Extra Bolder";
+      font-family: "Baloo Extra Bolder", monospace;
       gap: 16px;
     }
   }
@@ -62,7 +60,6 @@
 /* Mobile styles */
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .HomePageWrapper {
-    width: 43rem;
     margin: 3rem auto 0 auto;
     overflow: hidden;
   }

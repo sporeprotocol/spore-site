@@ -8,7 +8,7 @@ html {
 
 html,
 body {
-  background: var(--background-01, #FFF4CC);
+  background: white;
   margin: 0;
   overflow: auto;
 }
@@ -66,11 +66,46 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Tomorrow Light';
+  src: url('../font/Tomorrow-Light.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tomorrow Medium';
+  src: url('../font/Tomorrow-Medium.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tomorrow Bold';
+  src: url('../font/Tomorrow-Bold.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tomorrow Bolder';
+  src: url('../font/Tomorrow-Black.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chakra Petch Regular';
+  src: url('../font/ChakraPetch-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1,
 h2,
 h3,
 h5 {
-  font-family: "Baloo Extra Bolder";
+  font-family: "Tomorrow Bolder", monospace;
   font-weight: 800;
   line-height: 120%;
 }
@@ -88,7 +123,7 @@ h3 {
 }
 
 h4 {
-  font-family: Nunito-SemiBold;
+  font-family: Nunito-SemiBold, monospace;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -103,14 +138,14 @@ h5 {
 .sub-header-2,
 .body-1,
 .body-2 {
-  font-family: Nunito;
+  font-family: Chakra Petch Regular, monospace;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
 }
 
 .sub-header {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .sub-header-2 {
@@ -126,9 +161,11 @@ h5 {
 }
 
 .button-ct {
-  font-family: "Baloo Extra Bolder";
+  font-family: "Tomorrow Bold", monospace;
   font-size: 16px;
+  font-weight: 900;
   transition: transform 0.3s ease;
+  background: conic-gradient(from 188deg at 49.81% 50%, #5A5A5A 26.24999910593033deg, #000 88.12500178813934deg, #3A3A3A 146.25deg, #000 204.37499284744263deg, #5E5E5E 268.1250071525574deg, #000 331.875deg);
   &:hover {
     cursor: pointer;
     transform: rotate(-5deg);
@@ -150,7 +187,7 @@ h5 {
   }
 
   h4 {
-    font-family: Nunito-SemiBold;
+    font-family: Nunito-SemiBold, monospace;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -173,7 +210,7 @@ h5 {
   }
 
   .button-ct {
-    font-family: "Baloo Extra Bolder";
+    font-family: "Tomorrow Bold", monospace;
     font-size: 1rem;
   }
 }
