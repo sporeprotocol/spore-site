@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import { ReactComponent as DiscordIcon } from "../../assets/svg/discord-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../assets/svg/twitter-icon.svg";
 import { ReactComponent as GithubIcon } from "../../assets/svg/github-icon.svg";
-import { ReactComponent as ContactMushroom } from "../../assets/svg/contact-mushroom.svg";
+import ThreeMetalMushroom from '../../assets/img/mthreeetalmushroom.png'
 import { useNavigate } from 'react-router-dom';
 
 import styles from './index.module.scss';
@@ -96,8 +96,8 @@ const CommonFooter:React.FC = () => {
                     </div>
                     <h1>SPORE PROTOCOL</h1>
                 </div>
-                <div className={styles.ContactMushroom}>
-                    <ContactMushroom />
+                <div className={styles.ThreeMetalMushroom}>
+                    <img src={ThreeMetalMushroom} alt={'metal'} />
                 </div>
             </div>
         </>

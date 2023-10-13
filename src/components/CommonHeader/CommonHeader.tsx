@@ -1,8 +1,9 @@
 import React, {useState, useEffect, useContext} from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import { ReactComponent as CloseButton } from "../../assets/svg/close.svg";
 import { ReactComponent as DocumentMushroom } from "../../assets/svg/DocumentMushroom.svg";
+import { ReactComponent as LightHeaderIcon } from "../../assets/svg/spore-site-logo-light.svg";
 import { ReactComponent as PCheaderIcon } from "../../assets/svg/spore-site-logo-dark.svg";
+import HeaderMenuIcon from '../../assets/img/HeaderMenuIcon.png'
 import styles from './index.module.scss'
 import GlobalContext from "../../context/GlobalContext";
 
@@ -11,7 +12,50 @@ const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 1280 && window.innerWidth > 375);
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(true);
+    const [isDarkBackground, setIsDarkBackground] = useState(false);
     const globalContext = useContext(GlobalContext)
+
+    const BOUNDARIES = {
+        LARGE: {
+            DARK_START: 0,
+            DARK_END: 685,
+            LIGHT_START: 685,
+            LIGHT_END: 3594
+        },
+        MEDIUM: {
+            DARK_START: 0,
+            DARK_END: 1285,
+            LIGHT_START: 1285,
+            LIGHT_END: 4315
+        }
+    };
+
+    useEffect(() => {
+        const checkBackground = () => {
+            const currentY = window.scrollY;
+            const width = window.innerWidth;
+
+            if (width > 1280) {
+                if ((currentY >= BOUNDARIES.LARGE.DARK_START && currentY < BOUNDARIES.LARGE.DARK_END) || currentY >= BOUNDARIES.LARGE.LIGHT_END) {
+                    setIsDarkBackground(true);
+                } else if (currentY >= BOUNDARIES.LARGE.LIGHT_START && currentY < BOUNDARIES.LARGE.LIGHT_END) {
+                    setIsDarkBackground(false);
+                }
+            } else if (width >= 768) {
+                if ((currentY >= BOUNDARIES.MEDIUM.DARK_START && currentY < BOUNDARIES.MEDIUM.DARK_END) || currentY >= BOUNDARIES.MEDIUM.LIGHT_END) {
+                    setIsDarkBackground(true);
+                } else if (currentY >= BOUNDARIES.MEDIUM.LIGHT_START && currentY < BOUNDARIES.MEDIUM.LIGHT_END) {
+                    setIsDarkBackground(false);
+                }
+            }
+        };
+
+        window.addEventListener('scroll', checkBackground);
+        return () => window.removeEventListener('scroll', checkBackground);
+    }, []);
+
+    const textColorClass = isDarkBackground ? styles.DarkText : styles.LightText;
+
 
     const toggleSubMenu = () => {
         setIsSubMenuOpen(prevState => !prevState);
@@ -26,16 +70,28 @@ const Header: React.FC = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    useEffect(() => {
+        const checkBackground = () => {
+            const currentY = window.scrollY;
+            console.log(currentY)
+        };
+
+        window.addEventListener('scroll', checkBackground);
+        return () => window.removeEventListener('scroll', checkBackground);
+    }, []);
+
     return (
-        <div className={`${styles.CommonHeaderWrapper} ${isMenuOpen ? styles.MobileFullScreen: ''}` }>
+        <div className={`${styles.CommonHeaderWrapper} ${isMenuOpen ? styles.MobileFullScreen : ''} ${textColorClass}`}>
             <div className={styles.CommonHeaderLogo}>
                 <Link to={'/'} className={location.pathname === '/' ? styles.Active : ''}>
-                    <PCheaderIcon />
+                    {isDarkBackground ? <PCheaderIcon /> : <LightHeaderIcon />}
                 </Link>
             </div>
             {isMobile ? (
                 <>
-                    <button onClick={() => setIsMenuOpen(!isMenuOpen)}>☰</button> {/* 三横线icon */}
+                    <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                        <img src={HeaderMenuIcon} />
+                    </button>
                     {isMenuOpen && (
                         <div className={styles.MobileMenuWrappper}>
                             <div className={styles.MobileMenu}>
@@ -44,9 +100,13 @@ const Header: React.FC = () => {
                                         <Link
                                             to={'/'}
                                             onClick={() => setIsMenuOpen(false)}
-                                            className={location.pathname === '/' ? styles.Active : ''}>Spore Protocol</Link>
+                                            className={location.pathname === '/' ? styles.Active : ''}>
+                                            <LightHeaderIcon />
+                                        </Link>
                                     </div>
-                                    <CloseButton onClick={() => setIsMenuOpen(false)}/>
+                                    <button onClick={() => setIsMenuOpen(false)}>
+                                        <img src={HeaderMenuIcon} alt={"close"}/>
+                                    </button>
                                 </div>
                                 <div className={styles.CommonHeaderNav}>
                                     <div className={styles.MobileDropdownMenu} onClick={toggleSubMenu}>

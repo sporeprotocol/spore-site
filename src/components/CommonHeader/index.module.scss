@@ -12,6 +12,13 @@
   z-index: 999;
   box-sizing: content-box;
 
+  button {
+    img {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
   &.MobileFullScreen {
     width: 100%;
     margin: 0;
@@ -208,7 +215,7 @@
     .MobileDropdownMenu {
       width: 100%;
       color: #ffffff;
-      font-family: "Baloo Extra Bolder", monospace;
+      font-family: Chakra Petch Regular, monospace;
       font-size: 1rem;
       margin: 1.25rem 5rem;
       .ArrowDown {
@@ -272,16 +279,14 @@
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .CommonHeaderWrapper {
     display: flex;
-    width: 43rem;
+    width: 100%;
     height: 5rem;
     top: 0;
-    padding: 1.25rem 2.5rem;
+    padding: 0 40px;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
     box-sizing: border-box;
-    background: #000;
-    margin-top: 1rem;
     .CommonHeaderNav, {
       display: none;
     }
@@ -303,12 +308,12 @@
     justify-content: space-between;
     position: fixed;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #000;
+    background-image: url('../../assets/img/header-bg.png');
+    background-size: cover;
     z-index: 1000;
     flex-direction: column;
     align-items: center;
@@ -316,10 +321,11 @@
       width: 100%;
       .MobileHeader {
         display: flex;
+        height: 80px;
+        padding: 0 40px;
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #ffffff;
-        padding: 2.5rem 5rem;
         .CommonHeaderLogo {
           margin-top: 0;
         }
@@ -374,8 +380,6 @@
     align-items: center;
     align-self: stretch;
     box-sizing: border-box;
-    background: #000;
-    margin-top: 1rem;
     .CommonHeaderNav,
     .CommonHeaderContactUs{
       display: none;
@@ -431,7 +435,7 @@
           display: flex;
           &.Active {
             background-color: #000;
-            color: var(--brand-yellow, #FFC43B);
+            color: #FFC43B;
             justify-content: flex-start;
           }
         }
