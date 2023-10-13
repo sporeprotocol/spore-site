@@ -1,17 +1,15 @@
 import React from 'react'
-import { questionsData } from "../../utils/FAQuestion.ts";
-import FAQuestionItem from "../FAQuestionItem/FAQustionItem.tsx";
-import { ReactComponent as FAQMushroom } from "../../assets/svg/FAQ-Mushroom.svg";
+import { questionsData } from "../../utils/FAQuestion";
+import FAQuestionItem from "../FAQuestionItem/FAQustionItem";
 import styles from './index.module.scss'
 
 const AboutFAQ:React.FC = () => {
     return (
         <div className={styles.AboutFAQWrapper}>
             <div className={styles.LeftContainer}>
-                <div className={styles.LeftHeader}>FAQ</div>
-                <div className={styles.LeftSVG}>
-                    <FAQMushroom />
-                </div>
+                <div className={styles.LeftHeader}>Frequently</div>
+                <div className={styles.LeftHeader}>Asked</div>
+                <div className={styles.LeftHeader}>Questions</div>
             </div>
             <div className={styles.RightContainer}>
                 <h2>FAQ</h2>

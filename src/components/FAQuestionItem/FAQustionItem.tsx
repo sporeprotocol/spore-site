@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Question } from '../../utils/FAQuestion.ts';
+import { Question } from '../../utils/FAQuestion';
 import {ReactComponent as OpenSVG} from "../../assets/svg/FAQ-Open.svg";
 import {ReactComponent as CloseSVG} from "../../assets/svg/FAQ-Close.svg";
 import styles from './index.module.scss'

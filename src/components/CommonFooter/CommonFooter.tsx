@@ -1,6 +1,4 @@
 import React, {useContext} from 'react';
-import { ReactComponent as BlueMushroom } from "../../assets/svg/blue-mushroom.svg";
-import { ReactComponent as QuestionMushroom } from "../../assets/svg/question-mushroom.svg";
 import { ReactComponent as DiscordIcon } from "../../assets/svg/discord-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../assets/svg/twitter-icon.svg";
 import { ReactComponent as GithubIcon } from "../../assets/svg/github-icon.svg";
@@ -51,8 +49,6 @@ const CommonFooter:React.FC = () => {
         <>
             { (path == '/') &&
                 <div className={styles.SpreadCreation}>
-                    <BlueMushroom className={styles.BlueMushroom}/>
-                    <QuestionMushroom className={styles.QuestionMushroom}/>
                     <h1 className={styles.FooterDesc}>
                         Explore, Learn and Build!
                     </h1>

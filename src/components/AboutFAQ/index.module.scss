@@ -1,28 +1,28 @@
 .AboutFAQWrapper {
   display: flex;
-  width: 1400px;
   padding: 100px 180px;
-  margin: 24px auto;
   box-sizing: border-box;
   justify-content: space-between;
   align-items: flex-start;
   flex-shrink: 0;
-  border-radius: 35px;
-  background: var(--white-alpha-100, #FFF);
+  background: #f6f6f6;
   .LeftContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     .LeftHeader {
-      margin-bottom: 56px;
       color: var(--gray, #21232B);
       /* Header2 */
-      font-family: Baloo Extra Bolder;
-      font-size: 48px;
+      font-family: "Tomorrow Bolder", monospace;
+      font-size: 40px;
       font-style: normal;
       font-weight: 800;
       line-height: 120%; /* 57.6px */
       letter-spacing: -0.48px;
+      background: conic-gradient(from 180deg at 48.5% 50%, #5A5A5A 26.24999910593033deg, #1E1E1E 88.12500178813934deg, #3A3A3A 146.25deg, #1E1E1E 204.37499284744263deg, #5E5E5E 268.1250071525574deg, #1E1E1E 331.875deg);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
   .RightContainer {
