@@ -1,12 +1,9 @@
 import React, {useContext} from 'react';
-// import { ReactComponent as DiscordIcon } from "../../assets/svg/discord-icon.svg";
-// import { ReactComponent as TwitterIcon } from "../../assets/svg/twitter-icon.svg";
-// import { ReactComponent as GithubIcon } from "../../assets/svg/github-icon.svg";
 import ThreeMetalMushroom from '../../assets/img/mthreeetalmushroom.png'
 import { useNavigate } from 'react-router-dom';
-import DiscordIcon from '../../assets/img/discord.png';
-import MailIcon from '../../assets/img/mail.png'
-import GithubIcon from '../../assets/img/github.png';
+import DiscordIcon from '../../assets/img/discord-big-icon.png';
+import MailIcon from '../../assets/img/mail-big-icon.png'
+import GithubIcon from '../../assets/img/github-big-icon.png';
 import styles from './index.module.scss';
 import {Link, useLocation} from 'react-router-dom';
 import AboutFAQ from "../AboutFAQ/AboutFAQ";
@@ -86,10 +83,10 @@ const CommonFooter:React.FC = () => {
                 <div className={styles.SocialMediaContainer}>
                     <div>
                         <Link to={"https://discord.gg/9eufnpZZ8P"} target={'_blank'}>
-                            <img alt={'discord link'} src={DiscordIcon} />
+                            <img alt={'discord link'} src={GithubIcon} />
                         </Link>
                         <Link to={'https://github.com/sporeprotocol/spore-sdk'} target={'_blank'}>
-                            <img alt={'github link'} src={GithubIcon}/>
+                            <img alt={'github link'} src={DiscordIcon}/>
                         </Link>
                         <Link to={'mailto:contact@spore.pro'}>
                             <img src={MailIcon} alt={'send a mail'} />

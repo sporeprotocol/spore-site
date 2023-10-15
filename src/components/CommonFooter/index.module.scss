@@ -151,6 +151,12 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    a {
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
     div {
       display: flex;
       justify-content: center;
