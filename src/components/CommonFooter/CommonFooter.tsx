@@ -1,10 +1,12 @@
 import React, {useContext} from 'react';
-import { ReactComponent as DiscordIcon } from "../../assets/svg/discord-icon.svg";
-import { ReactComponent as TwitterIcon } from "../../assets/svg/twitter-icon.svg";
-import { ReactComponent as GithubIcon } from "../../assets/svg/github-icon.svg";
+// import { ReactComponent as DiscordIcon } from "../../assets/svg/discord-icon.svg";
+// import { ReactComponent as TwitterIcon } from "../../assets/svg/twitter-icon.svg";
+// import { ReactComponent as GithubIcon } from "../../assets/svg/github-icon.svg";
 import ThreeMetalMushroom from '../../assets/img/mthreeetalmushroom.png'
 import { useNavigate } from 'react-router-dom';
-
+import DiscordIcon from '../../assets/img/discord.png';
+import MailIcon from '../../assets/img/mail.png'
+import GithubIcon from '../../assets/img/github.png';
 import styles from './index.module.scss';
 import {Link, useLocation} from 'react-router-dom';
 import AboutFAQ from "../AboutFAQ/AboutFAQ";
@@ -27,22 +29,22 @@ const CommonFooter:React.FC = () => {
         {
             title: "Basics",
             content: "Learn Spore Fundamentals - Quickly grasp the core concepts and components.",
-            link: `${globalContext.baseUrl}/${globalContext.basic}`
+            link: `${globalContext.baseUrl}${globalContext.basic}`
         },
         {
             title: "Tutorial",
             content: "Follow Along - Build a toy project, dive in with easy to follow steps and examples.",
-            link: `${globalContext.baseUrl}/${globalContext.tutorial}`
+            link: `${globalContext.baseUrl}${globalContext.tutorial}`
         },
         {
             title: "How to recipes",
             content: "Simplified Solutions - Find concise recipes to streamline your production.",
-            link: `${globalContext.baseUrl}/${globalContext.howToRecipes}`
+            link: `${globalContext.baseUrl}${globalContext.howToRecipes}`
         },
         {
             title: "Resources",
             content: "Power tools - SDK, API, Contracts, and more!",
-            link: `${globalContext.baseUrl}/${globalContext.resources}`
+            link: `${globalContext.baseUrl}${globalContext.resources}`
         },
     ];
     return (
@@ -72,7 +74,7 @@ const CommonFooter:React.FC = () => {
                                     {card.content}
                                 </div>
                                 <div className={`${styles.CardButton} button-ct`}>
-                                    <Link to={card.link}>Visit</Link>
+                                    <Link target={'_blank'} to={card.link}>Visit</Link>
                                 </div>
                             </div>
                         ))}
@@ -84,13 +86,13 @@ const CommonFooter:React.FC = () => {
                 <div className={styles.SocialMediaContainer}>
                     <div>
                         <Link to={"https://discord.gg/9eufnpZZ8P"} target={'_blank'}>
-                            <DiscordIcon />
+                            <img alt={'discord link'} src={DiscordIcon} />
                         </Link>
                         <Link to={'https://github.com/sporeprotocol/spore-sdk'} target={'_blank'}>
-                            <GithubIcon />
+                            <img alt={'github link'} src={GithubIcon}/>
                         </Link>
                         <Link to={'mailto:contact@spore.pro'}>
-                            <TwitterIcon />
+                            <img src={MailIcon} alt={'send a mail'} />
                         </Link>
 
                     </div>

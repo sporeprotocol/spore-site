@@ -1,16 +1,23 @@
 .CommonHeaderWrapper {
   position: fixed;
-  top: 16px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  width: 976px;
-  padding: 20px 60px;
+  width: 100%;
+  padding: 20px 120px;
   justify-content: space-between;
   align-items: center;
   border-radius: 100px;
   z-index: 999;
   box-sizing: content-box;
+  .HeaderInner {
+    width: 100%;
+    max-width: 1360px;
+    padding: 0 120px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
 
   button {
     img {
@@ -106,6 +113,9 @@
         .SubDocMenuList {
           display: none;
           position: absolute;
+          //background: url('../../assets/img/noisy-layer.png'), lightgray 50% / cover no-repeat, linear-gradient(180deg, #FFF 0%, #FFF 80.73%, #E7E7E7 100%);
+          //box-shadow: 0px 2px 8px 0px rgba(30, 30, 30, 0.20);
+          background-color: #ffffff;
           top: 100%;
           left: 50%;
           transform: translateX(-50%);
@@ -115,7 +125,6 @@
           flex-shrink: 0;
           border-radius: 16px;
           border: 2px solid #1E1E1E;
-          background: #ffffff;
           flex-wrap: wrap;
           justify-content: space-between;
           align-items: center;
@@ -177,11 +186,15 @@
 
       .SubMenu {
         width: 50%;
-        padding: 40px 32px 0 32px;
+        height: 100%;
+        padding: 24px 32px 43px 18px;
+        display: flex;
+        flex-direction: column;
         .SubMenuItem {
           width: 100%;
           height: 69px;
           padding: 8px 10px;
+          color: #1e1e1e;
           .SubMenuItemHeader {
             text-align: left;
             font-family: "Tomorrow Medium", monospace;
@@ -282,15 +295,16 @@
     width: 100%;
     height: 5rem;
     top: 0;
-    padding: 0 40px;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
     box-sizing: border-box;
+    .HeaderInner {
+      padding: 0 2.5rem;
+    }
     .CommonHeaderNav, {
       display: none;
     }
-
     button {
       background: none;
       border: none;
@@ -372,7 +386,7 @@
 @media only screen and (max-width: 768px) {
   .CommonHeaderWrapper {
     display: flex;
-    width: calc(100% - 2rem);
+    width: 100%;
     top: 0;
     height: 5rem;
     padding: 1.25rem 1.5rem;
@@ -380,6 +394,11 @@
     align-items: center;
     align-self: stretch;
     box-sizing: border-box;
+    border-radius: 0;
+    .HeaderInner {
+      padding: 0;
+      align-items: center;
+    }
     .CommonHeaderNav,
     .CommonHeaderContactUs{
       display: none;
@@ -415,10 +434,11 @@
       width: 100%;
       .MobileHeader {
         display: flex;
+        height: 80px;
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #ffffff;
-        padding: 2.12rem 2.5rem 1.12rem 2.5rem;
+        padding: 1.25rem 1.5rem;
         .CommonHeaderLogo {
           margin-top: 0;
           font-size: 1.125rem;

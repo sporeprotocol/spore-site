@@ -3,14 +3,33 @@
   width: 520px;
   height: 634px;
   display: flex;
+
   flex-direction: column;
   margin: 0 auto 32px auto;
   padding: 0 56px;
   transition: transform 0.5s;
   border-radius: 24px;
+  border: 2px solid #FFF;
   background-image: url('../../assets/img/Cardbg.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  .GrayCard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background-01, #E7E7E7);
+    border-radius: 24px;
+    z-index: -1;
+    transition: transform 0.5s;
+  }
+  &:hover {
+    cursor: pointer;
+    .GrayCard {
+      transform: rotate(3deg);
+    }
+  }
 
 
   .TotalAndIndex {
@@ -88,7 +107,7 @@
   .SporeItemWrapper {
     width: 32.5rem;
     border-radius: 2.1875rem;
-    padding: 0 1rem;
+    padding: 0 3.5rem;
     .SvgItem {
       width: 11.4rem;
       height: 11.4rem;

@@ -11,9 +11,10 @@ const AboutFAQ:React.FC = () => {
                 <div className={styles.LeftHeader}>Asked</div>
                 <div className={styles.LeftHeader}>Questions</div>
             </div>
+            <h1 className={`${styles.MobileTitle}`}>
+                <div className={styles.LeftHeader}>Frequently Asked Questions</div>
+            </h1>
             <div className={styles.RightContainer}>
-                <h2>FAQ</h2>
-                <h1>FAQ</h1>
                 {questionsData.map((question, index) => (
                     <FAQuestionItem key={index} index={index} {...question} />
                 ))}

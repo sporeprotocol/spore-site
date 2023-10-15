@@ -24,6 +24,7 @@ const SporeItem: React.FC<Props> = ({ title, content, index, total }) => {
     const wrapperClass = index % 2 === 0 ? 'even-wrapper' : 'odd-wrapper';
     return (
         <div className={`${styles.SporeItemWrapper} ${styles[wrapperClass]}`}>
+            <div className={styles.GrayCard}></div>
             <div className={`${styles.TotalAndIndex} body-1`}>{`${index}/${total}`}</div>
             <div className={styles.SvgItem}>
                 {SvgComponent}

@@ -17,6 +17,20 @@ body {
   overflow: auto;
 }
 
+.bg-pixel-grey {
+  background-image: url('../../assets/img/pixel-grey-bg.png');
+  .header-text {
+    color: rgba(30, 30, 30, 0.7);
+  }
+}
+
+.bg-pixel-black {
+  background-image: url('../../assets/img/pixel-black-bg.png');
+  .header-text {
+    color: #fff !important;
+  }
+}
+
 @font-face {
   font-family: 'Nunito';
   src: url('../font/Nunito-Regular.woff') format('woff');
@@ -101,13 +115,23 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Chakra Petch Bold';
+  src: url('../font/ChakraPetch-Bold.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1,
 h2,
-h3,
-h5 {
+h3,{
   font-family: "Tomorrow Bolder", monospace;
   font-weight: 800;
   line-height: 120%;
+}
+
+h5 {
+  font-family: "Tomorrow Bold", monospace;
 }
 
 h1 {
@@ -139,6 +163,13 @@ h5 {
 .body-1,
 .body-2 {
   font-family: Chakra Petch Regular, monospace;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.body-1-bold {
+  font-family: Chakra Petch Bold, monospace;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -217,7 +248,7 @@ h5 {
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
   .button-ct {
     width: 100% !important;

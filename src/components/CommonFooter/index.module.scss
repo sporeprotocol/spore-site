@@ -82,13 +82,13 @@
 
     .CardItem {
       display: flex;
-      height: 424px;
-      padding: 85px 27px 62px 27px;
+      padding: 48px 76px 48px 32px;
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
       border-radius: 35px;
       border: 2px solid #1E1E1E;
+      gap: 24px;
 
       &:hover {
         cursor: pointer;
@@ -223,9 +223,6 @@
     }
     .FooterCardContainer {
       flex-wrap: wrap;
-      .CardItem {
-        height: 26.5rem;
-      }
     }
   }
   .ContactUsContainer {
@@ -245,16 +242,12 @@
     padding: 6.25rem 1.5rem;
     border-radius: 0;
     .DocumentationCard {
-      width: 19.15rem;
       height: 26.5rem;
       gap: 6.125rem;
     }
     .FooterCardContainer {
-      flex-wrap: wrap;
-      justify-content: center;
+      grid-template-columns: repeat(1, 1fr);
       .CardItem {
-        width: 19.15rem;
-        height: 26.5rem;
         gap: 3rem;
       }
     }
@@ -268,7 +261,7 @@
   }
   .DocumentationCard,
   .CardItem{
-    padding: 4rem 1.8rem 3.88rem 1rem;
+    padding: 3rem 2rem !important;
     .CardTitle {
       margin-bottom: 0 !important;
     }
@@ -283,8 +276,6 @@
   }
   .ContactUsContainer {
     width: auto;
-    margin: 0 2.5rem;
-
     h1 {
       margin-top: 1.5rem;
     }
@@ -292,5 +283,8 @@
 
   .ContactMushroom {
     display: none;
+  }
+  .ThreeMetalMushroom {
+    display: none !important;
   }
 }
