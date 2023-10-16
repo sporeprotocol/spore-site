@@ -7,7 +7,6 @@
   padding: 20px 120px;
   justify-content: space-between;
   align-items: center;
-  border-radius: 100px;
   z-index: 999;
   box-sizing: content-box;
   .HeaderInner {
@@ -47,6 +46,10 @@
   }
 
   .HeaderIconContainer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     a {
       width: 32px;
       height: 32px;
@@ -113,9 +116,8 @@
         .SubDocMenuList {
           display: none;
           position: absolute;
-          //background: url('../../assets/img/noisy-layer.png'), lightgray 50% / cover no-repeat, linear-gradient(180deg, #FFF 0%, #FFF 80.73%, #E7E7E7 100%);
-          //box-shadow: 0px 2px 8px 0px rgba(30, 30, 30, 0.20);
-          background-color: #ffffff;
+          background: url('../../assets/img/menu-bg.png');
+          background-size: cover;
           top: 100%;
           left: 50%;
           transform: translateX(-50%);
@@ -225,12 +227,29 @@
 
 
     }
+    .MobileHome {
+      color: #ffffff;
+      font-family: Chakra Petch Regular, monospace;
+      font-size: 1rem;
+      margin: 1rem 5rem  0 0!important;
+      &:hover {
+        font-family: Chakra Petch bold, monospace;
+      }
+    }
     .MobileDropdownMenu {
       width: 100%;
       color: #ffffff;
       font-family: Chakra Petch Regular, monospace;
       font-size: 1rem;
-      margin: 1.25rem 5rem;
+      margin: 0 5rem 1.25rem 0;
+      &:hover {
+        font-family: Chakra Petch bold, monospace;
+      }
+      .DropdownMenuTitle {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
       .ArrowDown {
         display: inline-block;
         transition: transform 0.3s; /* 添加过渡效果 */
@@ -333,6 +352,9 @@
     align-items: center;
     .MobileMenu {
       width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
       .MobileHeader {
         display: flex;
         height: 80px;
@@ -348,7 +370,6 @@
       .CommonHeaderNav {
         display: flex;
         align-items: flex-start !important;
-        //padding: 5rem 2.5rem 0 2.5rem;
         width: 100%;
         text-align: left;
         a {
@@ -367,11 +388,11 @@
 
       .CommonHeaderNav {
         display: flex;
+        height: 100%;
         flex-direction: column;
         gap: 1rem;
         align-items: center;
-        //margin-top: 2rem;
-
+        padding: 0 2.5rem;
         a {
           margin: 0;
         }
@@ -429,7 +450,7 @@
     z-index: 1000;
     flex-direction: column;
     align-items: center;
-    //padding: 2rem;
+    background-image: url('../../assets/img/pixel-black-bg.png');
     .MobileMenu {
       width: 100%;
       .MobileHeader {
@@ -438,7 +459,7 @@
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #ffffff;
-        padding: 1.25rem 1.5rem;
+        padding: 1rem 1.5rem;
         .CommonHeaderLogo {
           margin-top: 0;
           font-size: 1.125rem;
@@ -448,9 +469,8 @@
         display: flex;
         align-items: flex-start !important;
         gap: 1rem;
-        .MobileDropdownMenu {
-          margin-left: 2.5rem;
-        }
+        flex-direction: column;
+        padding: 0 2.5rem;
         a {
           display: flex;
           &.Active {
@@ -460,11 +480,6 @@
           }
         }
       }
-
-      .HeaderIconContainer {
-        margin-left: 2.5rem;
-      }
-
     }
     .CommonHeaderContactUs {
       margin-bottom: 2rem;

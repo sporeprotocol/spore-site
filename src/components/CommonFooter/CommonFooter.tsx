@@ -1,9 +1,9 @@
 import React, {useContext} from 'react';
 import ThreeMetalMushroom from '../../assets/img/mthreeetalmushroom.png'
 import { useNavigate } from 'react-router-dom';
-import DiscordIcon from '../../assets/img/discord-big-icon.png';
-import MailIcon from '../../assets/img/mail-big-icon.png'
-import GithubIcon from '../../assets/img/github-big-icon.png';
+import DiscordIcon from '../../assets/img/discord-large-icon.png';
+import MailIcon from '../../assets/img/mail-large-icon.png'
+import GithubIcon from '../../assets/img/github-large-icon.png';
 import styles from './index.module.scss';
 import {Link, useLocation} from 'react-router-dom';
 import AboutFAQ from "../AboutFAQ/AboutFAQ";

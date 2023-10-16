@@ -73,6 +73,7 @@
   }
   .DocumentationCard {
     gap: 24px;
+    max-width: 1403px;
   }
 
   .FooterCardContainer {
@@ -140,7 +141,7 @@
 
 .ContactUsContainer {
   position: relative;
-  height: 240px;
+  height: 157px;
   padding: 100px 0 200px 0;
   box-sizing: content-box;
   display: flex;

@@ -1,7 +1,11 @@
 .WaveSvg {
   width: 100%;
-  overflow: hidden;
+  height: 153px;
   margin-bottom: -1px;
+  background-image: url('../../assets/img/intro-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .SporeIntroWrapper {
   position: relative;
@@ -23,22 +27,34 @@
       color: #FFF;
     }
     .IntroSubTtile {
+      margin: 16px 0 48px 0;
       font-family: Chakra Petch Regular, monospace;
       color: rgba(255, 255, 255, 0.80);
     }
   }
   .DiscoverButton {
-    display: flex;
-    width: 248px;
-    padding: 20px 24px;
-    margin: 48px 0 0 0;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 50px;
-    background: conic-gradient(from 180deg at 48.5% 50%, #FBFBFD 26.24999910593033deg, #ECECEC 88.12500178813934deg, #FFF 156.58468008041382deg, #D6DFE6 191.74442768096924deg, #ECECEC 237.1290135383606deg, #FAFBFC 255.19062280654907deg, #ECECEC 310.1085305213928deg, #D4DDE2 331.875deg);
-    color: #1e1e1e;
-    text-align: center;
+    position: relative;
+    width: 168px;
+    height: 94px;
+    background: none;
+    z-index: 1;
+    &:hover {
+      .GreyLiquid {
+        opacity: 1;
+        bottom: -5px;
+        right: 9px;
+        z-index: -1;
+        transition: 0.6s;
+      }
+    }
+    a {
+      width: 168px;
+      height: 56px;
+      border-radius: 30px;
+      background:  linear-gradient(180deg, #FBFBFD 0%, #D4DDE2 100%);
+      line-height: 56px;
+      text-align: center;
+    }
     &.PCDiscoverButton {
       display: flex;
     }
@@ -46,9 +62,17 @@
       display: none;
     }
   }
+  .GreyLiquid {
+    position: absolute;
+    width: 80px;
+    height: 59px;
+    background-image: url('../../assets/img/btn-liquid-grey.png');
+    background-size: contain;
+    opacity: 0;
+    z-index: -1;
+  }
   .SporeIntroCards {
     position: sticky;
-    overflow: auto;
     top: 0;
   }
 }
@@ -75,15 +99,31 @@
     .DiscoverButton {
       width: 343px;
       margin: 3rem auto 6.25rem auto !important;
+      z-index: 1;
+      &:hover {
+        .GreyLiquid {
+          opacity: 1;
+          bottom: -20px;
+          right: 37px;
+          z-index: -1;
+          transition: 0.6s;
+        }
+      }
+      a {
+        width: 21.4375rem;
+      }
+
       &.PCDiscoverButton {
         display: none;
       }
       &.MobileDiscoverButton {
+        position: relative;
         display: flex;
         width: 21.4375rem;
         padding: 0.9375rem 1.5625rem;
         justify-content: center;
-        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
       }
     }
   }
@@ -93,7 +133,7 @@
   .WaveSvg {
     width: 100%;
     height: 9.5625rem;
-    background-image: url('../../assets/svg/intro-bg.svg'),;
+    background-image: url('../../assets/img/intro-bg.png');
     background-size: 1440px auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -122,6 +162,8 @@
         padding: 0.9375rem 1.5625rem;
         justify-content: center;
         align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
       }
     }
   }

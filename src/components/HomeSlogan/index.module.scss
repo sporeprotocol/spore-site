@@ -8,14 +8,37 @@
   .MobileButton {
     display: none;
   }
-  //.PCButton {
-  //  display: flex;
-  //}
+  .PCButton {
+    position: relative;
+    width: 257px;
+    height: 94px;
+    z-index: 10;
+    &:hover {
+      .BlackLiquid {
+        right: 10px;
+        bottom: -6px;
+        opacity: 1;
+        transition: 0.6s;
+      }
+    }
+    .BlackLiquid {
+      position: absolute;
+      width: 80px;
+      height: 59px;
+      background-image: url('../../assets/img/btn-liquid-black.png');
+      background-size: contain;
+      right: 10px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
   .TextWrapper {
     width: 635px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
     .TextContainer {
       position: relative;
-      margin: 0 auto 22px auto;
       line-height: 120%;
       text-align: left;
       span {
@@ -30,8 +53,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-
-
       .PurpleFont {
         color: #3A5AFF;
       }
@@ -122,11 +143,11 @@
     color: var(--black-alpha-70, rgba(0, 0, 0, 0.70));
   }
   .SpreadButton {
+    width: 257px;
+    height: 56px;
     display: inline-flex;
     padding: 15px 25px;
     justify-content: center;
-    align-items: center;
-    margin: 47px auto 0 auto;
     gap: 10px;
     border-radius: 50px;
     color: #fff;
@@ -143,12 +164,34 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 48px;
     .PCButton {
       display: none;
     }
     .MobileButton {
+      position: relative;
       display: flex;
+      height: 94px;
       margin: 0 auto 5.75rem auto;
+      z-index: 8;
+      &:hover {
+        .BlackLiquid {
+          right: 10px;
+          bottom: -6px;
+          opacity: 1;
+          transition: 0.6s;
+        }
+      }
+      .BlackLiquid {
+        position: absolute;
+        width: 80px;
+        height: 59px;
+        background-image: url('../../assets/img/btn-liquid-black.png');
+        background-size: contain;
+        right: 10px;
+        opacity: 0;
+        z-index: -1;
+      }
     }
 
     .TextWrapper {
@@ -165,8 +208,10 @@
     .CodeWrapper {
       position: relative;
       right: 0;
-      margin: 5rem auto 0 auto;
       width: 43rem;
+      top: 0;
+      height: auto;
+      padding-bottom: 0;
       .CodeArea {
         width: 43rem;
       }

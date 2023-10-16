@@ -38,6 +38,8 @@ const HomeSlogan: React.FC = () => {
                         <div className={`${styles.SpreadButton} button-ct`}>
                             {`Explore Documentation >`}
                         </div>
+                        <div className={styles.BlackLiquid}></div>
+
                     </Link>
 
             </div>
@@ -72,11 +74,14 @@ const HomeSlogan: React.FC = () => {
                 </pre>
                 </div>
             </div>
-            <Link className={styles.MobileButton} to={'/guide'}>
-                <div className={`${styles.SpreadButton} button-ct`}>
-                    {`Explore Documentation >`}
-                </div>
-            </Link>
+            <div className={styles.MobileButton}>
+                <Link to={'/guide'}>
+                    <div className={`${styles.SpreadButton} button-ct`}>
+                        {`Explore Documentation >`}
+                    </div>
+                </Link>
+                <div className={styles.BlackLiquid}></div>
+            </div>
         </div>
     )
 }
