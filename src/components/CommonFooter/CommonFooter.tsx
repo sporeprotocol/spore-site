@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import ThreeMetalMushroom from '../../assets/img/mthreeetalmushroom.png'
 import { useNavigate } from 'react-router-dom';
 import DiscordIcon from '../../assets/img/discord-large-icon.png';
@@ -20,6 +20,7 @@ const CommonFooter:React.FC = () => {
     const router = useNavigate();
     const path = location.pathname;
     const globalContext = useContext(GlobalContext)
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
 
     const cardDataArray: CardData[] = [
@@ -47,34 +48,38 @@ const CommonFooter:React.FC = () => {
     return (
         <>
             { (path == '/') &&
-                <div className={styles.SpreadCreation}>
-                    <h1 className={styles.FooterDesc}>
-                        Explore, Learn and Build!
-                    </h1>
-                    <div className={`${styles.FooterText} sub-header`}>
-                        Whether you're crafting a dynamic piece of code or turning a meme into an asset, we've got the perfect ecosystem for your ideas to flourish.
-                    </div>
-                    <div className={styles.DocumentationCard} onClick={() => router('/')}>
-                        <h5 className={`${styles.CardTitle}`}>Documentation</h5>
-                        <div className={`${styles.CardContent} body-1`}>
-                            Get started mastering Spore Protocol, from basics to building your next project.
+                <div className={styles.SpreadCreationWrapper}>
+                    <div className={styles.SpreadCreation}>
+                        <h1 className={styles.FooterDesc}>
+                            Explore, Learn and Build!
+                        </h1>
+                        <div className={`${styles.FooterText} sub-header`}>
+                            Whether you're crafting a dynamic piece of code or turning a meme into an asset, we've got the perfect ecosystem for your ideas to flourish.
                         </div>
-                        <div className={`${styles.CardButton} button-ct`}>
-                            <Link to={`${globalContext.baseUrl}}`}>Visit</Link>
-                        </div>
-                    </div>
-                    <div className={`${styles.FooterCardContainer}`}>
-                        {cardDataArray.map((card, index) => (
-                            <div key={index} className={`${styles.CardItem}`}  onClick={() => router(card.link)}>
-                                <h5 className={`${styles.CardTitle}`}>{card.title}</h5>
-                                <div className={`${styles.CardContent} body-1`}>
-                                    {card.content}
-                                </div>
-                                <div className={`${styles.CardButton} button-ct`}>
-                                    <Link target={'_blank'} to={card.link}>Visit</Link>
-                                </div>
+                        <div className={styles.DocumentationCard} onClick={() => router('/')}>
+                            <h5 className={`${styles.CardTitle}`}>Documentation</h5>
+                            <div className={`${styles.CardContent} body-1`}>
+                                Get started mastering Spore Protocol, from basics to building your next project.
                             </div>
-                        ))}
+                            <div className={`${styles.CardButton} button-ct`}>
+                                <Link to={`${globalContext.baseUrl}}`}>Visit</Link>
+                            </div>
+                        </div>
+                        <div className={`${styles.FooterCardContainer}`}>
+                            {cardDataArray.map((card, index) => (
+                                <div key={index}
+                                     className={`${styles.CardItem} ${hoveredIndex === index ? styles.hovered : ''}`}
+                                     onClick={() => router(card.link)}>
+                                    <h5 className={`${styles.CardTitle}`}>{card.title}</h5>
+                                    <div className={`${styles.CardContent} body-1`}>
+                                        {card.content}
+                                    </div>
+                                    <div className={`${styles.CardButton} button-ct`}>
+                                        <Link target={'_blank'} to={card.link}>Visit</Link>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             }

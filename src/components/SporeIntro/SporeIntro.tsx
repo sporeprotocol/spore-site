@@ -11,29 +11,31 @@ const SporeIntro: React.FC = () => {
         <>
             <div className={styles.WaveSvg}></div>
             <div className={styles.SporeIntroWrapper}>
-                <div className={styles.SporeIntroTitle}>
-                    <h1>
-                        What’s in <span>Spore</span>
-                    </h1>
-                    <div className={`sub-header ${styles.IntroSubTtile}`}>(not just another NFT protocol)</div>
-                    <div className={`${styles.DiscoverButton} ${styles.PCDiscoverButton}`}>
+                <div className={`pc-max-container`}>
+                    <div className={styles.SporeIntroTitle}>
+                        <h1>
+                            What’s in <span>Spore</span>
+                        </h1>
+                        <div className={`sub-header ${styles.IntroSubTtile}`}>(not just another NFT protocol)</div>
+                        <div className={`${styles.DiscoverButton} ${styles.PCDiscoverButton}`}>
+                            <Link className={` button-ct`} to={`${globalContext.baseUrl}`} target={'_blank'}>
+                                Discover More
+                            </Link>
+                            <div className={styles.GreyLiquid}></div>
+                        </div>
+
+                    </div>
+                    <div className={styles.SporeIntroCards}>
+                        {sporeItemsData.map((item, index) => (
+                            <SporeItem title={item.title} content={item.content} index={index + 1} total={sporeItemsData.length}/>
+                        ))}
+                    </div>
+                    <div className={`${styles.DiscoverButton} ${styles.MobileDiscoverButton}`}>
                         <Link className={` button-ct`} to={`${globalContext.baseUrl}`} target={'_blank'}>
                             Discover More
                         </Link>
                         <div className={styles.GreyLiquid}></div>
                     </div>
-
-                </div>
-                <div className={styles.SporeIntroCards}>
-                    {sporeItemsData.map((item, index) => (
-                        <SporeItem title={item.title} content={item.content} index={index + 1} total={sporeItemsData.length}/>
-                    ))}
-                </div>
-                <div className={`${styles.DiscoverButton} ${styles.MobileDiscoverButton}`}>
-                    <Link className={` button-ct`} to={`${globalContext.baseUrl}`} target={'_blank'}>
-                        Discover More
-                    </Link>
-                    <div className={styles.GreyLiquid}></div>
                 </div>
             </div>
         </>
