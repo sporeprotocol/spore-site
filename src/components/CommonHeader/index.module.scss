@@ -35,7 +35,6 @@
     font-family: CaveatBrush, monospace;
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
     line-height: 32px; /* 133.333% */
     text-transform: uppercase;
     white-space: nowrap;
@@ -75,7 +74,7 @@
       line-height: 32px;
       color: rgba(30, 30, 30, 0.70);
       text-align: center;
-      font-family: "Tomorrow Light", monospace;
+      font-family: "Tomorrow", monospace;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -144,7 +143,8 @@
             margin-bottom: 19px;
             .SubMenuItemHeader {
               text-align: left;
-              font-family: "Tomorrow Medium", monospace;
+              font-family: "Tomorrow", monospace;
+              font-weight: 500;
             }
             &:hover {
               cursor: pointer;
@@ -200,7 +200,8 @@
           color: #1e1e1e;
           .SubMenuItemHeader {
             text-align: left;
-            font-family: "Tomorrow Medium", monospace;
+            font-family: "Tomorrow", monospace;
+            font-weight: 500;
           }
           .SubMenuItemContent {
             text-align: left;

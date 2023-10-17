@@ -67,7 +67,8 @@
         gap: 10px;
         border-radius: 50px;
         color: #ffffff;
-        font-family: "Tomorrow Bold", monospace;
+        font-family: "Tomorrow", monospace;
+        font-weight: 600;
         &:hover {
           cursor: pointer;
         }
@@ -114,7 +115,8 @@
 
     .FooterDesc {
       text-align: center;
-      font-family: "Tomorrow Bolder", monospace;
+      font-family: "Tomorrow", monospace;
+      font-weight: 700;
       background: var(--black-angular, conic-gradient(from 180deg at 48.5% 50%, #5A5A5A 26.24999910593033deg, #1E1E1E 88.12500178813934deg, #3A3A3A 146.25deg, #1E1E1E 204.37499284744263deg, #5E5E5E 268.1250071525574deg, #1E1E1E 331.875deg));
       background-clip: text;
       -webkit-background-clip: text;
