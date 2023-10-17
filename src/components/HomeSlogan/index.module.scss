@@ -17,7 +17,6 @@
       .BlackLiquid {
         right: 10px;
         bottom: -6px;
-        opacity: 1;
         transition: 0.6s;
       }
     }
@@ -27,8 +26,8 @@
       height: 59px;
       background-image: url('../../assets/img/btn-liquid-black.png');
       background-size: contain;
+      bottom: 35px;
       right: 10px;
-      opacity: 0;
       z-index: -1;
     }
   }
@@ -144,9 +143,9 @@
   }
   .SpreadButton {
     width: 257px;
-    height: 56px;
+    height: 60px;
     display: inline-flex;
-    padding: 15px 25px;
+    padding: 16px 25px;
     justify-content: center;
     gap: 10px;
     border-radius: 50px;
@@ -178,7 +177,6 @@
         .BlackLiquid {
           right: 10px;
           bottom: -6px;
-          opacity: 1;
           transition: 0.6s;
         }
       }
@@ -186,11 +184,12 @@
         position: absolute;
         width: 80px;
         height: 59px;
+        bottom: 0;
+        right: 0;
         background-image: url('../../assets/img/btn-liquid-black.png');
         background-size: contain;
-        right: 10px;
-        opacity: 0;
         z-index: -1;
+        transition: 0.6s;
       }
     }
 

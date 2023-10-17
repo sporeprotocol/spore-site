@@ -34,13 +34,13 @@
   }
   .DiscoverButton {
     position: relative;
-    width: 168px;
+    width: 200px;
     height: 94px;
     background: none;
     z-index: 1;
+    transition: 0.6s;
     &:hover {
       .GreyLiquid {
-        opacity: 1;
         bottom: -5px;
         right: 9px;
         z-index: -1;
@@ -48,11 +48,11 @@
       }
     }
     a {
-      width: 168px;
-      height: 56px;
+      width: 200px;
+      height: 60px;
       border-radius: 30px;
       background:  linear-gradient(180deg, #FBFBFD 0%, #D4DDE2 100%);
-      line-height: 56px;
+      line-height: 60px;
       text-align: center;
     }
     &.PCDiscoverButton {
@@ -68,8 +68,10 @@
     height: 59px;
     background-image: url('../../assets/img/btn-liquid-grey.png');
     background-size: contain;
-    opacity: 0;
     z-index: -1;
+    right: 10px;
+    bottom: 34px;
+    transition: 0.6s;
   }
   .SporeIntroCards {
     position: sticky;
