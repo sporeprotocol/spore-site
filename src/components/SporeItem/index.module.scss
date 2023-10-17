@@ -50,7 +50,8 @@
 
   .SporeItemTitle {
     font-size: 1.75rem;
-    font-family: Tomorrow Bold, monospace;
+    font-family: Tomorrow, monospace;
+    font-weight: 700;
     background: linear-gradient(261deg, #FFF 41.93%, #DBE1E3 49.15%, #FFF 57.82%, #E3E9EE 67.07%, #FFF 75.74%, #D6DFE6 84.99%, #D8D8D8 93.37%);     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -146,6 +147,9 @@
       width: 11.4rem;
       height: 11.4rem;
     }
+    .SporeItemTitle {
+      font-size: 20px;
+    }
     .TotalAndIndex {
       width: 5.75rem;
       padding: 0.25rem 1.5rem;
@@ -164,8 +168,7 @@
     .SporeItemContent {
       width: 19.43rem;
       ul {
-        li {
-        }
+        margin-left: 1rem;
       }
       .content {
         width: auto;

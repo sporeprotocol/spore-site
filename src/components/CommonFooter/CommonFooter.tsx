@@ -22,7 +22,6 @@ const CommonFooter:React.FC = () => {
     const globalContext = useContext(GlobalContext)
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-
     const cardDataArray: CardData[] = [
         {
             title: "Basics",
@@ -45,6 +44,7 @@ const CommonFooter:React.FC = () => {
             link: `${globalContext.baseUrl}${globalContext.resources}`
         },
     ];
+
     return (
         <>
             { (path == '/') &&
@@ -68,7 +68,12 @@ const CommonFooter:React.FC = () => {
                         <div className={`${styles.FooterCardContainer}`}>
                             {cardDataArray.map((card, index) => (
                                 <div key={index}
-                                     className={`${styles.CardItem} ${hoveredIndex === index ? styles.hovered : ''}`}
+                                     className={`
+                                        ${styles.CardItem}
+                                        ${hoveredIndex === index ? styles.hovered : ''}
+                                        ${(hoveredIndex !== null && (hoveredIndex + 1) % 2 === 0) && hoveredIndex - 1 === index ? styles.ScaleSmall : '' }
+                                        ${(hoveredIndex !== null && (hoveredIndex + 1) % 2 !== 0) && hoveredIndex + 1 === index ? styles.ScaleSmall : '' }
+                                    `}
                                      onClick={() => router(card.link)}
                                      onMouseEnter={() => setHoveredIndex(index)}
                                      onMouseLeave={() => setHoveredIndex(null)}>
