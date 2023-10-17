@@ -69,7 +69,9 @@ const CommonFooter:React.FC = () => {
                             {cardDataArray.map((card, index) => (
                                 <div key={index}
                                      className={`${styles.CardItem} ${hoveredIndex === index ? styles.hovered : ''}`}
-                                     onClick={() => router(card.link)}>
+                                     onClick={() => router(card.link)}
+                                     onMouseEnter={() => setHoveredIndex(index)}
+                                     onMouseLeave={() => setHoveredIndex(null)}>
                                     <h5 className={`${styles.CardTitle}`}>{card.title}</h5>
                                     <div className={`${styles.CardContent} body-1`}>
                                         {card.content}
