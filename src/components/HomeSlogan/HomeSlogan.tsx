@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react';
+import React, {useContext, useEffect} from 'react';
 import styles from './index.module.scss'
 import {Link} from "react-router-dom";
 import Prism from 'prismjs';
 import './code.scss'
+import GlobalContext from "../../context/GlobalContext";
 
 // @ts-ignore
 const HomeSlogan: React.FC = () => {
+    const globalContext = useContext(GlobalContext)
 
     useEffect(() => {
         Prism.highlightAll();
@@ -34,7 +36,7 @@ const HomeSlogan: React.FC = () => {
                     Spore Protocol infuses digital assets with enduring value backed by tokenomics, redeemable at any time. Ensures true on-chain ownership, creative freedom and frictionless interaction experience.
                 </div>
 
-                    <Link className={styles.PCButton} to={'/guide'}>
+                    <Link className={styles.PCButton} to={`${globalContext.baseUrl}`} target={'_blank'}>
                         <div className={`${styles.SpreadButton} button-ct`}>
                             {`Explore Documentation >`}
                         </div>
