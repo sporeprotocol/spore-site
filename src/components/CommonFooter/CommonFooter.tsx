@@ -62,7 +62,7 @@ const CommonFooter:React.FC = () => {
                                 Get started mastering Spore Protocol, from basics to building your next project.
                             </div>
                             <div className={`${styles.CardButton} button-ct`}>
-                                <Link to={`${globalContext.baseUrl}}`}>Visit</Link>
+                                <Link to={`${globalContext.baseUrl}}`} target={'_blank'}>Visit</Link>
                             </div>
                         </div>
                         <div className={`${styles.FooterCardContainer}`}>
@@ -74,7 +74,6 @@ const CommonFooter:React.FC = () => {
                                         ${(hoveredIndex !== null && (hoveredIndex + 1) % 2 === 0) && hoveredIndex - 1 === index ? styles.ScaleSmall : '' }
                                         ${(hoveredIndex !== null && (hoveredIndex + 1) % 2 !== 0) && hoveredIndex + 1 === index ? styles.ScaleSmall : '' }
                                     `}
-                                     onClick={() => router(card.link)}
                                      onMouseEnter={() => setHoveredIndex(index)}
                                      onMouseLeave={() => setHoveredIndex(null)}>
                                     <h5 className={`${styles.CardTitle}`}>{card.title}</h5>
@@ -82,7 +81,7 @@ const CommonFooter:React.FC = () => {
                                         {card.content}
                                     </div>
                                     <div className={`${styles.CardButton} button-ct`}>
-                                        <Link target={'_blank'} to={card.link}>Visit</Link>
+                                        <Link to={card.link} target={'_blank'} >Visit</Link>
                                     </div>
                                 </div>
                             ))}
@@ -100,7 +99,7 @@ const CommonFooter:React.FC = () => {
                         <Link to={'https://github.com/sporeprotocol/spore-sdk'} target={'_blank'}>
                             <img alt={'github link'} src={DiscordIcon}/>
                         </Link>
-                        <Link to={'mailto:contact@spore.pro'}>
+                        <Link to={'mailto:contact@spore.pro'} target={'_blank'}>
                             <img src={MailIcon} alt={'send a mail'} />
                         </Link>
 

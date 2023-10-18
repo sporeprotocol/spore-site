@@ -1,8 +1,8 @@
 const DocUrl = {
-    baseUrl: 'https://spore-docs.vercel.app',
+    baseUrl: 'https://docs.spore.pro',
     basic: '/category/basics',
     tutorial: '/category/tutorials',
-    howToRecipes: '/category/how-to-recipes',
+    howToRecipes: '/category/how-to',
     resources: '/category/resources'
 };
 
