@@ -94,10 +94,10 @@ const CommonFooter:React.FC = () => {
                 <div className={styles.SocialMediaContainer}>
                     <div>
                         <Link to={"https://discord.gg/9eufnpZZ8P"} target={'_blank'}>
-                            <img alt={'discord link'} src={GithubIcon} />
+                            <img alt={'discord link'} src={DiscordIcon} />
                         </Link>
                         <Link to={'https://github.com/sporeprotocol/spore-sdk'} target={'_blank'}>
-                            <img alt={'github link'} src={DiscordIcon}/>
+                            <img alt={'github link'} src={GithubIcon}/>
                         </Link>
                         <Link to={'mailto:contact@spore.pro'} target={'_blank'}>
                             <img src={MailIcon} alt={'send a mail'} />
