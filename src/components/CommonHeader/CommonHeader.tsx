@@ -14,7 +14,7 @@ import GlobalContext from "../../context/GlobalContext";
 const Header: React.FC = () => {
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1280 && window.innerWidth > 375);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1280);
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(true);
     const [isDarkBackground, setIsDarkBackground] = useState(true);
     const globalContext = useContext(GlobalContext)
