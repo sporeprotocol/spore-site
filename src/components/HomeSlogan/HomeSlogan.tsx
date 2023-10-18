@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import styles from './index.module.scss'
 import {Link} from "react-router-dom";
 import Prism from 'prismjs';
@@ -8,18 +8,50 @@ import GlobalContext from "../../context/GlobalContext";
 // @ts-ignore
 const HomeSlogan: React.FC = () => {
     const globalContext = useContext(GlobalContext)
+    const [textIndex, setTextIndex] = useState(0);
+    const [displayText, setDisplayText] = useState('');
+    const [isDeleting, setIsDeleting] = useState(false);
+    const words = ["Craft", "Secure", "Distribute", "Monetize"];
+    const typingSpeed = 200;
+    const pauseAfterTyping = 2000;
 
     useEffect(() => {
         Prism.highlightAll();
     }, [])
 
+    useEffect(() => {
+        let timer: NodeJS.Timeout;
+
+        if (isDeleting) {
+            timer = setTimeout(() => {
+                setDisplayText(prevText => prevText.substring(0, prevText.length - 1));
+            }, typingSpeed);
+        } else if (displayText.length < words[textIndex].length) {
+            timer = setTimeout(() => {
+                setDisplayText(prevText => prevText + words[textIndex][prevText.length]);
+            }, typingSpeed);
+        } else {
+            timer = setTimeout(() => {
+                setIsDeleting(true);
+            }, pauseAfterTyping); // 打完一个单词后，停顿2秒
+        }
+
+        if (isDeleting && displayText === '') {
+            setIsDeleting(false);
+            setTextIndex(prevIndex => (prevIndex + 1) % words.length);
+        }
+
+        return () => {
+            clearTimeout(timer);
+        };
+    }, [displayText, textIndex, isDeleting]);
 
     return (
         <div className={styles.SloganWrapper}>
             <div className={styles.TextWrapper}>
                 <div className={styles.TextContainer}>
-                    <h1>
-                        Monetize
+                    <h1 className={styles.AnimationH1}>
+                        {displayText}
                     </h1>
                     <div className={styles.AnimationText}>
                         <h1>
@@ -62,22 +94,22 @@ const HomeSlogan: React.FC = () => {
                         </div>
                     <code className="language-javascript">
                         {
-                            `await createSpore({
-    data: {
-        contentType:'image/jpeg',
-        content: await fetchLocalImage('./image.jpg'),
-    },
-    toLock: wallet.lock,
-    fromInfos: [wallet.address], 
-    config,
-});`
+                            `import { createSpore } from '@spore-sdk/core'
+await createSpore({
+  data: {
+    contentType:'image/jpeg',
+    content: await fetchLocalImage('./image.jpg'),
+  },
+  toLock: wallet.lock,
+  fromInfos: [wallet.address], 
+})`
                         }
                     </code>
                 </pre>
                 </div>
             </div>
             <div className={styles.MobileButton}>
-                <Link to={'/guide'}>
+                <Link to={`${globalContext.baseUrl}`}>
                     <div className={`${styles.SpreadButton} button-ct`}>
                         {`Explore Documentation >`}
                     </div>

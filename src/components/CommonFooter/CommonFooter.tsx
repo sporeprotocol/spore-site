@@ -58,7 +58,7 @@ const CommonFooter:React.FC = () => {
                         </div>
                         <div className={styles.DocumentationCard} onClick={() => router('/')}>
                             <h5 className={`${styles.CardTitle}`}>Documentation</h5>
-                            <div className={`${styles.CardContent} body-1`}>
+                            <div className={`${styles.DocContent} body-1`}>
                                 Get started mastering Spore Protocol, from basics to building your next project.
                             </div>
                             <div className={`${styles.CardButton} button-ct`}>
@@ -78,7 +78,7 @@ const CommonFooter:React.FC = () => {
                                      onMouseEnter={() => setHoveredIndex(index)}
                                      onMouseLeave={() => setHoveredIndex(null)}>
                                     <h5 className={`${styles.CardTitle}`}>{card.title}</h5>
-                                    <div className={`${styles.CardContent} body-1`}>
+                                    <div className={`${styles.CardContent} body-2`}>
                                         {card.content}
                                     </div>
                                     <div className={`${styles.CardButton} button-ct`}>

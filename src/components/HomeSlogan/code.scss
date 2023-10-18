@@ -98,7 +98,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: #3A5AFF !important; /* blue */
+  color: #000 !important; /* blue */
 }
 
 .token.selector,
@@ -124,7 +124,7 @@ pre[class*="language-"] {
 
 .token.function,
 .token.class-name {
-  color: #B210DB !important; /* yellow */
+  color: #3A5AFF !important; /* yellow */
 }
 
 .token.regex,

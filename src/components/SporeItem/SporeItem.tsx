@@ -33,7 +33,7 @@ const SporeItem: React.FC<Props> = ({ title, content, index, total }) => {
                 {title}
             </h3>
             <div className={styles.SporeItemContent}>
-                <div className={`${styles.content} body-1`}>
+                <div className={`${styles.content} body-2`}>
                     {content.includes('<') ? <div dangerouslySetInnerHTML={{ __html: content }} /> : <p>{content}</p>}
                 </div>
             </div>

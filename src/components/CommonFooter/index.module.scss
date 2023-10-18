@@ -59,8 +59,14 @@
         -webkit-text-fill-color: transparent;
         gap: 24px;
       }
+      .CardContent,
+      .DocContent {
+        color: rgba(30, 30, 30, 0.7);
+      }
+
       .CardContent {
         max-width: 360px;
+
       }
       .CardButton {
         display: flex;
@@ -186,7 +192,8 @@
       gap: 24px;
     }
     h1 {
-      background: var(--black-angular, conic-gradient(from 180deg at 48.5% 50%, #5A5A5A 26.24999910593033deg, #1E1E1E 88.12500178813934deg, #3A3A3A 146.25deg, #1E1E1E 204.37499284744263deg, #5E5E5E 268.1250071525574deg, #1E1E1E 331.875deg));
+      height: 64px;
+      background: conic-gradient(from 180deg at 48.5% 50%, #5A5A5A 26.24999910593033deg, #1E1E1E 88.12500178813934deg, #3A3A3A 146.25deg, #1E1E1E 204.37499284744263deg, #5E5E5E 268.1250071525574deg, #1E1E1E 331.875deg);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -256,6 +263,7 @@
   .ContactUsContainer {
     width: auto;
     h1 {
+      height: 56px;
       margin-top: 1.5rem;
     }
   }
@@ -304,6 +312,7 @@
   .ContactUsContainer {
     width: auto;
     h1 {
+      height: 36px;
       margin-top: 1.5rem;
     }
   }
