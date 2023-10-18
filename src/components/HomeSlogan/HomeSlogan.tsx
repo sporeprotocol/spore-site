@@ -20,7 +20,7 @@ const HomeSlogan: React.FC = () => {
     }, [])
 
     useEffect(() => {
-        let timer: NodeJS.Timeout;
+        let timer: any;
 
         if (isDeleting) {
             timer = setTimeout(() => {
