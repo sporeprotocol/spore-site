@@ -15,8 +15,8 @@ const FAQuestionItem: React.FC<Props> = ({ question, answer}) => {
     const toggleOpen = () => setIsOpen(!isOpen);
 
     return (
-        <div className={styles.FAQuestionWrapper} onClick={toggleOpen}>
-            <div className={styles.Question}>
+        <div className={styles.FAQuestionWrapper}>
+            <div className={styles.Question} onClick={toggleOpen}>
                 {question}
                 {isOpen ? <CloseSVG /> : <OpenSVG />}
             </div>
