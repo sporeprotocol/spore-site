@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Question } from '../../utils/FAQuestion.ts';
 import {ReactComponent as OpenSVG} from "../../assets/svg/FAQ-Open.svg";
 import {ReactComponent as CloseSVG} from "../../assets/svg/FAQ-Close.svg";
+import ReactMarkdown from 'react-markdown';
 import styles from './index.module.scss'
 
 interface Props extends Question {
@@ -19,7 +20,11 @@ const FAQuestionItem: React.FC<Props> = ({ question, answer}) => {
                 {question}
                 {isOpen ? <CloseSVG /> : <OpenSVG />}
             </div>
-            {isOpen && <div className={styles.Answer}>{answer}</div>}
+            {isOpen && <div className={styles.Answer}>
+                <ReactMarkdown>
+                    { answer }
+                </ReactMarkdown>
+            </div>}
         </div>
     );
 }
