@@ -31,9 +31,5 @@ export const questionsData: Question[] = [
     {
         question: "How do I get started with Spore Protocol?",
         answer: "To get started with the Spore Protocol, head over to our [documentation](https://docs.spore.pro/). There, you will find comprehensive guides and resources that will help you navigate the protocol and make the most out of its features."
-    },
-    {
-        question: "What is the expected cost of Spore's on-chain storage?",
-        answer: "1 byte of storage requires approximately 1 CKBytes as the necessary capacity for block fields. For instance, a 100-byte file needs about 130 CKBytes."
     }
 ];
