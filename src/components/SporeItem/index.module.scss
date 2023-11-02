@@ -1,4 +1,5 @@
 .SporeItemWrapper {
+  position: relative;
   width: 520px;
   height: 614px;
   display: flex;
@@ -6,14 +7,58 @@
   margin: 0 auto 32px auto;
   padding: 0 56px;
   border-radius: 35px;
-  background: var(--background-01, #FFF4CC);
+  background: #FFF4CC;
+
+  &:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.30);
+  }
 
   &.even-wrapper {
+    position: relative;
     background-image: url('../../assets/svg/spore-even-bg.svg');
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url('../../assets/svg/spore-even-bg.svg');
+      z-index: -1;
+    }
+    &:hover {
+      background-image: none;
+    }
+    &:hover::before {
+      transition: 0.5s;
+      opacity: 0.8;
+    }
   }
+
   &.odd-wrapper {
+    position: relative;
     background-image: url('../../assets/svg/spore-odd-bg.svg');
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url('../../assets/svg/spore-odd-bg.svg');
+      z-index: -1;
+    }
+    &:hover {
+      background-image: none;
+    }
+    &:hover::before {
+      transition: 0.5s;
+      opacity: 0.8;
+    }
   }
+
+
   .TotalAndIndex {
     width: 76px;
     display: inline-flex;
@@ -67,9 +112,21 @@
       line-height: 100%; /* 200px */
     }
   }
+  .SporeitemButton {
+    a {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      bottom: 30px;
+      right: 30px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 600px) {
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
   .SporeItemWrapper {
     width: 32.5rem;
     border-radius: 2.1875rem;
@@ -102,11 +159,12 @@
 }
 
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 768px)  {
   .SporeItemWrapper {
     width: 21.4rem;
     border-radius: 2.1875rem;
     padding: 0 1rem;
+    overflow: hidden;
     .SvgItem {
       width: 11.4rem;
       height: 11.4rem;
@@ -116,6 +174,11 @@
       padding: 0.25rem 1.5rem;
       margin-top: 3rem;
       font-family: Nunito-SemiBold;
+    }
+    .SporeitemButton {
+      a {
+        top: 30px;
+      }
     }
     h2 {
       margin-top: 2rem;

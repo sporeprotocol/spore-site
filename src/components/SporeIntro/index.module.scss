@@ -1,9 +1,11 @@
+.WaveSvg {
+  width: 100%;
+  overflow: initial;
+}
 .SporeIntroWrapper {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: stretch;
-  background-color: var(--brand-yellow, #FFC43B);
+  display: flex;
+  background-color: #FFC43B;
   background-repeat: no-repeat;
   background-position: top center;
   padding: 70px 153px 70px 180px;
@@ -51,24 +53,9 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1440px) {
-  .WaveSvg {
-    position: relative;
-    width: 1200px;
-    height: 160px;
-    overflow: hidden;
-    svg {
-      position: absolute;
-      bottom: 0;
-    }
-  }
-  .SporeIntroWrapper {
-    padding: 70px 80px 70px 80px;
-  }
-}
 
 
-@media only screen and (max-width: 1200px) and (min-width: 600px) {
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
   .WaveSvg {
     position: relative;
     svg {
@@ -78,19 +65,31 @@
     }
   }
   .SporeIntroWrapper {
-    display: block;
     padding: 0;
+    flex-direction: column;
     .SporeIntroTitle {
       width: auto;
       text-align: center;
+      margin-bottom: 3.5rem;
     }
     .DiscoverButton {
-      margin: 3rem auto 0 auto !important;
+      width: 343px;
+      margin: 3rem auto 6.25rem auto !important;
+      &.PCDiscoverButton {
+        display: none;
+      }
+      &.MobileDiscoverButton {
+        display: flex;
+        width: 21.4375rem;
+        padding: 0.9375rem 1.5625rem;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 768px)  {
   .WaveSvg {
     position: relative;
     svg {
@@ -101,7 +100,7 @@
   }
   .SporeIntroWrapper {
     display: block;
-    padding: 0;
+    padding: 0 1rem;
     .SporeIntroTitle {
       width: auto;
       text-align: center;
@@ -109,6 +108,7 @@
       margin-bottom: 3.5rem;
     }
     .DiscoverButton {
+      width: 100%;
       margin: 3rem auto 6.25rem auto !important;
       &.PCDiscoverButton {
         display: none;

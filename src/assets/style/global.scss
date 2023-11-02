@@ -27,6 +27,13 @@ body {
 }
 
 @font-face {
+  font-family: 'Red Hat Mono';
+  src: url('../font/RedHatMono-VariableFont_wght.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Baloo';
   src: url('../font/Baloo2-VariableFont_wght.woff') format('woff');
   font-weight: normal;
@@ -56,18 +63,19 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h5 {
   font-family: "Baloo Extra Bolder";
   font-weight: 800;
   line-height: 120%;
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 48px;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 40px;
 }
 
 h3 {
@@ -80,6 +88,10 @@ h4 {
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 30px */
+}
+
+h5 {
+  font-size: 32px;
 }
 
 .sub-header,
@@ -119,7 +131,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
   h1 {
     font-size: 2.25rem;
   }
@@ -161,8 +173,11 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   h1 {
     font-size: 2rem;
+  }
+  .button-ct {
+    width: 100% !important;
   }
 }

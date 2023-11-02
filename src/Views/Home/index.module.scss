@@ -41,12 +41,6 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1440px) {
-  .HomePageWrapper {
-    width: 1200px;
-  }
-}
-
 @keyframes rail {
   0% {
     -webkit-transform: translateZ(0);
@@ -58,16 +52,23 @@
   }
 }
 
-/* Mobile styles */
-@media only screen and (max-width: 1200px) and (min-width: 600px) {
+@media only screen and (max-width: 1400px) {
   .HomePageWrapper {
-    width: auto;
-    margin: 3rem 2.5rem 0 2.5rem;
+    width: 100%;
+  }
+}
+
+
+/* Mobile styles */
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .HomePageWrapper {
+    width: 43rem;
+    margin: 3rem auto 0 auto;
     overflow: hidden;
   }
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 768px)  {
   .HomePageWrapper {
     width: auto;
     margin: 0;

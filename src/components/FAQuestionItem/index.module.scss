@@ -2,7 +2,6 @@
   width: 774px;
   padding: 16px 0;
   color: var(--gray, #21232B);
-  /* Body1-bold */
   font-family: Nunito;
   font-size: 18px;
   font-style: normal;
@@ -16,23 +15,37 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    svg {
+      flex-shrink: 0;
+    }
   }
   .Answer {
     margin-top: 12.5px;
-    color: var(--black-alpha-70, rgba(0, 0, 0, 0.70));
+    color: rgba(0, 0, 0, 0.70);
     font-family: Nunito;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
     padding-right: 100px;
-
+    a {
+      color: #3A5AFF;
+    }
   }
 }
 
 /* Mobile styles */
-@media only screen and (max-width: 1200px)  {
+@media only screen and (max-width: 1280px)  {
   .FAQuestionWrapper {
     width: auto;
+  }
+}
+
+@media only screen and (max-width: 768px)  {
+  .FAQuestionWrapper {
+    width: auto;
+    .Answer {
+      padding: 0;
+    }
   }
 }
