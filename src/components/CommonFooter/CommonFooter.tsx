@@ -21,22 +21,22 @@ const cardDataArray: CardData[] = [
     {
         title: "Basics",
         content: "Learn Spore Fundamentals - Quickly grasp the core concepts and components.",
-        link: "/"
+        link: "https://docs.spore.pro/"
     },
     {
         title: "Tutorial",
         content: "Follow Along - Build a toy project, dive in with easy to follow steps and examples.",
-        link: "/"
+        link: "https://docs.spore.pro/"
     },
     {
         title: "How to recipes",
         content: "Simplified Solutions - Find concise recipes to streamline your production.",
-        link: "/"
+        link: "https://docs.spore.pro/"
     },
     {
         title: "Resources",
         content: "Power tools - SDK, API, Contracts, and more!",
-        link: "/"
+        link: "https://docs.spore.pro/"
     },
 ];
 
@@ -64,7 +64,7 @@ const CommonFooter:React.FC = () => {
                             Get started mastering Spore Protocol, from basics to building your next project.
                         </div>
                         <div className={`${styles.CardButton} button-ct`}>
-                            <Link to={'/'}>Visit</Link>
+                            <Link to={'https://docs.spore.pro/'}>Visit</Link>
                         </div>
                     </div>
                     <div className={`${styles.FooterCardContainer}`}>
