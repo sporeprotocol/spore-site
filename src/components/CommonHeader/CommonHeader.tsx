@@ -50,7 +50,7 @@ const Header: React.FC = () => {
                                         {isSubMenuOpen && (  // 根据isSubMenuOpen的状态来条件渲染子菜单
                                             <div className={styles.MobileDropdownList}>
                                                 <Link to={'https://docs.spore.pro/'}>Documentation</Link>
-                                                <Link to={'https://docs.spore.pro/basics/spore-operation'}>Spore Protocol Basics</Link>
+                                                <Link to={'https://docs.spore.pro/category/get-started'}>Spore Protocol Basics</Link>
                                                 <Link to={'https://docs.spore.pro/category/tutorials'}>Tutorials</Link>
                                                 <Link to={'https://docs.spore.pro/category/how-to-recipes'}>How to recipes</Link>
                                                 <Link to={'https://docs.spore.pro/category/resources'}>Resources</Link>
@@ -109,7 +109,7 @@ const Header: React.FC = () => {
                                     </div>
                                     <div className={styles.MenuDivider}></div>
                                     <div className={styles.SubMenu}>
-                                        <Link className={styles.SubMenuItem} target={'_blank'} to={'https://docs.spore.pro/basics/spore-operation'}>
+                                        <Link className={styles.SubMenuItem} target={'_blank'} to={'https://docs.spore.pro/category/get-started'}>
                                             <p className={`${styles.SubMenuItemHeader} sub-header`}>Spore Protocol Basics</p>
                                             <p className={`${styles.SubMenuItemContent} body-2`}>Learn Spore fundamentals</p>
                                         </Link>
