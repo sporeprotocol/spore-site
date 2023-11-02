@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import { ReactComponent as CloseButton } from "../../assets/svg/close.svg";
-import codeBackgroundHeader from '../../assets/img/codeBackground.png';
+// @ts-ignore
+import codeBackgroundHeader from "../../assets/img/codeBackground.png";
 import styles from './index.module.scss'
 
 const Header: React.FC = () => {
@@ -37,7 +38,7 @@ const Header: React.FC = () => {
                                 <div className={styles.MobileHeader}>
                                     <div className={styles.CommonHeaderLogo}>
                                         <Link
-                                            to={'/'}
+                                            to={'https://docs.spore.pro/'}
                                             onClick={() => setIsMenuOpen(false)}
                                             className={location.pathname === '/' ? styles.Active : ''}>Spore Protocol</Link>
                                     </div>
@@ -48,11 +49,11 @@ const Header: React.FC = () => {
                                         Doc<span className={`${styles.ArrowDown} ${isSubMenuOpen ? styles.ArrowUp : ''}`}>&gt;</span>
                                         {isSubMenuOpen && (  // 根据isSubMenuOpen的状态来条件渲染子菜单
                                             <div className={styles.MobileDropdownList}>
-                                                <Link to={'/'}>Documentation</Link>
-                                                <Link to={'/'}>Spore Protocol Basics</Link>
-                                                <Link to={'/'}>Tutorials</Link>
-                                                <Link to={'/'}>How to recipes</Link>
-                                                <Link to={'/'}>Resources</Link>
+                                                <Link to={'https://docs.spore.pro/'}>Documentation</Link>
+                                                <Link to={'https://docs.spore.pro/basics/spore-operation'}>Spore Protocol Basics</Link>
+                                                <Link to={'https://docs.spore.pro/category/tutorials'}>Tutorials</Link>
+                                                <Link to={'https://docs.spore.pro/category/how-to-recipes'}>How to recipes</Link>
+                                                <Link to={'https://docs.spore.pro/category/resources'}>Resources</Link>
                                             </div>
                                         )}
                                     </div>
@@ -98,7 +99,9 @@ const Header: React.FC = () => {
                             <div className={styles.SubMenuMargin}>
                                 <div className={styles.SubDocMenuList}>
                                     <div className={styles.DocList}>
-                                        <div className={styles.SubMenuTextContainer} >
+                                        <div className={styles.SubMenuTextContainer}
+                                            onClick={() => window.open('https://docs.spore.pro/')}
+                                            >
                                             <p className={`${styles.SubMenuItemHeader} sub-header`}>Documentation</p>
                                             <p className={`${styles.SubMenuItemContent} body-2`}>Master Spore, from basics to building your next project.</p>
                                         </div>
@@ -106,19 +109,19 @@ const Header: React.FC = () => {
                                     </div>
                                     <div className={styles.MenuDivider}></div>
                                     <div className={styles.SubMenu}>
-                                        <Link className={styles.SubMenuItem} to={'/basics'}>
+                                        <Link className={styles.SubMenuItem} target={'_blank'} to={'https://docs.spore.pro/basics/spore-operation'}>
                                             <p className={`${styles.SubMenuItemHeader} sub-header`}>Spore Protocol Basics</p>
                                             <p className={`${styles.SubMenuItemContent} body-2`}>Learn Spore fundamentals</p>
                                         </Link>
-                                        <Link className={styles.SubMenuItem} to={'/tutorials'}>
+                                        <Link className={styles.SubMenuItem} target={'_blank'} to={'https://docs.spore.pro/category/tutorials'}>
                                             <p className={`${styles.SubMenuItemHeader} sub-header`}>Tutorial</p>
                                             <p className={`${styles.SubMenuItemContent} body-2`}>Learn with examples.</p>
                                         </Link>
-                                        <Link className={styles.SubMenuItem} to={'/recipes'}>
+                                        <Link className={styles.SubMenuItem} target={'_blank'} to={'https://docs.spore.pro/category/how-to-recipes'}>
                                             <p className={`${styles.SubMenuItemHeader} sub-header`}>How to recipes</p>
                                             <p className={`${styles.SubMenuItemContent} body-2`}>Build with solutions.</p>
                                         </Link>
-                                        <Link className={styles.SubMenuItem} to={'/resources'}>
+                                        <Link className={styles.SubMenuItem} target={'_blank'} to={'https://docs.spore.pro/category/resources'}>
                                             <p className={`${styles.SubMenuItemHeader} sub-header`}>Resources</p>
                                             <p className={`${styles.SubMenuItemContent} body-2`}>Power tools for devs.</p>
                                         </Link>
