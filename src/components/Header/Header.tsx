@@ -50,7 +50,7 @@ const Header: React.FC = () => {
                             </div>
                             <div className="flex flex-1 flex-col items-center p-4 gap-1">
                                 {MenuItems.map(item =>
-                                    <MenuItem link={item.link} title={item.title} intro={item.intro}/>
+                                    <MenuItem key={item.intro} link={item.link} title={item.title} intro={item.intro}/>
                                 )}
                             </div>
                         </div>
