@@ -8,7 +8,7 @@ import {DocUrl} from "@/data/links";
 import MenuItems from "@/data/HeaderItem";
 
 const Header: React.FC = () => {
-    const [isDocsHovered, setDocsHovered] = useState(true);
+    const [isDocsHovered, setDocsHovered] = useState(false);
     const hoverTimeoutRef = useRef<number | null>(null);
 
     const handleMouseEnter = () => {
