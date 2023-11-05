@@ -10,7 +10,13 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'code-block': "url('/svg/code-block.svg')",
-        'code-mushroom': "url('/img/code-mushroom.png')"
+        'code-mushroom': "url('/img/code-mushroom.png')",
+        'wave-bg': "url('/svg/wave-divider.svg')",
+        'scatter': "url('/svg/scatter-mushroom.svg')",
+        'poly': "url('/svg/poly-mushroom.svg')",
+        'card-btn': "url('/svg/card-btn.svg')",
+        'explore-bg': "url('/svg/explore-bg.svg')",
+        'faq-circle': "url('/svg/faq-circle.svg')"
       },
       fontFamily: {
         custom: ['Montserrat'],
