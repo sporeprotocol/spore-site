@@ -12,7 +12,7 @@ const FAQ: React.FC = () => {
                    <p className="font-custom font-extrabold text-hd2">Frequently</p>
                    <p className="font-custom font-extrabold text-hd2">Asked</p>
                    <p className="font-custom font-extrabold text-hd2">Questions</p>
-                   <div className="w-[233px] h-[233px] bg-faq-circle flex justify-center items-center">
+                   <div className="w-[233px] h-[233px] bg-faq-circle flex justify-center items-center mt-6">
                        <div className="w-[200px] h-[200px] rounded-full overflow-hidden relative">
                            <Image className="absolute bottom-[-26px] left-[20px]" width={164} height={183} src={'/svg/faq-mushroom.svg'} alt='faq-mushroom' />
                        </div>

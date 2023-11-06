@@ -23,7 +23,8 @@ const config: Config = {
         'explore-bg': "url('/svg/explore-bg.svg')",
         'faq-circle': "url('/svg/faq-circle.svg')",
         'menu-collapse': "url('/svg/menu-collapse.svg')",
-        'menu-close': "url('/svg/menu-close.svg')"
+        'menu-close': "url('/svg/menu-close.svg')",
+        'easter-egg': "url('/svg/easter-egg.svg')"
       },
       fontFamily: {
         custom: ['Montserrat'],
@@ -39,6 +40,10 @@ const config: Config = {
         BrandWhite80: 'rgba(255, 255, 255, 0.80)',
         BackgroundLight: '#FFFCF1',
         BackgroundDark: '#FDF2C8',
+      },
+      cursor: {
+        'flamethrower': "url(/svg/flamethrower.svg), pointer",
+        'flamethrower-active': "url('/svg/flamethrower-active.svg'), pointer",
       },
       fontSize: {
         'hd1': ['48px', { lineHeight: '120%' }],
