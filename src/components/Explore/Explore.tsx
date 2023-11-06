@@ -13,7 +13,7 @@ const Explore: React.FC = () => {
                 Explore, Learn, and Build!
             </div>
             <div className="max-w-[844px] mx-auto text-b2 font-normal font-inter text-center text-BrandLightGray mb-8">
-                Whether you're crafting a dynamic piece of code or turning a meme into an asset, we've got the perfect ecosystem for your ideas to flourish.
+                Whether you`&apos;re crafting a dynamic piece of code or turning a meme into an asset, we&apos;ve got the perfect ecosystem for your ideas to flourish.
             </div>
             <div className="h-[273px] mb-6">
                 <ExploreItem title={DocsDetail.title} content={DocsDetail.content} link={DocsDetail.link}/>

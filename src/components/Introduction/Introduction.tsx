@@ -9,7 +9,7 @@ const Introduction: React.FC = () => {
             <div className="w-full max-w-[1440px] mx-auto px-[120px] flex justify-between">
                 <div className="max-h-[600px] flex flex-col sticky top-0">
                     <div className="text-section mb-4">
-                        <p className="text-hd2 font-black font-custom">What's in Spore</p>
+                        <p className="text-hd2 font-black font-custom">What&apos;s in Spore</p>
                         <p className="text-b2 font-inter font-normal mt-4">(not just another NFT protocol)</p>
                         <Link className="mt-12 w-[168px] h-[56px] bg-BrandBlack block flex justify-center items-center rounded-full text-btn font-custom font-extrabold shadow-custom text-white" href={'/'} target={'_blank'}>
                             Discover More
