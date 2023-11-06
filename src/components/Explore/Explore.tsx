@@ -8,22 +8,23 @@ const Explore: React.FC = () => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     return (
-        <div className="bg-explore-bg bg-no-repeat bg-top bg-center flex flex-col max-w-[1440px] mx-auto px-[120px]">
-            <div className="text-hd2 font-extrabold font-custom text-center mt-[100px] text-BrandBlack mb-8">
+        <div className="bg-explore-bg bg-no-repeat bg-top bg-center flex flex-col max-w-[1440px] mx-auto px-[120px] sm:px-4 md:px-10">
+            <div className="text-hd2 sm:text-hd2-mb font-extrabold font-custom text-center mt-[100px] text-BrandBlack mb-8">
                 Explore, Learn, and Build!
             </div>
-            <div className="max-w-[844px] mx-auto text-b2 font-normal font-inter text-center text-BrandLightGray mb-8">
+            <div className="max-w-[844px] sm:text-b2 mx-auto text-b2 font-normal font-inter text-center text-BrandLightGray mb-8">
                 Whether you`&apos;re crafting a dynamic piece of code or turning a meme into an asset, we&apos;ve got the perfect ecosystem for your ideas to flourish.
             </div>
-            <div className="h-[273px] mb-6">
+            <div className="h-[273px] md:h-[244px] mb-6">
                 <ExploreItem title={DocsDetail.title} content={DocsDetail.content} link={DocsDetail.link}/>
             </div>
-            <div className="card-section flex flex-wrap gap-6 justify-between">
+            <div className="card-section flex flex-wrap gap-6 justify-between ">
                 {ItemDatails.map((cardProps, index) => (
                     <div
                         key={index}
                         className={`
-                            explore-item-animation-ct transition-all duration-300 h-[273px]
+                            sm:w-full
+                            explore-item-animation-ct transition-all duration-300 h-[299px] sm:h-[252px]
                             ${hoveredIndex === index ? 'hovered' : ''}
                             ${(hoveredIndex !== null && (hoveredIndex + 1) % 2 === 0) && hoveredIndex - 1 === index ? 'ScaleSmall' : '' }
                             ${(hoveredIndex !== null && (hoveredIndex + 1) % 2 !== 0) && hoveredIndex + 1 === index ? 'ScaleSmall' : '' }

@@ -11,13 +11,11 @@ export default function Home() {
   return (
     <div className="bg-BackgroundLight">
         <div className="">
-            <div className="max-w-[1440px] px-[120px] mx-auto mt-0 mb-0">
-                <Header />
-            </div>
-            <div className="max-w-[1440px] px-[120px] mx-auto mt-0 mb-0">
+            <Header />
+            <div className="max-w-[1440px] lg:px-[120px] mx-auto mt-0 mb-0 sm:px-4">
                 <HeroSection />
             </div>
-            <div className="bg-wave-bg h-[153px] bg-no-repeat bg-cover"></div>
+            <div className="bg-wave-bg h-[153px] md:bg-center sm:bg-center bg-no-repeat bg-cover"></div>
             <Introduction />
             <Explore />
             <FAQ />

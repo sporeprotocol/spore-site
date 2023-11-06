@@ -7,6 +7,11 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      sm: { max: '768px', min: '1px' },
+      md: { min: '769px', 'max': '1279px'},
+      lg: { min: '1280px'}
+    },
     extend: {
       backgroundImage: {
         'code-block': "url('/svg/code-block.svg')",
@@ -16,7 +21,9 @@ const config: Config = {
         'poly': "url('/svg/poly-mushroom.svg')",
         'card-btn': "url('/svg/card-btn.svg')",
         'explore-bg': "url('/svg/explore-bg.svg')",
-        'faq-circle': "url('/svg/faq-circle.svg')"
+        'faq-circle': "url('/svg/faq-circle.svg')",
+        'menu-collapse': "url('/svg/menu-collapse.svg')",
+        'menu-close': "url('/svg/menu-close.svg')"
       },
       fontFamily: {
         custom: ['Montserrat'],

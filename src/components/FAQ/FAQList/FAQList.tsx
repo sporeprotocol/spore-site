@@ -6,7 +6,7 @@ import FAQItem from "@/components/FAQ/FAQItem/FAQItem";
 
 const FAQList: React.FC = () => {
     return (
-        <div className="flex flex-col w-[774px]">
+        <div className="flex flex-col w-[774px] sm:w-full">
             {QuestionsData.map((value, index) => (
                 <FAQItem question={value.question} answer={value.answer} key={value.question} />
             ))}
