@@ -24,7 +24,10 @@ const config: Config = {
         'faq-circle': "url('/svg/faq-circle.svg')",
         'menu-collapse': "url('/svg/menu-collapse.svg')",
         'menu-close': "url('/svg/menu-close.svg')",
-        'easter-egg': "url('/svg/easter-egg.svg')"
+        'easter-egg': "url('/svg/easter-egg.svg')",
+        'amazing-mushroom': "url('/svg/amazing-mushroom.svg')",
+        'like-mushroom': "url('/svg/like-mushroom.svg')",
+        'sleeping-mushroom': "url('/svg/sleeping-mushroom.svg')"
       },
       fontFamily: {
         custom: ['Montserrat'],
@@ -38,7 +41,7 @@ const config: Config = {
         BrandLightGray: '#BDBCB9',
         BrandWhite: '#FFFFFF',
         BrandWhite80: 'rgba(255, 255, 255, 0.80)',
-        BackgroundLight: '#FFFCF1',
+        BackgroundLight: '#FFF8D9',
         BackgroundDark: '#FDF2C8',
       },
       cursor: {

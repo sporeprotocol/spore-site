@@ -13,12 +13,12 @@ const Explore: React.FC = () => {
                 Explore, Learn, and Build!
             </div>
             <div className="max-w-[844px] sm:text-b2 mx-auto text-b2 font-normal font-inter text-center text-BrandLightGray mb-8">
-                Whether you`&apos;re crafting a dynamic piece of code or turning a meme into an asset, we&apos;ve got the perfect ecosystem for your ideas to flourish.
+                Whether you&apos;re crafting a dynamic piece of code or turning a meme into an asset, we&apos;ve got the perfect ecosystem for your ideas to flourish.
             </div>
             <div className="h-[273px] md:h-[244px] mb-6">
                 <ExploreItem title={DocsDetail.title} content={DocsDetail.content} link={DocsDetail.link}/>
             </div>
-            <div className="card-section flex flex-wrap gap-6 justify-between ">
+            <div className="card-section flex flex-wrap gap-6 ">
                 {ItemDatails.map((cardProps, index) => (
                     <div
                         key={index}

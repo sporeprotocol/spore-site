@@ -64,11 +64,15 @@
                         />
                     </div>
 
-                    <nav className="hidden lg:flex">
-                        <button className={`w-[80px] h-[32px] box-content px-4 py-2 text-b2 font-custom ${isDocsHovered ? 'font-medium text-BrandDarkGray' : 'border-b-2 border-Brand font-bold'}`}>Home</button>
+                    <nav className="hidden gap-10 lg:flex">
+                        <button className={`relative w-[48px] h-[32px] box-content px-4 py-2 text-b2 cursor-pointer font-inter ${isDocsHovered ? 'font-medium text-BrandDarkGray' : 'font-bold'}`}>
+                            Home
+                            {!isDocsHovered && <span className={"absolute cursor-pointer w-full left-0 bottom-0 block h-1 bg-Brand rounded-full"}></span>}
+                        </button>
                         <div className="z-99 relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                            <button className={`w-[80px] h-[32px] box-content px-4 py-2 text-b2 font-custom ${isDocsHovered ? 'border-b-2 border-Brand font-bold' : 'font-medium text-BrandDarkGray'}`}>
+                            <button className={`relative w-[48px] h-[32px] box-content cursor-pointer px-4 py-2 text-b2 font-inter ${isDocsHovered ? 'font-bold' : 'font-medium text-BrandDarkGray'}`}>
                                 Docs
+                                {isDocsHovered && <span className={"absolute cursor-pointer w-full left-0 bottom-0 block h-1 bg-Brand rounded-full"}></span>}
                             </button>
                             <div className={`absolute top-full mt-2 w-[598px] h-[340px] border-2 rounded-2xl border-BrandBlack bg-Brand ${isDocsHovered ? 'visible' : 'invisible'}`}>
                                 <div className="flex box-border w-[574px] h-[316px] m-2 border-2 border-BrandBlack rounded-2xl bg-white">
@@ -86,21 +90,21 @@
                         </div>
                     </nav>
                     <div className="hidden lg:flex icons gap-2">
-                        <Link href={'https://github.com'}>
+                        <Link href={'https://github.com'} className="rounded-full bg-white hover:bg-BackgroundDark">
                             <Image
                                 width={32}
                                 height={32}
                                 src={'/svg/github-pc.svg'} alt={'logo'}
                             />
                         </Link>
-                        <Link href={'https://github.com'}>
+                        <Link href={'https://github.com'} className="rounded-full bg-white hover:bg-BackgroundDark">
                             <Image
                                 width={32}
                                 height={32}
                                 src={'/svg/discord-pc.svg'} alt={'logo'}
                             />
                         </Link>
-                        <Link href={'https://github.com'}>
+                        <Link href={'https://github.com'} className="rounded-full bg-white hover:bg-BackgroundDark">
                             <Image
                                 width={32}
                                 height={32}

@@ -8,7 +8,7 @@ const Introduction: React.FC = () => {
     return (
         <div className="flex md:flex-col sm:flex-col bg-Brand pb-[100px]">
             <div className="w-full max-w-[1440px] mx-auto px-[120px] md:mt-12 md:px-10 sm:px-4 sm:items-center flex md:flex-col sm:flex-col md:items-center justify-between">
-                <div className="max-h-[600px] flex flex-col sticky top-0">
+                <div className="max-h-[600px] flex flex-col sticky top-20 pt-12">
                     <div className="text-section mb-4 sm:text-center md:text-center md:mb-12">
                         <p className="sm:w-[216px] text-hd2 font-black font-custom sm:text-hd2-mb">What&apos;s in Spore</p>
                         <p className="text-b2 font-inter font-normal mt-4 sm:text-b2-mb">(not just another NFT protocol)</p>

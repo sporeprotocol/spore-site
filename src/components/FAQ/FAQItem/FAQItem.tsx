@@ -23,7 +23,7 @@ const FAQItem: React.FC<FAQData> = ({ question, answer }) => {
 
     return (
         <div className="border-b py-4">
-            <div className="flex font-bold font-inter text-b1 sm:text-b1-mb w-full justify-between text-BrandBlack" onClick={toggleOpen}>
+            <div className="flex font-bold font-inter cursor-pointer text-b1 sm:text-b1-mb w-full justify-between text-BrandBlack" onClick={toggleOpen}>
                 {/* @ts-ignore */}
                 <ReactMarkdown className="question-text pr-6" components={{ a: CustomLink }}>
                     {question}

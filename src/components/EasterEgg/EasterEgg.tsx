@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import React from 'react';
+import React, {useEffect} from 'react';
 import Image from "next/image";
 
 const cardVariants = {
@@ -23,6 +23,14 @@ const cardVariants = {
 };
 
 const EasterEgg: React.FC<{ onClose: () => void, isVisible: boolean }> = ({ onClose, isVisible }) => {
+    useEffect(() => {
+        document.body.style.overflow = 'hidden';
+
+        // 组件卸载时重置滚动
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, []);
     return (
         <AnimatePresence>
             {isVisible && (
