@@ -27,5 +27,9 @@ export const QuestionsData: FAQData[] = [
     {
         question: "How do I get started with Spore Protocol?",
         answer: "To get started with the Spore Protocol, head over to our [documentation](https://docs.spore.pro/). There, you will find comprehensive guides and resources that will help you navigate the protocol and make the most out of its features."
+    },
+    {
+        question: "How does Spore Protocol enhance privacy & asset security?",
+        answer: "Rather than keeping all NFTs at a single address and making you VERY attractive to attackers, Spore holder can effortlessly utilize unique addresses for receiving/managing spores, greatly reduces the risk of targeted attacks. Plus, you don't need to deposit tokens to move your spores, making you less traceable compared to Ethereum-based NFTs."
     }
 ];
