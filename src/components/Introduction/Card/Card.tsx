@@ -27,7 +27,7 @@ const Card: React.FC<CardProps> = ({length, index, img, title, listItems, link }
                         ))}
                     </ul>
                 )}
-                <Link href={link} target={'_blank'} className="absolute right-12 bottom-9 sm:top-6 sm:right-4 w-12 h-12 bg-card-btn bg-cover"></Link>
+                {/*<Link href={link} target={'_blank'} className="absolute right-12 bottom-9 sm:top-6 sm:right-4 w-12 h-12 bg-card-btn bg-cover"></Link>*/}
             </div>
         </div>
 

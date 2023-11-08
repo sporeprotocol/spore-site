@@ -70,9 +70,7 @@ const HeroSection: React.FC = () => {
                             <p className="text-hd1 font-custom font-black sm:text-hd1-mb">with Spore Protocol</p>
                         </div>
                         <p className="text-b1 mt-4 text-inter text-BrandDarkGray font-normal sm:text-b1-mb sm:text-center sm:px-4">
-                            Spore Protocol infuses digital assets with enduring value backed by tokenomics,
-                            redeemable at any time. Ensures true on-chain ownership, creative freedom and
-                            frictionless interaction experience.
+                            Spore Protocol infuses digital assets with enduring value backed by tokenomics, redeemable at any time. Ensures true on-chain ownership, privacy, creative freedom and frictionless interaction.
                         </p>
                         <div className="hidden lg:block">
                             <ExplorBtn />
@@ -100,7 +98,7 @@ const HeroSection: React.FC = () => {
                             `await createSpore({
     data: {
         contentType:'image/jpeg',
-        content: await fetchLocalImage('./image.jpg'),
+        content: await fetchLocalFile('./image.jpg'),
     },
     toLock: wallet.lock,
     fromInfos: [wallet.address], 
