@@ -1,0 +1,17 @@
+@media only screen and (min-width: 769px) {
+    .card-section > div {
+        transition: flex 0.6s;
+    }
+
+    .card-section > div.hovered {
+        flex: 2 2 calc(55% - 1.5rem);
+    }
+
+    .card-section > div.ScaleSmall {
+        flex: 0 0 calc(45% - 1.5rem);
+    }
+
+    .explore-item-animation-ct {
+        flex: 0 0 calc(50% - 1.5rem);
+    }
+}
