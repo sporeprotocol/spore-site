@@ -36,21 +36,21 @@ const Footer: React.FC = () => {
                 <div className="bg-sleeping-mushroom w-[120px] h-[116px] hover:cursor-flamethrower active:cursor-flamethrower-active" onClick={handleMushroomClick}></div>
                 <div className="flex flex-col">
                     <div className="flex justify-around w-[192px] gap-[24px] mx-auto">
-                        <Link href={'https://github.com'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                        <Link target={'_blank'} href={'https://github.com/sporeprotocol/spore-sdk'} className="rounded-full bg-white hover:bg-BackgroundDark">
                             <Image
                                 width={48}
                                 height={48}
                                 src={'/svg/github-pc.svg'} alt={'logo'}
                             />
                         </Link>
-                        <Link href={'https://github.com'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                        <Link target={'_blank'} href={'https://discord.com/invite/9eufnpZZ8P'} className="rounded-full bg-white hover:bg-BackgroundDark">
                             <Image
                                 width={48}
                                 height={48}
                                 src={'/svg/discord-pc.svg'} alt={'logo'}
                             />
                         </Link>
-                        <Link href={'https://github.com'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                        <Link target={'_blank'} href={'mailto:contact@spore.pro'} className="rounded-full bg-white hover:bg-BackgroundDark">
                             <Image
                                 width={48}
                                 height={48}

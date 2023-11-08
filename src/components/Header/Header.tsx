@@ -90,21 +90,21 @@
                         </div>
                     </nav>
                     <div className="hidden lg:flex icons gap-2">
-                        <Link href={'https://github.com'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                        <Link target={'_blank'} href={'https://github.com/sporeprotocol/spore-sdk'} className="rounded-full bg-white hover:bg-BackgroundDark">
                             <Image
                                 width={32}
                                 height={32}
                                 src={'/svg/github-pc.svg'} alt={'logo'}
                             />
                         </Link>
-                        <Link href={'https://github.com'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                        <Link target={'_blank'} href={'https://discord.com/invite/9eufnpZZ8P'} className="rounded-full bg-white hover:bg-BackgroundDark">
                             <Image
                                 width={32}
                                 height={32}
                                 src={'/svg/discord-pc.svg'} alt={'logo'}
                             />
                         </Link>
-                        <Link href={'https://github.com'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                        <Link target={'_blank'} href={'mailto:contact@spore.pro'} className="rounded-full bg-white hover:bg-BackgroundDark">
                             <Image
                                 width={32}
                                 height={32}
