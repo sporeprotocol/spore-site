@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/** Font Montserrat **/
-
 @font-face {
   font-family: 'Montserrat';
   src: url('../../public/font/Montserrat-Regular.ttf') format('truetype');
@@ -39,7 +37,6 @@
   font-style: normal;
 }
 
-/** Font Inter **/
 @font-face {
   font-family: 'Inter';
   src: url('../../public/font/Inter-Regular.ttf') format('truetype');
@@ -75,7 +72,6 @@
   font-style: normal;
 }
 
-/** Font Red Hat Mono **/
 
 @font-face {
   font-family: 'RedHatMono';
