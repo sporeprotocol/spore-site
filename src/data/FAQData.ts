@@ -17,6 +17,10 @@ export const QuestionsData: FAQData[] = [
         answer: "With the Spore Protocol, digital assets benefit from [Zero-fee Transfers](https://docs.spore.pro/basics/spore-101#do-i-need-to-hold-ckb-to-transfer-and-receive-spores). This innovative feature removes the hassle of needing tokens to share creations, enabling audiences to receive and spread content without friction. It opens up opportunities to engage with non-crypto users like never before and drive mass-adoption."
     },
     {
+        question: "How does Spore Protocol enhance privacy & asset security?",
+        answer: "Rather than keeping all NFTs at a single address and making you VERY attractive to attackers, Spore holder can effortlessly utilize unique addresses for receiving/managing spores, greatly reduces the risk of targeted attacks. Plus, you don't need to deposit tokens to move your spores, making you less traceable compared to Ethereum-based NFTs."
+    },
+    {
         question: "How can I benefit from the protocol success?",
         answer: "Creators using the Spore Protocol can earn a stake in CKB, enabling both direct profits from Spore sales in cash or crypto and passive income from increased on-chain space usage. Each Spore, created with intrinsic value, grants holders the unique ability to 'melt' it at any time, converting it into underlying CKBytes for on-demand access to the contributed network value."
     },
@@ -27,9 +31,5 @@ export const QuestionsData: FAQData[] = [
     {
         question: "How do I get started with Spore Protocol?",
         answer: "To get started with the Spore Protocol, head over to our [documentation](https://docs.spore.pro/). There, you will find comprehensive guides and resources that will help you navigate the protocol and make the most out of its features."
-    },
-    {
-        question: "How does Spore Protocol enhance privacy & asset security?",
-        answer: "Rather than keeping all NFTs at a single address and making you VERY attractive to attackers, Spore holder can effortlessly utilize unique addresses for receiving/managing spores, greatly reduces the risk of targeted attacks. Plus, you don't need to deposit tokens to move your spores, making you less traceable compared to Ethereum-based NFTs."
     }
 ];
