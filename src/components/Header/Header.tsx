@@ -128,11 +128,11 @@ const Header: React.FC = () => {
                             {
                                 isDocsActive  &&
                                 <div className="px-8 text-BrandDarkGray font-inter text-b1 font-normal h-12 flex flex-col">
-                                    <Link className="py-2 flex items-center" href={'/'}>Documentations</Link>
-                                    <Link className="py-2 flex items-center" href={'/'}>Spore Protocol Basics</Link>
-                                    <Link className="py-2 flex items-center" href={'/'}>Tutorial</Link>
-                                    <Link className="py-2 flex items-center" href={'/'}>How to recipes</Link>
-                                    <Link className="py-2 flex items-center" href={'/'}>Resources</Link>
+                                    <Link className="py-2 flex items-center" href={`${DocUrl.baseUrl}`}>Documentations</Link>
+                                    <Link className="py-2 flex items-center" href={`${DocUrl.baseUrl}${DocUrl.basic}`}>Spore Protocol Basics</Link>
+                                    <Link className="py-2 flex items-center" href={`${DocUrl.baseUrl}${DocUrl.tutorial}`}>Tutorial</Link>
+                                    <Link className="py-2 flex items-center" href={`${DocUrl.baseUrl}${DocUrl.howToRecipes}`}>How to recipes</Link>
+                                    <Link className="py-2 flex items-center" href={`${DocUrl.baseUrl}${DocUrl.resources}`}>Resources</Link>
                                 </div>
                             }
                         </div>
