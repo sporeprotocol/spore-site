@@ -18,7 +18,7 @@ const FAQ: React.FC = () => {
            <AnimatePresence>
                {showEasterEgg && <EasterEgg onClose={handleClose} isVisible={showEasterEgg} />}
            </AnimatePresence>
-           <div className="mt-12 bg-white rounded-t-[64px] py-[100px] flex md:flex-col sm:flex-col max-w-[1440px] w-full px-[120px] sm:px-4 mx-auto justify-between">
+           <div className="mt-12 bg-white rounded-t-[64px] py-[100px] flex md:flex-col sm:flex-col max-w-[1440px] w-full px-[120px] sm:px-4 mx-auto justify-between items-center">
                <div className="flex-col hidden lg:flex">
                    <p className="font-custom font-extrabold text-hd2">Frequently</p>
                    <p className="font-custom font-extrabold text-hd2">Asked</p>
