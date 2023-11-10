@@ -63,7 +63,7 @@ const HeroSection: React.FC = () => {
                     <div className="flex flex-col gap-[48px] w-[579px] md:w-full sm:w-full">
                         <div className="flex flex-col gap-1 sm:text-center">
                             <p className="h-[58px] sm:h-8 text-hd1 font-custom font-black sm:text-hd1-mb">{`${words[index].substring(0, subIndex)}${blink ? "|": " "}`}</p>
-                            <p className="w-[454px] relative text-hd1 font-custom font-black sm:text-hd1-mb sm:mx-auto md:mx-auto">
+                            <p className="lg:w-[454px] relative text-hd1 font-custom font-black sm:text-hd1-mb sm:mx-auto md:mx-auto">
                                 <span className="relative z-10">On-chain Artifact</span>
                                 <span className="absolute w-full left-0 bottom-0 h-[30px] bg-Brand rounded-full z-1 sm:hidden"></span>
                             </p>
@@ -76,11 +76,11 @@ const HeroSection: React.FC = () => {
                             <ExplorBtn />
                         </div>
                     </div>
-                    <div className="w-[555px] h-[366px] self-end lg:flex-none sm:w-full md:w-full text-inter flex md:flex-col relative">
+                    <div className="w-[555px] h-[366px] self-end lg:flex-none sm:w-full md:w-full text-inter flex md:flex-col relative sm:overflow-hidden md:overflow-hidden">
                         <div className="hidden hover:cursor-flamethrower active:cursor-flamethrower-active lg:flex w-[183px] h-[183px] absolute bg-code-mushroom bg-cover right-[20px] top-[-137px]" onClick={handleMushroomClick}></div>
                         <div className="w-[555px] sm:w-full h-[366px] md:w-full md:border md:border-BrandBlack md:rounded-2xl md:bg-white sm:bg-white md:text-left lg:bg-code-block bg-no-repeat self-end z-10 p-[37px] sm:pl-6 sm:pt-8 sm:border sm:border-BrandBlack sm:rounded-2xl">
                             <div className="w-[100px] border rounded-full border-BrandBlack text-center text-code !leading-6 font-redHat">index.js</div>
-                            <div className="flex">
+                            <div className="flex sm:overflow-x-scroll">
                                 <div className="mt-4">
                                     <div className="font-redHat text-code text-BrandLightGray">1</div>
                                     <div className="font-redHat text-code text-BrandLightGray">2</div>
