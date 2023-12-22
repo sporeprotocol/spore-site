@@ -90,14 +90,14 @@ const Header: React.FC = () => {
                     </div>
                 </nav>
                 <div className="hidden lg:flex icons gap-2">
-                    <Link target={'_blank'} href={'https://github.com/sporeprotocol/spore-sdk'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                    <Link target={'_blank'} href={'https://github.com/sporeprotocol'} className="rounded-full bg-white hover:bg-BackgroundDark">
                         <Image
                             width={32}
                             height={32}
                             src={'/svg/github-pc.svg'} alt={'logo'}
                         />
                     </Link>
-                    <Link target={'_blank'} href={'https://discord.com/invite/9eufnpZZ8P'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                    <Link target={'_blank'} href={'https://discord.com/channels/1083998986735730738/1176755433462054973'} className="rounded-full bg-white hover:bg-BackgroundDark">
                         <Image
                             width={32}
                             height={32}
@@ -137,21 +137,21 @@ const Header: React.FC = () => {
                             }
                         </div>
                         <div className="absolute flex bottom-6 icons gap-6">
-                            <Link href={'https://github.com'}>
+                            <Link href={'https://github.com/sporeprotocol'}>
                                 <Image
                                     width={32}
                                     height={32}
                                     src={'/svg/github-pc.svg'} alt={'logo'}
                                 />
                             </Link>
-                            <Link href={'https://github.com'}>
+                            <Link href={'https://discord.com/channels/1083998986735730738/1176755433462054973'}>
                                 <Image
                                     width={32}
                                     height={32}
                                     src={'/svg/discord-pc.svg'} alt={'logo'}
                                 />
                             </Link>
-                            <Link href={'https://github.com'}>
+                            <Link href={'mailto:contact@spore.pro'}>
                                 <Image
                                     width={32}
                                     height={32}
