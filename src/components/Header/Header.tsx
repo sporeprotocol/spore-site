@@ -39,14 +39,11 @@ const Header: React.FC = () => {
 
     useEffect(() => {
         if (isMenuOpen) {
-            // 当菜单打开时，禁用滚动
             document.body.style.overflow = 'hidden';
         } else {
-            // 当菜单关闭时，恢复滚动
             document.body.style.overflow = '';
         }
 
-        // 组件卸载时重置滚动
         return () => {
             document.body.style.overflow = '';
         };
