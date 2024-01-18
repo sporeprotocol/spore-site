@@ -87,6 +87,13 @@ const Header: React.FC = () => {
                     </div>
                 </nav>
                 <div className="hidden lg:flex icons gap-2">
+                    <Link target={'_blank'} href={'https://twitter.com/sporeprotocol'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                        <Image
+                            width={32}
+                            height={32}
+                            src={'/svg/x-logo.svg'} alt={'logo'}
+                        />
+                    </Link>
                     <Link target={'_blank'} href={'https://github.com/sporeprotocol'} className="rounded-full bg-white hover:bg-BackgroundDark">
                         <Image
                             width={32}
@@ -134,6 +141,13 @@ const Header: React.FC = () => {
                             }
                         </div>
                         <div className="absolute flex bottom-6 icons gap-6">
+                            <Link href={'https://twitter.com/sporeprotocol'}>
+                                <Image
+                                    width={32}
+                                    height={32}
+                                    src={'/svg/x-logo.svg'} alt={'logo'}
+                                />
+                            </Link>
                             <Link href={'https://github.com/sporeprotocol'}>
                                 <Image
                                     width={32}
