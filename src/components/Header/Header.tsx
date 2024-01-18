@@ -87,7 +87,7 @@ const Header: React.FC = () => {
                     </div>
                 </nav>
                 <div className="hidden lg:flex icons gap-2">
-                    <Link target={'_blank'} href={'https://github.com/sporeprotocol'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                    <Link target={'_blank'} href={'https://twitter.com/sporeprotocol'} className="rounded-full bg-white hover:bg-BackgroundDark">
                         <Image
                             width={32}
                             height={32}
