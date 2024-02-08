@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                                 src={'/svg/github-pc.svg'} alt={'logo'}
                             />
                         </Link>
-                        <Link target={'_blank'} href={'https://discord.com/channels/1083998986735730738/1176755433462054973'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                        <Link target={'_blank'} href={'https://discord.gg/X7D7xG7YeX'} className="rounded-full bg-white hover:bg-BackgroundDark">
                             <Image
                                 width={48}
                                 height={48}
