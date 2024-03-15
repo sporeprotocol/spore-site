@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
     const [subIndex, setSubIndex] = useState(0);
     const [reverse, setReverse] = useState(false);
     const [blink, setBlink] = useState(true);
-    const speed = 150; // 打字速度
+    const speed = 150; // typing speed
 
     useEffect(() => {
         Prism.highlightAll();

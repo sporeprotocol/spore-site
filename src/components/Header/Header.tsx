@@ -39,14 +39,11 @@ const Header: React.FC = () => {
 
     useEffect(() => {
         if (isMenuOpen) {
-            // 当菜单打开时，禁用滚动
             document.body.style.overflow = 'hidden';
         } else {
-            // 当菜单关闭时，恢复滚动
             document.body.style.overflow = '';
         }
 
-        // 组件卸载时重置滚动
         return () => {
             document.body.style.overflow = '';
         };
@@ -90,14 +87,21 @@ const Header: React.FC = () => {
                     </div>
                 </nav>
                 <div className="hidden lg:flex icons gap-2">
-                    <Link target={'_blank'} href={'https://github.com/sporeprotocol/spore-sdk'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                    <Link target={'_blank'} href={'https://twitter.com/sporeprotocol'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                        <Image
+                            width={32}
+                            height={32}
+                            src={'/svg/x-logo.svg'} alt={'logo'}
+                        />
+                    </Link>
+                    <Link target={'_blank'} href={'https://github.com/sporeprotocol'} className="rounded-full bg-white hover:bg-BackgroundDark">
                         <Image
                             width={32}
                             height={32}
                             src={'/svg/github-pc.svg'} alt={'logo'}
                         />
                     </Link>
-                    <Link target={'_blank'} href={'https://discord.com/invite/9eufnpZZ8P'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                    <Link target={'_blank'} href={'https://discord.gg/X7D7xG7YeX'} className="rounded-full bg-white hover:bg-BackgroundDark">
                         <Image
                             width={32}
                             height={32}
@@ -137,21 +141,28 @@ const Header: React.FC = () => {
                             }
                         </div>
                         <div className="absolute flex bottom-6 icons gap-6">
-                            <Link href={'https://github.com'}>
+                            <Link href={'https://twitter.com/sporeprotocol'}>
+                                <Image
+                                    width={32}
+                                    height={32}
+                                    src={'/svg/x-logo.svg'} alt={'logo'}
+                                />
+                            </Link>
+                            <Link href={'https://github.com/sporeprotocol'}>
                                 <Image
                                     width={32}
                                     height={32}
                                     src={'/svg/github-pc.svg'} alt={'logo'}
                                 />
                             </Link>
-                            <Link href={'https://github.com'}>
+                            <Link href={'https://discord.gg/X7D7xG7YeX'}>
                                 <Image
                                     width={32}
                                     height={32}
                                     src={'/svg/discord-pc.svg'} alt={'logo'}
                                 />
                             </Link>
-                            <Link href={'https://github.com'}>
+                            <Link href={'mailto:contact@spore.pro'}>
                                 <Image
                                     width={32}
                                     height={32}

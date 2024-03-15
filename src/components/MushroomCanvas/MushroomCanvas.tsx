@@ -10,20 +10,19 @@ const MushroomCanvas: React.FC = () => {
     let pixels: Pixel[] = [];
     let timeoutId: NodeJS.Timeout;
 
-    // 创建蘑菇的形状
     const createMushroomShape = () => {
         const mushroomPixels: Pixel[] = [];
         const width = canvasRef.current!.width;
         const height = canvasRef.current!.height;
 
-        // 创建蘑菇帽
+        // The hat
         for (let i = width / 2 - 50; i < width / 2 + 50; i++) {
             for (let j = 50; j < 150; j++) {
                 mushroomPixels.push({ x: i, y: j });
             }
         }
 
-        // 创建蘑菇柄
+        // The foot
         for (let i = width / 2 - 10; i < width / 2 + 10; i++) {
             for (let j = 150; j < height / 2; j++) {
                 mushroomPixels.push({ x: i, y: j });
@@ -33,7 +32,7 @@ const MushroomCanvas: React.FC = () => {
         return mushroomPixels;
     };
 
-    // 随机化像素点
+    // Random pixels
     const randomizePixels = (numPixels: number) => {
         const randomPixels: Pixel[] = [];
         for (let i = 0; i < numPixels; i++) {
@@ -45,7 +44,6 @@ const MushroomCanvas: React.FC = () => {
         return randomPixels;
     };
 
-    // 绘制函数
     const drawPixels = (ctx: CanvasRenderingContext2D, pixelsToDraw: Pixel[]) => {
         ctx.clearRect(0, 0, canvasRef.current!.width, canvasRef.current!.height);
         ctx.fillStyle = 'black';
