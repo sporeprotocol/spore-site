@@ -101,7 +101,7 @@ const HeroSection: React.FC = () => {
         content: await fetchLocalFile('./image.jpg'),
     },
     toLock: wallet.lock,
-    fromInfos: [wallet.address], 
+    fromInfos: [wallet.address],
     config,
 });`
                         }
