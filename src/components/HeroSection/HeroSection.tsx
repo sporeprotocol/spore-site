@@ -64,7 +64,7 @@ const HeroSection: React.FC = () => {
                         <div className="flex flex-col gap-1 sm:text-center">
                             <p className="h-[58px] sm:h-8 text-hd1 font-custom font-black sm:text-hd1-mb">{`${words[index].substring(0, subIndex)}${blink ? "|": " "}`}</p>
                             <p className="lg:w-[454px] relative text-hd1 font-custom font-black sm:text-hd1-mb sm:mx-auto md:mx-auto">
-                                <span className="relative z-10">On-chain Digital Object</span>
+                                <span className="relative z-10">Digital Object</span>
                                 <span className="absolute w-full left-0 bottom-0 h-[30px] bg-Brand rounded-full z-1 sm:hidden"></span>
                             </p>
                             <p className="text-hd1 font-custom font-black sm:text-hd1-mb">with Spore Protocol</p>
