@@ -2,7 +2,7 @@ import { FAQData } from "@/types/FAQ";
 export const QuestionsData: FAQData[] = [
     {
         question: "Is Spore an NFT?",
-        answer: `Yes and no. [Spore](https://docs.spore.pro/basics/spore-101#what-is-a-spore) is a special kind of non-fungible token that establishes an intrinsic link between the token’s content and its value. Also, the content held by Spore is not only fully on-chain, but generative and dynamic as well.`
+        answer: `Not exactly. [Spore](https://docs.spore.pro/basics/spore-101#what-is-a-spore) is a Digital Object(DOB) that is not only non-fungible, resides fully on-chain but also establishes an intrinsic link between content and value.`
     },
     {
         question: "What kind of content can I put on the Spore Protocol?",
@@ -14,11 +14,11 @@ export const QuestionsData: FAQData[] = [
     },
     {
         question: "How does the Spore Protocol handle transaction fees?",
-        answer: "With the Spore Protocol, digital assets benefit from [Zero-fee Transfers](https://docs.spore.pro/basics/spore-101#do-i-need-to-hold-ckb-to-transfer-and-receive-spores). This innovative feature removes the hassle of needing tokens to share creations, enabling audiences to receive and spread content without friction. It opens up opportunities to engage with non-crypto users like never before and drive mass-adoption."
+        answer: "With the Spore Protocol, digital objects benefit from [Zero-fee Transfers](https://docs.spore.pro/basics/spore-101#do-i-need-to-hold-ckb-to-transfer-and-receive-spores). This innovative feature removes the hassle of needing tokens to share creations, enabling audiences to receive and spread content without friction. It opens up opportunities to engage with non-crypto users like never before and drive mass-adoption."
     },
     {
         question: "How does Spore Protocol enhance privacy & asset security?",
-        answer: "Rather than keeping all NFTs at a single address and making you VERY attractive to attackers, Spore holder can effortlessly utilize unique addresses for receiving/managing spores, greatly reduces the risk of targeted attacks. Plus, you don't need to deposit tokens to move your spores, making you less traceable compared to Ethereum-based NFTs."
+        answer: "Rather than keeping all digital assets at a single address and making you VERY attractive to attackers, Spore holder can effortlessly utilize unique addresses for receiving/managing spores, greatly reduces the risk of targeted attacks. Plus, you don't need to deposit tokens to move your spores, making you less traceable compared to Ethereum-based NFTs."
     },
     {
         question: "How can I benefit from the protocol success?",
