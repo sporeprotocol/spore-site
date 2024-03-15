@@ -32,16 +32,15 @@ const EasterEgg: React.FC<{ onClose: () => void, isVisible: boolean }> = ({ onCl
         };
     }, []);
     return (
-        <AnimatePresence>
+        <>
             {isVisible && (
-                <motion.div
-                    className="fixed top-0 left-0 right-0 bottom-0 bg-Brand bg-easter-egg z-[999] flex flex-col justify-center items-center gap-4"
-                    variants={cardVariants}
-                    initial="initial"
-                    animate="in"
-                    exit="out"
+                <>
+                    <div
+                        className="fixed top-0 left-0 right-0 bottom-0 bg-Brand bg-easter-egg z-[999] flex flex-col justify-center items-center gap-4"
+                    ></div>
+                    <div
+                    className="fixed top-0 left-0 right-0 bottom-0 bg-Brand bg-easter-egg z-[998] flex flex-col justify-center items-center gap-4"
                 >
-
                     <Image width={44} height={44} src={'/svg/menu-close.svg'} alt={'close'} className="absolute top-16 right-16 cursor-pointer" onClick={onClose}/>
                     <div className="font-extrabold font-custom text-hd3 text-center">Natural Spore Facts</div>
                     <div className="font-normal font-custom text-b1 text-BrandDarkGray text-center">OF THE DAY</div>
@@ -52,9 +51,11 @@ const EasterEgg: React.FC<{ onClose: () => void, isVisible: boolean }> = ({ onCl
                         </div>
                         <Image className="absolute bottom-0 right-0" width={39} height={30} src={'/svg/down-quotation.svg'} alt={'up'}/>
                     </div>
-                </motion.div>
+                </div>
+                </>
+                
             )}
-        </AnimatePresence>
+        </>
     )
 }
 

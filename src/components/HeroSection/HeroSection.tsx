@@ -76,7 +76,7 @@ const HeroSection: React.FC = () => {
                             <ExplorBtn />
                         </div>
                     </div>
-                    <div className="w-[555px] h-[366px] self-end lg:flex-none sm:w-full md:w-full text-inter flex md:flex-col relative sm:overflow-hidden md:overflow-hidden">
+                    <div className="w-[555px] h-[366px] self-end lg:flex-none sm:w-full md:w-full text-inter flex md:flex-col relative sm:overflow-hidden md:overflow-hidden sm:mt-12">
                         <div className="hidden hover:cursor-flamethrower active:cursor-flamethrower-active lg:flex w-[183px] h-[183px] absolute bg-code-mushroom bg-cover right-[20px] top-[-137px]" onClick={handleMushroomClick}></div>
                         <div className="w-[555px] sm:w-full h-[366px] md:w-full md:border md:border-BrandBlack md:rounded-2xl md:bg-white sm:bg-white md:text-left lg:bg-code-block bg-no-repeat self-end z-10 p-[37px] sm:pl-6 sm:pt-8 sm:border sm:border-BrandBlack sm:rounded-2xl">
                             <div className="w-[100px] border rounded-full border-BrandBlack text-center text-code !leading-6 font-redHat">index.js</div>
@@ -101,7 +101,7 @@ const HeroSection: React.FC = () => {
         content: await fetchLocalFile('./image.jpg'),
     },
     toLock: wallet.lock,
-    fromInfos: [wallet.address], 
+    fromInfos: [wallet.address],
     config,
 });`
                         }

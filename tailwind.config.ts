@@ -43,6 +43,7 @@ const config: Config = {
         BrandWhite80: 'rgba(255, 255, 255, 0.80)',
         BackgroundLight: '#FFF8D9',
         BackgroundDark: '#FDF2C8',
+        LinkBlue: '#3A5AFF',
       },
       cursor: {
         'flamethrower': "url(/svg/flamethrower.svg), pointer",

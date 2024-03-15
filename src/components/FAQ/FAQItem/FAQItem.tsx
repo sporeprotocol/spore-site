@@ -15,7 +15,7 @@ const FAQItem: React.FC<FAQData> = ({ question, answer }) => {
     };
 
     const CustomLink: React.FC<CustomLinkProps> = ({ href, children }) => (
-        <a href={href} target="_blank" rel="noopener noreferrer" className="text-Brand">
+        <a href={href} target="_blank" rel="noopener noreferrer" className="text-LinkBlue">
             {children}
         </a>
     );

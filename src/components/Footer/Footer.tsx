@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
                 {showEasterEgg && <EasterEgg onClose={handleClose} isVisible={showEasterEgg} />}
             </AnimatePresence>
             <div className="flex gap-8 mx-auto justify-center">
-                <div className="bg-sleeping-mushroom w-[120px] h-[116px] hover:cursor-flamethrower active:cursor-flamethrower-active" onClick={handleMushroomClick}></div>
+                <div className="sm:hidden bg-sleeping-mushroom w-[120px] h-[116px] hover:cursor-flamethrower active:cursor-flamethrower-active" onClick={handleMushroomClick}></div>
                 <div className="flex flex-col">
                     <div className="flex justify-around w-[192px] gap-[24px] mx-auto">
                         <Link target={'_blank'} href={'https://twitter.com/sporeprotocol'} className="rounded-full bg-white hover:bg-BackgroundDark">
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
                     </div>
                     <h2 className="text-center font-custom font-extrabold text-[64px] sm:text-[36px] sm:p-4">SPORE PROTOCOL</h2>
                 </div>
-                <div className="bg-amazing-mushroom w-[120px] h-[116px] hover:cursor-flamethrower active:cursor-flamethrower-active" onClick={handleMushroomClick}></div>
+                <div className="sm:hidden bg-amazing-mushroom w-[120px] h-[116px] hover:cursor-flamethrower active:cursor-flamethrower-active" onClick={handleMushroomClick}></div>
             </div>
         </footer>
     );
