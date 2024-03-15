@@ -4,10 +4,10 @@ import {CardProps} from "@/types/Introduction";
 const cardData: CardProps[] = [
     {
         img: "/svg/monetize.svg",
-        title: "Monetize On-Chain",
-        listItems: ["Craft digital assets that are inherently valuable",
+        title: "On-Chain Digital Objects",
+        listItems: ["Craft digital objects that are inherently valuable",
                     "Benefit from the increasing use of on-chain space",
-                    "Redeem tokens used for minting anytime"],
+                    "Melt back and redeem $CKB tokens anytime"],
         link: "/link1",
     },
     {
@@ -20,7 +20,7 @@ const cardData: CardProps[] = [
     {
         img: "/svg/full-on-chain.svg",
         title: "Private & Secure",
-        listItems: ["Own fully on-chain digital creations",
+        listItems: ["Own fully on-chain digital objects",
                     "Control over your on-chain presence for privacy",
                     "Minimize exposure to targeted attacks"],
         link: "/link3",
