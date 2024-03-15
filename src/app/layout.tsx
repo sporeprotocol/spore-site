@@ -18,8 +18,7 @@ export default function RootLayout({
       <head>
           <link rel="icon" href="/svg/favicon.svg" sizes="any" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <meta property="og:title" content="Spore Protocol: Realize Your Potential On-Chain" />
-          <meta property="og:description" content="Craft dynamic experiences, achieve widespread adoption, and monetize your work with full ownership powered by Spore Protocol, now!" />
+          <meta property="og:title" content="Spore Protocol: On-Chain Digital Objects" />
           <meta property="og:image" content="/img/ogp.png" />
 
       </head>
