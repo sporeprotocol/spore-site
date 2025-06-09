@@ -101,7 +101,7 @@ const Header: React.FC = () => {
                             src={'/svg/github-pc.svg'} alt={'logo'}
                         />
                     </Link>
-                    <Link target={'_blank'} href={'https://discord.gg/X7D7xG7YeX'} className="rounded-full bg-white hover:bg-BackgroundDark">
+                    <Link target={'_blank'} href={'https://discord.gg/Ncc3AcBcMU'} className="rounded-full bg-white hover:bg-BackgroundDark">
                         <Image
                             width={32}
                             height={32}
@@ -155,7 +155,7 @@ const Header: React.FC = () => {
                                     src={'/svg/github-pc.svg'} alt={'logo'}
                                 />
                             </Link>
-                            <Link href={'https://discord.gg/X7D7xG7YeX'}>
+                            <Link href={'https://discord.gg/Ncc3AcBcMU'}>
                                 <Image
                                     width={32}
                                     height={32}
